@@ -426,13 +426,11 @@
 /* Mobile (5" - 7") */
 @media screen and (max-width: 600px) {
     .astro-chat-container {
-        width: 75%;
-        height: 50vh;
-        bottom: 75px;
-        /* Reduced specific spacing */
-        right: 2.5%;
-        left: 2.5%;
-        margin: auto;
+        width: 85%;
+        height: 60vh;
+        bottom: 90px;
+        right: 20px;
+        /* Default starting position */
         transform-origin: bottom center;
         border-radius: 12px;
     }

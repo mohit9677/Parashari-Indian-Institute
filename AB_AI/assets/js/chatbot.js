@@ -349,21 +349,11 @@
 
     // --- Floating & Drag Logic ---
     function updateContainerPosition() {
-        // Disable custom positioning on mobile to let CSS handle it
-        if (window.innerWidth <= 600) {
-            container.style.left = '';
-            container.style.top = '';
-            container.style.right = '';
-            container.style.bottom = '';
-            container.style.transform = ''; // Clear JS transform if any
-            return;
-        }
-
         const tRect = toggle.getBoundingClientRect();
         const cRect = container.getBoundingClientRect();
         const gap = 20;
         const padding = 20;
-        const headerClearance = 280; // Clearance for header + search bar
+        const headerClearance = window.innerWidth <= 600 ? 50 : 280; // Adaptive clearance for mobile vs desktop
 
         // Default: Bottom aligned, side based on toggle position
         // If toggle is on right half: Container to left
@@ -406,7 +396,6 @@
         handle.style.cursor = 'move';
 
         const onStart = (e) => {
-            if (window.innerWidth <= 600) return;
             isDragging = true;
             const event = e.type.includes('touch') ? e.touches[0] : e;
             startX = event.clientX;
@@ -418,6 +407,10 @@
                 // When dragging toggle, update container too (smooth)
                 container.style.transition = 'none';
             }
+            // Explicitly lock the current left and top position before unsetting bottom and right. 
+            // This prevents the element from jumping back to 0,0.
+            el.style.left = initialX + 'px';
+            el.style.top = initialY + 'px';
             el.style.bottom = 'auto';
             el.style.right = 'auto';
             if (!e.type.includes('touch')) e.preventDefault();
@@ -432,9 +425,10 @@
             let x = initialX + dx;
             let y = initialY + dy;
 
-            // Strict Vertical Constraints (Below Header, Above Footer)
-            const minTop = 280;
-            const maxTop = window.innerHeight - el.offsetHeight - 50;
+            // Adaptive Vertical Constraints
+            const minTop = window.innerWidth <= 600 ? 50 : 280;
+            const maxBottomPadding = window.innerWidth <= 600 ? 20 : 50;
+            const maxTop = window.innerHeight - el.offsetHeight - maxBottomPadding;
 
             y = Math.max(minTop, Math.min(y, maxTop));
             x = Math.max(0, Math.min(x, window.innerWidth - el.offsetWidth));
@@ -510,22 +504,6 @@
     }
 
     function restorePositions() {
-        if (window.innerWidth <= 600) {
-            // Mobile: Clear all inline positioning to let CSS handle it
-            toggle.style.left = '';
-            toggle.style.top = '';
-            toggle.style.right = '';
-            toggle.style.bottom = '';
-            toggle.style.transform = '';
-
-            container.style.left = '';
-            container.style.top = '';
-            container.style.right = '';
-            container.style.bottom = '';
-            container.style.transform = '';
-            return;
-        }
-
         // Disable transitions to prevent layout thrashing and ensure getBoundingClientRect is correct immediately
         toggle.style.transition = 'none';
         container.style.transition = 'none';
@@ -533,9 +511,10 @@
         // Restore Toggle Position
         const data = JSON.parse(sessionStorage.getItem('astroChat_toggle_pos_v2'));
         if (data) {
-            const sidePadding = 40;
+            const sidePadding = window.innerWidth <= 600 ? 20 : 40;
             const x = data.side === 'left' ? sidePadding : window.innerWidth - toggle.offsetWidth - sidePadding;
-            const y = Math.max(280, Math.min(data.y, window.innerHeight - toggle.offsetHeight - 100));
+            const minAllowedTop = window.innerWidth <= 600 ? 50 : 280;
+            const y = Math.max(minAllowedTop, Math.min(data.y, window.innerHeight - toggle.offsetHeight - 100));
 
             toggle.style.left = x + 'px';
             toggle.style.top = y + 'px';

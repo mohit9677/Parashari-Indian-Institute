@@ -25,6 +25,7 @@ textarea {
   user-select: text;
 }
 
+html,
 body {
   overflow-x: hidden;
   width: 100%;
@@ -1819,7 +1820,6 @@ textarea.form-control {
   min-height: 500px;
   /* Ensure height for background */
   background-image: url('../images/institute-building-modern.jpg');
-  background-attachment: fixed;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;

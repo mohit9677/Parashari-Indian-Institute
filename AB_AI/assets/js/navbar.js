@@ -185,6 +185,38 @@ const courseDomains = [
       ]
     },
     courses: allCoursesList
+  },
+  {
+    id: 'level-6stairs',
+    label: '6 Stairs',
+    icon: 'fas fa-om',
+    description: 'Explore Yantra, Mantra, Tantra, Chakra Balancing, Remedies, and PLRT.',
+    specialContent: {
+      title: "6 Stairs to Mastery",
+      whoItIsFor: "Seekers of mystic and energetic sciences",
+      objective: "Master the profound practices to achieve spiritual and life elevation",
+      whatYouWillLearn: [
+        "<b>Yantra:</b> Sacred geometrical diagrams for worship and cosmic energy",
+        "<b>Mantra:</b> Science of sacred sounds and vibrations",
+        "<b>Tantra:</b> Ancient esoteric practices for expanding consciousness",
+        "<b>Chakra Balancing:</b> Cleansing and aligning the 7 vital energy centers",
+        "<b>Remedies:</b> Astrological and spiritual solutions for complex problems",
+        "<b>PLRT:</b> Healing present traumas via past lives"
+      ],
+      learningOutcome: [
+        "Deep understanding of spiritual and occult practices",
+        "Ability to practically apply remedies for healing",
+        "Elevation of personal consciousness"
+      ]
+    },
+    courses: [
+      { name: 'Yantra', meta: 'Sacred Geometry', url: 'yantra.html', icon: 'fas fa-star-of-david' },
+      { name: 'Mantra', meta: 'Vibrational Science', url: 'mantra.html', icon: 'fas fa-om' },
+      { name: 'Tantra', meta: 'Esoteric Practices', url: 'tantra.html', icon: 'fas fa-pray' },
+      { name: 'Chakra Balancing', meta: 'Energy Centers', url: 'chakra-balancing.html', icon: 'fas fa-yin-yang' },
+      { name: 'Remedies', meta: 'Astrological Solutions', url: '6-stairs-remedies.html', icon: 'fas fa-leaf' },
+      { name: 'PLRT', meta: 'Past Life Regression', url: 'plrt.html', icon: 'fas fa-hourglass-half' }
+    ]
   }
 ];
 
