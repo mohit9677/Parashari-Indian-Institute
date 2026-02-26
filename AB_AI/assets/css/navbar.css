@@ -4,15 +4,12 @@
 
 header {
   background-color: transparent;
-  /* Changed from white for floating search */
-  /* background-size: cover; Removed */
-  /* background-position: center; Removed */
-  /* background-repeat: no-repeat; Removed */
   box-shadow: none;
-  /* Changed from shadow for floating search */
   position: sticky;
   top: 0;
   z-index: 1000;
+  pointer-events: none;
+  /* Allow clicks to pass through empty parts */
 }
 
 .navbar {
@@ -20,16 +17,14 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: var(--spacing-md) 0;
-  /* max-width: 1200px; Removed for full width */
   margin: 0 auto;
-  width: 100%;
   width: 100%;
   padding-left: var(--spacing-lg);
   padding-right: var(--spacing-lg);
-
-  /* Added background and shadow here */
   background-color: var(--white);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  pointer-events: auto;
+  /* Restore clicks for navbar */
 }
 
 /* ============ LOGO & BRANDING ============ */
@@ -132,6 +127,8 @@ header {
   border-radius: 4px;
   z-index: 1000;
   list-style: none;
+  pointer-events: auto;
+  /* Ensure dropdown is clickable */
 }
 
 .dropdown:hover .dropdown-menu {
@@ -236,6 +233,7 @@ header {
     width: 250px;
     /* Ultra-Compact Width matching search bar */
     background-color: var(--white);
+    pointer-events: auto;
     flex-direction: column;
     padding: var(--spacing-md);
     gap: var(--spacing-sm);
@@ -534,6 +532,8 @@ header {
   margin-top: 15px;
   border-bottom: 2px solid #aaa;
   /* Darker bottom edge */
+  pointer-events: auto;
+  /* Ensure mega menu is clickable */
 }
 
 .nav-item.dropdown:hover .mega-menu {

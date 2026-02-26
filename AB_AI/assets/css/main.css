@@ -27,7 +27,7 @@ textarea {
 
 html,
 body {
-  overflow-x: hidden;
+  overflow-x: clip;
   width: 100%;
 }
 
@@ -1574,6 +1574,8 @@ textarea.form-control {
 .hero-section {
   padding: 3rem 0;
   color: white;
+  margin-top: -100px;
+  padding-top: calc(3rem + 100px);
 }
 
 /* ============ CELESTIAL ELEGANCE STYLES ============ */
@@ -1588,6 +1590,8 @@ textarea.form-control {
   text-align: center;
   color: #fff;
   border-bottom: 2px solid rgba(212, 175, 55, 0.3);
+  margin-top: -100px;
+  padding-top: calc(6rem + 100px);
 }
 
 .celestial-title {
@@ -2020,6 +2024,16 @@ textarea.form-control {
   .card {
     height: auto;
     min-height: 0;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .celestial-hero,
+  .hero-section {
+    margin-top: 0;
+    padding-top: 6rem;
+    /* Restored original padding or similar appropriate mobile padding */
   }
 }
 

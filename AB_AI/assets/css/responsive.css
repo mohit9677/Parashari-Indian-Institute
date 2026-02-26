@@ -300,6 +300,12 @@
     flex-direction: column;
   }
 
+  /* Keep social media icons horizontal on mobile */
+  .flex:has(> .social-icon-link) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
   .flex-between {
     justify-content: center;
   }

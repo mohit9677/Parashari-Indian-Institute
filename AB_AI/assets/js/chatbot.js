@@ -353,7 +353,8 @@
         const cRect = container.getBoundingClientRect();
         const gap = 20;
         const padding = 20;
-        const headerClearance = window.innerWidth <= 600 ? 50 : 280; // Adaptive clearance for mobile vs desktop
+        const topHeaderHeight = 100;
+        const headerClearance = window.innerWidth <= 600 ? topHeaderHeight : 280; // Adaptive clearance for mobile vs desktop
 
         // Default: Bottom aligned, side based on toggle position
         // If toggle is on right half: Container to left
@@ -377,7 +378,9 @@
         // Align bottoms
         let targetTop = tRect.bottom - cRect.height;
         // Prevent going off-screen top
-        if (targetTop < headerClearance) targetTop = headerClearance;
+        if (targetTop < headerClearance) {
+            targetTop = headerClearance;
+        }
         // Prevent going off-screen bottom
         if (targetTop + cRect.height > window.innerHeight - padding) {
             targetTop = window.innerHeight - cRect.height - padding;
@@ -419,6 +422,12 @@
         const onMove = (e) => {
             if (!isDragging) return;
             const event = e.type.includes('touch') ? e.touches[0] : e;
+
+            // Prevent scrolling while dragging on touch devices
+            if (e.type.includes('touch')) {
+                e.preventDefault();
+            }
+
             const dx = event.clientX - startX;
             const dy = event.clientY - startY;
 
@@ -426,7 +435,8 @@
             let y = initialY + dy;
 
             // Adaptive Vertical Constraints
-            const minTop = window.innerWidth <= 600 ? 50 : 280;
+            const topHeaderHeight = 100; // Account for mobile header thickness
+            const minTop = window.innerWidth <= 600 ? topHeaderHeight : 280;
             const maxBottomPadding = window.innerWidth <= 600 ? 20 : 50;
             const maxTop = window.innerHeight - el.offsetHeight - maxBottomPadding;
 
@@ -513,7 +523,8 @@
         if (data) {
             const sidePadding = window.innerWidth <= 600 ? 20 : 40;
             const x = data.side === 'left' ? sidePadding : window.innerWidth - toggle.offsetWidth - sidePadding;
-            const minAllowedTop = window.innerWidth <= 600 ? 50 : 280;
+            const topHeaderHeight = 100;
+            const minAllowedTop = window.innerWidth <= 600 ? topHeaderHeight : 280;
             const y = Math.max(minAllowedTop, Math.min(data.y, window.innerHeight - toggle.offsetHeight - 100));
 
             toggle.style.left = x + 'px';

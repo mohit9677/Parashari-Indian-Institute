@@ -120,6 +120,8 @@
   border-bottom: none;
   position: relative;
   z-index: 999;
+  pointer-events: auto;
+  /* Ensure search is clickable */
 }
 
 .tablet-search-container .search-container {
@@ -172,20 +174,21 @@
   .tablet-search-container .input {
     width: 100% !important;
     transition:
-      width 0.3s ease,
       box-shadow 0.3s ease;
   }
 
-  /* Enable elongation on focus for mobile */
+  /* Keep search bar width fixed on mobile - no elongation */
   .tablet-search-container .input:focus {
-    width: 125% !important;
+    width: 100% !important;
     z-index: 1000;
   }
 
   .tablet-search-container .search-results {
-    width: 100% !important;
-    position: relative !important;
-    top: auto !important;
+    width: 250px !important;
+    position: absolute !important;
+    top: 100% !important;
+    left: 0 !important;
     margin-top: 5px !important;
+    z-index: 1001;
   }
 }

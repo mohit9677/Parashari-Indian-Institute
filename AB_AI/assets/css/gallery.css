@@ -457,6 +457,13 @@
     z-index: 1;
 }
 
+@media (max-width: 600px) {
+    .gallery-hero {
+        margin-top: 0;
+        padding-top: 0;
+    }
+}
+
 .gallery-hero-title {
     color: #D4AF37;
     /* Gold primary */
