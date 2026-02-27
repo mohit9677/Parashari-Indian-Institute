@@ -438,11 +438,11 @@
     }
 
     .astro-chat-toggle {
-        bottom: 30px;
+        bottom: 20px;
         /* Keep above navigation bars/floating buttons */
-        right: 20px;
-        width: 75px;
-        height: 75px;
+        right: 15px;
+        width: 55px;
+        height: 55px;
     }
 }
 

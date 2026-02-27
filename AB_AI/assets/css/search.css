@@ -118,10 +118,20 @@
   box-sizing: border-box;
   background: transparent;
   border-bottom: none;
-  position: relative;
+  position: absolute;
+  top: 100%;
+  left: 0;
   z-index: 999;
   pointer-events: auto;
   /* Ensure search is clickable */
+}
+
+.tablet-search-container.scrolled .input {
+  background-color: rgba(248, 249, 250, 0.5);
+  /* Frosty / faded texture */
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
 }
 
 .tablet-search-container .search-container {
@@ -173,13 +183,13 @@
   .tablet-search-container .container-input,
   .tablet-search-container .input {
     width: 100% !important;
-    transition:
-      box-shadow 0.3s ease;
+    transition: width 0.3s ease, box-shadow 0.3s ease;
   }
 
-  /* Keep search bar width fixed on mobile - no elongation */
+  /* Enable elongation on focus for mobile */
   .tablet-search-container .input:focus {
-    width: 100% !important;
+    width: 115% !important;
+    /* Slightly longer on focus */
     z-index: 1000;
   }
 

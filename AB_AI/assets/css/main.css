@@ -1513,6 +1513,20 @@ textarea.form-control {
   min-height: 3.6rem;
 }
 
+/* Extra badges (Online Available, Projects Included, etc.) shown in course footer */
+.badge-inline {
+  font-size: 0.72rem;
+  padding: 0.2rem 0.6rem;
+  background: #f8f8f8;
+  color: #555;
+  border: 1px solid #e0e0e0;
+  border-radius: 14px;
+  white-space: nowrap;
+  display: inline-block;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+}
+
 /* Category badge: shows which level/tier the course belongs to */
 .category-badge {
   display: inline-flex;
@@ -1574,8 +1588,6 @@ textarea.form-control {
 .hero-section {
   padding: 3rem 0;
   color: white;
-  margin-top: -100px;
-  padding-top: calc(3rem + 100px);
 }
 
 /* ============ CELESTIAL ELEGANCE STYLES ============ */
@@ -1590,8 +1602,6 @@ textarea.form-control {
   text-align: center;
   color: #fff;
   border-bottom: 2px solid rgba(212, 175, 55, 0.3);
-  margin-top: -100px;
-  padding-top: calc(6rem + 100px);
 }
 
 .celestial-title {

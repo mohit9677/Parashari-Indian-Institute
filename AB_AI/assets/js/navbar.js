@@ -45,6 +45,18 @@ document.addEventListener('DOMContentLoaded', function () {
       link.classList.add('active');
     }
   });
+
+  // Adding scroll effect for search bar
+  window.addEventListener('scroll', function () {
+    const searchContainer = document.querySelector('.tablet-search-container');
+    if (searchContainer) {
+      if (window.scrollY > 50) {
+        searchContainer.classList.add('scrolled');
+      } else {
+        searchContainer.classList.remove('scrolled');
+      }
+    }
+  });
 });
 
 /* ============ MEGA MENU LOGIC ============ */

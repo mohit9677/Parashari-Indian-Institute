@@ -47,7 +47,6 @@
     text-align: center;
     color: var(--text-cream);
     overflow: hidden;
-    margin-top: -100px;
     padding-top: 100px;
 }
 
@@ -716,10 +715,20 @@
         margin-bottom: -3rem;
     }
 
+    .story-section,
+    .core-values-section,
+    .dean-section,
+    .timeline-section,
+    .faculty-section,
+    .accreditation-section {
+        padding: 4rem 0;
+    }
+
     .story-content-box {
         grid-column: 1 / -1;
-        margin: 0 1rem;
-        padding: 2rem;
+        margin: 0;
+        padding: 1.5rem;
+        margin-top: 2rem;
     }
 
     .stats-grid {
@@ -798,6 +807,14 @@
     .about-hero {
         margin-top: 0;
         padding-top: 0;
-        /* Or whatever default padding it needs, likely none given flex center */
+    }
+
+    .story-section,
+    .core-values-section,
+    .dean-section,
+    .timeline-section,
+    .faculty-section,
+    .accreditation-section {
+        padding: 3rem 0;
     }
 }

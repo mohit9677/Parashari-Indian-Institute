@@ -450,10 +450,6 @@
     overflow: hidden;
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url('https://images.unsplash.com/photo-1532012197267-da84d127e765?w=1600&fit=crop') center/cover no-repeat fixed;
     margin-bottom: 4rem;
-    margin-top: -100px;
-    /* Pull the section OVER the white gap and UNDER the sticky header */
-    padding-top: 100px;
-    /* Push the text back down so it stays centered visually */
     z-index: 1;
 }
 
