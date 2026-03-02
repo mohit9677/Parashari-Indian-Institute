@@ -370,6 +370,8 @@
     display: none;
     align-items: center;
     gap: 10px;
+    box-sizing: border-box;
+    width: 100%;
 }
 
 .astro-chat-input-wrapper.active {
@@ -384,6 +386,9 @@
     outline: none;
     font-size: 0.9rem;
     font-family: inherit;
+    box-sizing: border-box;
+    width: 0;
+    /* Let flex-grow handle the width */
 }
 
 .astro-chat-send {
@@ -392,12 +397,15 @@
     border: none;
     width: 40px;
     height: 40px;
+    min-width: 40px;
+    min-height: 40px;
     border-radius: 50%;
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
     transition: transform 0.2s;
+    flex-shrink: 0;
 }
 
 .astro-chat-send:active {

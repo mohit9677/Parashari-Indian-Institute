@@ -1,0 +1,92 @@
+/* ContactPage.css */
+.contact-page {
+    padding-bottom: 4rem;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 3rem;
+    margin-top: 3rem;
+    align-items: start;
+}
+
+/* Contact Info Side */
+.contact-info {
+    padding: 2.5rem;
+    height: 100%;
+}
+
+.contact-info h3 {
+    color: var(--gold-primary);
+    margin-bottom: 0.5rem;
+}
+
+.info-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-top: 2.5rem;
+}
+
+.info-icon {
+    background: rgba(212, 175, 55, 0.1);
+    color: var(--gold-primary);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    flex-shrink: 0;
+}
+
+.info-item h4 {
+    font-size: 1.1rem;
+    margin-bottom: 0.2rem;
+    color: var(--text-heading);
+}
+
+.info-item a,
+.info-item p {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+}
+
+.info-item a:hover {
+    color: var(--gold-primary);
+}
+
+/* Form Side */
+.contact-form-container {
+    padding: 2.5rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--text-main);
+    font-weight: 500;
+    font-size: 0.95rem;
+}
+
+/* Mobile Responsive */
+@media (max-width: 900px) {
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .contact-info {
+        order: 2;
+    }
+
+    .contact-form-container {
+        order: 1;
+    }
+}

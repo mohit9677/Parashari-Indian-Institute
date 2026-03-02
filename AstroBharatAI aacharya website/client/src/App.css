@@ -1,0 +1,359 @@
+/* ════════════════════════════════════════════════════
+   AstroBharat AI — Modern Mystical Design System
+   ════════════════════════════════════════════════════ */
+
+:root {
+  /* ── Colors: Traditional Divine Palette ── */
+  --bg-deep: #FAFAFA;
+  /* Cream/White Background */
+  --bg-cosmic: #FFF5E1;
+  /* Light Saffron/Peach for sections */
+  --bg-maroon: #5D1916;
+  /* Deep Maroon for Header/Footer */
+  --bg-card: #FFFFFF;
+  /* White cards */
+  --bg-glass: rgba(255, 255, 255, 0.9);
+
+  /* ── Accents: Divine Gold ── */
+  --gold-primary: #D4AF37;
+  --gold-light: #F2C94C;
+  --gold-dark: #AA8C2C;
+  --gold-gradient: linear-gradient(135deg, #D4AF37 0%, #F2C94C 100%);
+  --maroon-gradient: linear-gradient(135deg, #5D1916 0%, #3E0E0C 100%);
+
+  /* ── Text ── */
+  --text-main: #333333;
+  /* Dark text for readability */
+  --text-muted: #666666;
+  --text-heading: #5D1916;
+  /* Maroon headings */
+  --text-light: #FFFFFF;
+  /* For text on maroon backgrounds */
+
+  /* ── Typography ── */
+  --font-heading: 'Cinzel', serif;
+  --font-body: 'Inter', sans-serif;
+
+  /* ── Borders & Shadows ── */
+  --border-subtle: rgba(93, 25, 22, 0.1);
+  /* Maroon tint */
+  --border-glow: rgba(212, 175, 55, 0.5);
+  --shadow-sm: 0 4px 12px rgba(93, 25, 22, 0.05);
+  --shadow-lg: 0 10px 30px rgba(93, 25, 22, 0.1);
+  --shadow-glow: 0 0 20px rgba(212, 175, 55, 0.15);
+
+  /* ── Spacing & Layout ── */
+  --container-width: 1200px;
+  /* Total height of fixed two-row header (top + bottom) */
+  --header-height: 120px;
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+}
+
+/* ── Reset & Base ── */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  background-color: var(--bg-deep);
+  color: var(--text-main);
+  font-family: var(--font-body);
+  line-height: 1.6;
+  overflow-x: hidden;
+  /* Subtle Divine Pattern */
+  background-image:
+    radial-gradient(circle at 50% 0%, rgba(212, 175, 55, 0.1) 0%, transparent 50%),
+    linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8));
+  background-attachment: fixed;
+}
+
+/* ── Typography ── */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+  color: var(--text-heading);
+  line-height: 1.2;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  margin-bottom: 1.5rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease;
+}
+
+/* ── Utility Classes ── */
+.page-wrapper {
+  padding-top: var(--header-height);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  width: 100%;
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-gold {
+  color: var(--gold-primary);
+}
+
+.text-gradient {
+  background: var(--gold-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid-cols-2 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+/* ── Glassmorphism Components ── */
+.glass-panel {
+  background: var(--bg-card);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.glass-panel:hover {
+  border-color: var(--border-glow);
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-glow);
+}
+
+/* ── Buttons ── */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.8em 2em;
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  letter-spacing: 0.03em;
+  min-height: 48px;
+  /* Touch target */
+}
+
+.btn-primary {
+  background: var(--gold-gradient);
+  color: #0F0C29;
+  /* Dark text for contrast against gold */
+  border: none;
+  box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(212, 175, 55, 0.4);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--gold-primary);
+  border: 1px solid var(--gold-primary);
+}
+
+.btn-secondary:hover {
+  background: rgba(212, 175, 55, 0.1);
+  box-shadow: 0 0 15px rgba(212, 175, 55, 0.2);
+}
+
+/* ── Form Elements ── */
+input,
+textarea,
+select {
+  width: 100%;
+  padding: 1rem;
+  background: #FFFFFF;
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  color: var(--text-main);
+  font-family: var(--font-body);
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.02);
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  border-color: var(--gold-primary);
+  box-shadow: 0 0 0 2px rgba(212, 175, 55, 0.1);
+}
+
+/* ── Page Header (Global) ── */
+.page-header {
+  text-align: center;
+  padding: 3rem 1rem 2rem;
+  background: radial-gradient(circle at center, rgba(212, 168, 67, 0.1) 0%, transparent 70%);
+}
+
+.page-header h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.page-header p {
+  color: var(--text-muted);
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+}
+
+/* ── Section Styles ── */
+section {
+  padding: 5rem 0;
+  position: relative;
+}
+
+.section-title {
+  font-size: 2.25rem;
+  text-align: center;
+  margin-bottom: 3rem;
+  position: relative;
+  display: inline-block;
+  /* Removed left/transform to rely on parent text-align */
+}
+
+.section-title::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 2px;
+  background: var(--gold-primary);
+  margin: 1rem auto 0;
+  border-radius: 2px;
+}
+
+/* ── Mobile Optimization (Media Queries) ── */
+@media (min-width: 768px) {
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  .grid-cols-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .grid-cols-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 767px) {
+  .section-title {
+    font-size: 1.75rem;
+  }
+
+  .container {
+    padding: 0 1.25rem;
+  }
+
+  /* Compact padding */
+  section {
+    padding: 3rem 0;
+  }
+
+  /* Improve tap targets */
+  .nav-link {
+    padding: 0.8rem 0;
+    display: block;
+  }
+}
+
+/* ── Animations ── */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-in {
+  animation: fadeInUp 0.6s ease-out forwards;
+  opacity: 0;
+  /* meaningful for forward fill */
+}
+
+/* ── 404 Page ── */
+.not-found-container {
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+}
+
+.error-code {
+  font-size: 8rem;
+  font-weight: 700;
+  color: var(--gold-primary);
+  line-height: 1;
+  margin-bottom: 1rem;
+  text-shadow: 0 0 30px rgba(212, 175, 55, 0.3);
+}

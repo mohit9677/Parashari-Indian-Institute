@@ -82,7 +82,7 @@ const allCoursesList = [
 const courseDomains = [
   {
     id: 'level-intro',
-    label: 'Intro Course',
+    label: 'Crash Course',
     icon: 'fas fa-seedling',
     description: 'Beginner foundations and awareness across all our core disciplines.',
     specialContent: {
