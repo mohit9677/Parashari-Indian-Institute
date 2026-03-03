@@ -618,4 +618,59 @@
     };
 
     restorePositions();
+
+    // --- Floating Ticket Spawner ---
+    function spawnTicket() {
+        const tRect = toggle.getBoundingClientRect();
+
+        // Ensure toggle is actually visible/mounted
+        if (tRect.width === 0 && tRect.height === 0) return;
+
+        const ticket = document.createElement('a');
+        ticket.href = 'register.html';
+        ticket.className = 'astro-floating-ticket';
+
+        ticket.innerHTML = `
+            <div class="ticket-text">REGISTER NOW</div>
+        `;
+
+        // Spawn from the center-top of the toggle
+        const spawnX = tRect.left + (tRect.width / 2) - 65; // 65 is half of ticket width
+        // Calculate bottom position based on the toggle's top
+        const spawnBottom = window.innerHeight - tRect.top;
+
+        ticket.style.setProperty('--start-x', spawnX + 'px');
+        ticket.style.setProperty('--start-y', spawnBottom + 'px');
+
+        // Add random horizontal drift (-40px to 40px)
+        const drift = (Math.random() - 0.5) * 80;
+        ticket.style.setProperty('--drift-x', drift + 'px');
+
+        // Target Y: stop and fade out BELOW the navbar bottom
+        // Measure actual header/navbar height so this works on all screen sizes
+        const header = document.querySelector('header') || document.querySelector('nav');
+        const navbarBottom = header ? header.getBoundingClientRect().bottom : 120;
+        // End bottom position = distance from bottom of screen to navbar bottom, with 30px buffer
+        const targetBottom = window.innerHeight - navbarBottom - 30;
+        ticket.style.setProperty('--end-y', targetBottom + 'px');
+
+        document.body.appendChild(ticket);
+
+        // Remove after animation (7 seconds)
+        setTimeout(() => {
+            if (ticket.parentNode) ticket.remove();
+        }, 7000);
+    }
+
+    // Spawn a ticket every 3 to 7 seconds randomly
+    function scheduleNextTicket() {
+        setTimeout(() => {
+            spawnTicket();
+            scheduleNextTicket();
+        }, 3000 + Math.random() * 4000);
+    }
+
+    // Start Spawner
+    scheduleNextTicket();
+
 })();

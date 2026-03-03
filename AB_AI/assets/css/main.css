@@ -1109,14 +1109,12 @@ section.primary-bg h4 {
   flex-direction: column;
   min-height: 450px;
   /* Minimum height for consistency, allows growth */
-  height: auto;
-  /* Flexible height */
+  height: 100%;
 }
 
 .card:hover {
   transform: translateY(-8px);
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
-  background-color: var(--light-bg);
 }
 
 .card-image-container {
@@ -1151,6 +1149,8 @@ section.primary-bg h4 {
   /* Stack content naturally */
   text-align: center;
   /* Center align text like motion cards */
+  background-color: var(--primary-color);
+  color: var(--white);
 }
 
 .card-header {
@@ -1171,16 +1171,33 @@ section.primary-bg h4 {
 
 .card-title {
   font-size: 1.4rem;
-  margin-bottom: 0;
-  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+  color: var(--secondary-color);
   font-weight: 700;
+  min-height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .card p {
   font-size: 0.95rem;
   color: var(--light-text);
-  margin-bottom: var(--spacing-md);
-  line-height: 1.6;
+  /* Fixed visibility on white backgrounds */
+  margin-bottom: var(--spacing-sm);
+  line-height: 1.4;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  min-height: 5.5rem;
+  /* Forces symmetrical appearance */
+}
+
+/* Ensure white text for cards with dark background (like Our Courses) */
+.card-body p {
+  color: var(--white);
 }
 
 .course-footer {
@@ -1191,9 +1208,29 @@ section.primary-bg h4 {
   align-items: center;
   gap: var(--spacing-sm);
   padding-top: var(--spacing-md);
-  border-top: 1px solid var(--border-color);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
   width: 100%;
 }
+
+.course-footer del {
+  color: #DDD !important;
+}
+
+.course-footer h4 {
+  margin-bottom: 0.5rem;
+}
+
+.course-footer h4 strong {
+  color: var(--secondary-color) !important;
+}
+
+.discount-text {
+  color: #FFF !important;
+  /* Make discount text pop instead of red on red */
+}
+
+/* Removed legacy .learn-more styles to avoid conflicts */
+
 
 .btn-full {
   width: 100%;
@@ -1350,6 +1387,61 @@ textarea.form-control {
 .card-auto {
   min-height: 0 !important;
   height: auto !important;
+}
+
+/* PREMIUM GOLDEN CARD UTILITY */
+.premium-gold-card {
+  background: #fff !important;
+  border-radius: 12px !important;
+  padding: 2.5rem 1.5rem !important;
+  text-align: center !important;
+  transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+  border: 2px solid #D4AF37 !important;
+  /* Gold border */
+  box-shadow: 0 10px 30px rgba(212, 175, 55, 0.15) !important;
+  position: relative !important;
+  overflow: hidden !important;
+  height: 100% !important;
+  display: flex !important;
+  flex-direction: column !important;
+  color: #666 !important;
+}
+
+.premium-gold-card::before {
+  content: '' !important;
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 6px !important;
+  background: linear-gradient(90deg, #591C21, #D4AF37) !important;
+  /* Maroon to Gold */
+  z-index: 1 !important;
+}
+
+.premium-gold-card:hover {
+  transform: translateY(-10px) !important;
+  box-shadow: 0 20px 40px rgba(212, 175, 55, 0.25) !important;
+}
+
+.premium-gold-card p {
+  color: #666 !important;
+  /* Ensure visibility on white card */
+  margin-bottom: 1rem !important;
+}
+
+.premium-gold-card h4,
+.premium-gold-card h3 {
+  color: #591C21 !important;
+  /* Deep Maroon titles */
+  margin-bottom: 1rem !important;
+  font-weight: 700 !important;
+}
+
+.premium-gold-card .card-icon img {
+  width: 50px !important;
+  height: 50px !important;
+  margin-bottom: 1rem !important;
 }
 
 /* ============ TEXT UTILITIES ============ */
@@ -1950,14 +2042,34 @@ textarea.form-control {
 }
 
 /* Pause on hover */
-.testimonial-track:hover {
+.testimonial-track:has(.testimonial-card-slide:hover) {
   animation-play-state: paused;
 }
 
 .testimonial-card-slide {
   width: 350px;
   flex-shrink: 0;
-  padding: 2rem;
+  padding: 1.5rem;
+  height: 100%;
+  /* Ensures they are all the same natural height equal to the track and not artificially squashed */
+  display: flex !important;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.testimonial-card-slide img {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 10px auto;
+}
+
+.testimonial-card-slide .card-small-text {
+  margin-bottom: 0;
+  flex-grow: 1;
+  /* Pushes content down if needed so quotes align or expand gracefully */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .faculty-card-slide {
@@ -2163,4 +2275,348 @@ textarea.form-control {
 .social-wrapper .linkedin:hover .tooltip::before {
   background: #0077b5;
   color: #fff;
+}
+
+/* Auto-injected Discount Ribbon CSS */
+.card {
+  position: relative;
+}
+
+.card-auto {
+  position: relative;
+}
+
+.discount-text {
+  display: block;
+  font-size: 0.95em;
+  color: #d32f2f;
+  font-weight: 600;
+  margin-top: 4px;
+  text-align: center;
+  width: 100%;
+}
+
+.course-footer h4,
+.course-price {
+  text-align: center;
+}
+
+.discount-tag {
+  position: absolute;
+  overflow: hidden;
+  width: 150px;
+  height: 150px;
+  top: -10px;
+  left: -10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  pointer-events: none;
+}
+
+.discount-tag::before {
+  content: attr(data-discount);
+  position: absolute;
+  width: 150%;
+  height: 40px;
+  background-image: linear-gradient(45deg, #ff6547 0%, #ffb144 51%, #ff7053 100%);
+  transform: rotate(-45deg) translateY(-20px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.23);
+  font-size: 0.8rem;
+}
+
+.discount-tag::after {
+  content: '';
+  position: absolute;
+  width: 10px;
+  bottom: 0;
+  left: 0;
+  height: 10px;
+  z-index: -1;
+  box-shadow: 140px -140px #cc3f47;
+  background-image: linear-gradient(45deg, #FF512F 0%, #F09819 51%, #FF512F 100%);
+}
+
+/* ============ 6 STAIRS CARD FIXES ============ */
+
+/* 1. Image container — dark bg, full image shown */
+.grid-responsive .premium-gold-card .card-image-container {
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+  position: relative;
+  flex-shrink: 0;
+  background-color: #0d0d0d;
+  /* Dark bg hides any letterbox edges */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid-responsive .premium-gold-card .card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  /* Show WHOLE image — no cropping */
+  object-position: center;
+  padding: 0;
+  transition: transform 0.5s ease;
+}
+
+.grid-responsive .premium-gold-card:hover .card-image {
+  transform: scale(1.04);
+}
+
+/* 2. Fix card body layout — structured & readable */
+.grid-responsive .premium-gold-card .card-body {
+  background: linear-gradient(160deg, #591C21 0%, #3a0f13 100%) !important;
+  padding: 1rem 1.2rem 1.2rem !important;
+  display: flex !important;
+  flex-direction: column !important;
+  flex: 1;
+  text-align: left !important;
+}
+
+/* 3. Card title — clearly visible, gold on dark background */
+.grid-responsive .premium-gold-card .card-title {
+  color: #FFD700 !important;
+  /* Bright gold for contrast */
+  font-size: 1.15rem !important;
+  font-weight: 800 !important;
+  margin-bottom: 0.5rem !important;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.6) !important;
+  min-height: auto !important;
+  line-height: 1.3 !important;
+  display: block !important;
+  letter-spacing: 0.02em;
+}
+
+/* 4. Card header icon — visible */
+.grid-responsive .premium-gold-card .card-header {
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  gap: 0.5rem !important;
+  margin-bottom: 0.4rem !important;
+  background: transparent !important;
+}
+
+.grid-responsive .premium-gold-card .card-header-icon {
+  display: flex !important;
+  width: 32px !important;
+  height: 32px !important;
+  background: rgba(212, 175, 55, 0.15) !important;
+  border-radius: 50% !important;
+  font-size: 1rem !important;
+  align-items: center !important;
+  justify-content: center !important;
+  flex-shrink: 0 !important;
+}
+
+/* 5. Description — fixed height, perfectly aligned across all 6 cards */
+.grid-responsive .premium-gold-card .card-body>p {
+  color: rgba(255, 255, 255, 0.9) !important;
+  font-size: 0.85rem !important;
+  line-height: 1.55 !important;
+  margin-bottom: 0.75rem !important;
+  height: 4rem !important;
+  /* Fixed height — every card the same */
+  min-height: 4rem !important;
+  overflow: hidden !important;
+  display: -webkit-box !important;
+  -webkit-line-clamp: 3 !important;
+  line-clamp: 3 !important;
+  -webkit-box-orient: vertical !important;
+  text-align: left !important;
+  flex-shrink: 0;
+}
+
+/* 6. Badges row */
+.grid-responsive .premium-gold-card .mb-1 {
+  margin-bottom: 0.6rem !important;
+}
+
+/* 7. Course footer — Learn More centered (Contact Us removed) */
+.grid-responsive .premium-gold-card .course-footer {
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-content: center !important;
+  /* Center the button now Contact Us is gone */
+  border-top: 1px solid rgba(212, 175, 55, 0.3) !important;
+  padding-top: 0.75rem !important;
+  margin-top: auto !important;
+  flex-shrink: 0;
+}
+
+/* 8. h3 titles — bright gold on dark body */
+.grid-responsive .premium-gold-card h3 {
+  color: #FFD700 !important;
+}
+
+/* --- FACULTY CARD (Extracted for global use) --- */
+.faculty-card {
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+  transition: all 0.4s ease;
+  border: none;
+  width: 350px;
+  min-width: 350px;
+  height: 450px !important;
+  max-height: 450px !important;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.faculty-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.12);
+  background: linear-gradient(rgba(18, 5, 20, 0.7), rgba(18, 5, 20, 0.7)),
+    url('../images/about-hero-bg.jpg') no-repeat center center/cover;
+  height: 60vh;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.faculty-img-wrapper {
+  height: 220px;
+  width: 100%;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.faculty-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.faculty-card:hover .faculty-img {
+  transform: scale(1.05);
+}
+
+.faculty-info {
+  padding: 1.5rem;
+  text-align: center;
+  position: relative;
+  background: #fff;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.faculty-name {
+  color: #591C21;
+  font-size: 1.3rem;
+  margin-bottom: 0.25rem;
+}
+
+.faculty-role {
+  color: #D4AF37;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 0.5rem;
+}
+
+.faculty-bio {
+  font-size: 0.85rem;
+  color: #666;
+  margin-top: auto;
+  line-height: 1.5;
+  border-top: 1px solid #eee;
+  padding-top: 0.75rem;
+  margin-top: 0.5rem;
+  overflow: hidden;
+}
+
+.faculty-education {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 0.8rem;
+  color: #591C21;
+  font-weight: 600;
+}
+
+/* =============================================
+   MOBILE FIXES — Accreditation & Benefits Cards
+   (max-width: 600px only, desktop unchanged)
+   ============================================= */
+@media (max-width: 600px) {
+
+  /* --- Accreditation Cards: 2 columns, full image visible (like zodiac) --- */
+  .accreditation-grid {
+    grid-template-columns: 1fr 1fr !important;
+    gap: 0.75rem !important;
+    align-items: stretch;
+  }
+
+  /* Fixed image area — same height for all, no cropping */
+  .accreditation-grid .faculty-img-wrapper {
+    height: 140px !important;
+    background: #f5f5f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .accreditation-grid .faculty-img {
+    object-fit: contain !important;
+    height: 100% !important;
+    width: 100% !important;
+    padding: 6px;
+  }
+
+  /* Compact text area */
+  .accreditation-grid .faculty-info {
+    padding: 0.75rem 0.5rem !important;
+  }
+
+  .accreditation-grid .faculty-name {
+    font-size: 0.9rem !important;
+  }
+
+  .accreditation-grid .faculty-bio p {
+    font-size: 0.75rem !important;
+  }
+
+  /* --- Benefits Cards: 1 column, compact layout --- */
+  .benefits-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* shrink the maroon icon panel on mobile */
+  .benefits-grid>div>div:first-child {
+    min-width: 65px !important;
+    width: 65px !important;
+    font-size: 1.8rem !important;
+    padding: 1rem 0 !important;
+  }
+
+  /* tighten the text area padding on mobile */
+  .benefits-grid>div>div:last-child {
+    padding: 1rem 1rem !important;
+  }
+
+  /* smaller heading inside benefits cards on mobile */
+  .benefits-grid>div h4 {
+    font-size: 1rem !important;
+  }
+
+  /* smaller paragraph inside benefits cards on mobile */
+  .benefits-grid>div p {
+    font-size: 0.85rem !important;
+  }
 }

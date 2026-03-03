@@ -582,20 +582,22 @@
     justify-content: center;
     align-items: center;
 
-    /* Uiverse Styles */
+    /* Uiverse Styles - Customized */
     position: relative;
     padding: 12px 35px;
-    background: #fec195;
+    background: #591C21;
+    /* Maroon */
     font-size: 17px;
     font-weight: 600;
-    color: #181818;
-    border: 3px solid #fec195;
+    color: #ffffff;
+    /* White text */
+    border: 3px solid #D4AF37;
+    /* Gold border */
     border-radius: 8px;
-    box-shadow: 0 0 0 #fec1958c;
+    box-shadow: 0 0 0 rgba(212, 175, 55, 0.5);
     transition: all 0.3s ease-in-out;
     cursor: pointer;
     z-index: 1;
-    /* Creates a stacking context for stars */
 }
 
 .btn-course-primary .star-1 {
@@ -665,9 +667,11 @@
 }
 
 .btn-course-primary:hover {
-    background: transparent;
-    color: #fec195;
-    box-shadow: 0 0 25px #fec1958c;
+    background: #D4AF37;
+    /* Gold on hover */
+    color: #591C21;
+    /* Maroon text on hover */
+    box-shadow: 0 0 25px rgba(212, 175, 55, 0.6);
 }
 
 .btn-course-primary:hover .star-1 {
@@ -731,7 +735,8 @@
 }
 
 .btn-course-primary .fil0 {
-    fill: #fffdef;
+    fill: #D4AF37;
+    /* Gold stars */
 }
 
 /* Pagination Dots */
