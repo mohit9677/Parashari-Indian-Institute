@@ -64,11 +64,13 @@
   }
 
   /* Cards */
-  .card {
+  .card,
+  .premium-gold-card {
     padding: var(--spacing-md);
   }
 
-  .card-image {
+  .card-image,
+  .premium-gold-card .card-image-container {
     height: 200px;
   }
 
@@ -119,16 +121,19 @@
   }
 
   /* Cards */
-  .card {
+  .card,
+  .premium-gold-card {
     padding: var(--spacing-md);
   }
 
-  .card-image {
+  .card-image,
+  .premium-gold-card .card-image-container {
     height: 180px;
   }
 
-  .card-title {
-    font-size: 1.1rem;
+  .card-title,
+  .premium-gold-card .card-title {
+    font-size: 1.1rem !important;
   }
 
   /* Forms */
@@ -244,16 +249,19 @@
   }
 
   /* Cards */
-  .card {
+  .card,
+  .premium-gold-card {
     padding: var(--spacing-md);
   }
 
-  .card-image {
+  .card-image,
+  .premium-gold-card .card-image-container {
     height: 160px;
   }
 
-  .card-title {
-    font-size: 1rem;
+  .card-title,
+  .premium-gold-card .card-title {
+    font-size: 1rem !important;
   }
 
   /* Buttons */

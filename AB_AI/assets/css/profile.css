@@ -242,6 +242,7 @@
     height: 320px;
     border-radius: 50%;
     object-fit: cover;
+    object-position: center top;
     border: 8px solid #fff;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
     position: relative;

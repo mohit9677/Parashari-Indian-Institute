@@ -115,7 +115,7 @@ const coursesData = [
         isCategory: "Bachelor",       // Pro
         icon: "🔢",
         image: "assets/images/virgo-card.jpg",
-        description: "Discover the mystical relationship between numbers and life events.",
+        description: "Numerology studies how numbers connected to your name and birthdate reveal personality, life path, and opportunities. ✨",
         price: "₹3,999",
         badges: ["✓ Certification"],
         link: "numerology.html"
