@@ -676,6 +676,67 @@ body {
 }
 
 /* ============ PROFILE PAGE STYLES ============ */
+/* Shared Hero Class (based on gallery.html) */
+.shared-page-hero {
+  position: relative;
+  height: 60vh;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  z-index: 1;
+}
+
+.shared-page-hero-title {
+  color: #D4AF37;
+  font-size: clamp(2rem, 5vw + 1rem, 3.5rem);
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 1rem;
+  text-shadow: 0 4px 15px rgba(0, 0, 0, 0.8);
+  position: relative;
+}
+
+.shared-page-hero-title::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #D4AF37;
+  margin: 1rem auto 0;
+}
+
+.shared-page-hero-subtitle {
+  color: #fff;
+  font-size: clamp(1rem, 2vw + 0.5rem, 1.2rem);
+  letter-spacing: 2px;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.8);
+}
+
+@media (max-width: 991px) {
+  .shared-page-hero {
+    background-attachment: scroll !important;
+    background-position: center !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .shared-page-hero {
+    height: 40vh;
+    min-height: 300px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .shared-page-hero {
+    min-height: 250px;
+    margin-top: 0;
+  }
+}
+
 .hero-header {
   background: linear-gradient(135deg, #8B5A3C 0%, #5C3A24 100%);
   color: white;
@@ -2026,10 +2087,11 @@ textarea.form-control {
 /* Testimonial Marquee */
 .testimonial-scroll-container {
   overflow: hidden;
-  width: 100%;
+  width: 100vw;
   position: relative;
   padding: 2rem 0;
-  mask-image: linear-gradient(to right, transparent, black 1%, black 99%, transparent);
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
 }
 
 .testimonial-track {
@@ -2047,29 +2109,79 @@ textarea.form-control {
 }
 
 .testimonial-card-slide {
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+  transition: all 0.4s ease;
+  border: none;
   width: 350px;
+  min-width: 350px;
+  height: 380px !important;
+  max-height: 380px !important;
   flex-shrink: 0;
-  padding: 1.5rem;
-  height: 100%;
-  /* Ensures they are all the same natural height equal to the track and not artificially squashed */
   display: flex !important;
   flex-direction: column;
-  box-sizing: border-box;
+}
+
+.testimonial-card-slide:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.12);
+}
+
+.testimonial-img-wrapper {
+  height: 220px;
+  width: 100%;
+  overflow: hidden;
+  flex-shrink: 0;
+  margin-bottom: 0;
 }
 
 .testimonial-card-slide img {
-  width: 80px;
-  height: 80px;
-  margin: 0 auto 10px auto;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+  margin: 0;
+  border-radius: 0;
+}
+
+.testimonial-card-slide:hover img {
+  transform: scale(1.05);
+}
+
+.testimonial-info {
+  padding: 1rem 1.5rem 2rem 1.5rem;
+  text-align: center;
+  background: #fff;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.testimonial-card-slide h4.color-primary {
+  color: #591C21;
+  font-size: 1.3rem;
+  margin-top: 0 !important;
+  margin-bottom: 0.25rem;
+}
+
+.testimonial-card-slide .color-secondary.stars {
+  color: #D4AF37;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 .testimonial-card-slide .card-small-text {
+  font-size: 0.85rem;
+  color: #666;
+  margin-top: auto;
+  line-height: 1.5;
+  border-top: 1px solid #eee;
+  padding-top: 0.75rem;
   margin-bottom: 0;
-  flex-grow: 1;
-  /* Pushes content down if needed so quotes align or expand gracefully */
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  overflow: hidden;
+  display: block;
 }
 
 .faculty-card-slide {
@@ -2320,7 +2432,7 @@ textarea.form-control {
   position: absolute;
   width: 150%;
   height: 40px;
-  background-image: linear-gradient(45deg, #ff6547 0%, #ffb144 51%, #ff7053 100%);
+  background-image: linear-gradient(45deg, #FF0044 0%, #FF5E00 100%);
   transform: rotate(-45deg) translateY(-20px);
   display: flex;
   align-items: center;
@@ -2329,7 +2441,7 @@ textarea.form-control {
   font-weight: 600;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.23);
+  box-shadow: 0 5px 15px rgba(255, 0, 68, 0.4);
   font-size: 0.8rem;
 }
 
@@ -2342,7 +2454,7 @@ textarea.form-control {
   height: 10px;
   z-index: -1;
   box-shadow: 140px -140px #cc3f47;
-  background-image: linear-gradient(45deg, #FF512F 0%, #F09819 51%, #FF512F 100%);
+  background-image: linear-gradient(45deg, #CC0036 0%, #D44E00 100%);
 }
 
 /* ============ 6 STAIRS CARD FIXES ============ */
@@ -2408,6 +2520,7 @@ textarea.form-control {
   margin-bottom: 0.4rem !important;
   background: transparent !important;
   padding: 0 !important;
+  min-height: 4rem !important;
 }
 
 .grid-responsive .premium-gold-card .card-header-icon {
@@ -2422,15 +2535,13 @@ textarea.form-control {
   flex-shrink: 0 !important;
 }
 
-/* 5. Description — fixed height, perfectly aligned across all 6 cards */
+/* 5. Description — natural height, perfectly aligned across all 6 cards */
 .grid-responsive .premium-gold-card .card-body>p {
   color: rgba(255, 255, 255, 0.9) !important;
   font-size: 0.85rem !important;
   line-height: 1.55 !important;
   margin-bottom: 0.75rem !important;
-  height: 4rem !important;
-  /* Fixed height — every card the same */
-  min-height: 4rem !important;
+  min-height: 4.1rem !important;
   overflow: hidden !important;
   display: -webkit-box !important;
   -webkit-line-clamp: 3 !important;
@@ -2442,6 +2553,7 @@ textarea.form-control {
 
 /* 6. Badges row */
 .grid-responsive .premium-gold-card .mb-1 {
+  margin-top: auto !important;
   margin-bottom: 0.6rem !important;
 }
 
@@ -2706,3 +2818,87 @@ textarea.form-control {
 }
 
 /* --- GOLDEN BUTTON END --- */
+/* --- HIGHLIGHTS GRID (Uniform Card Grid) --- */
+.highlights-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  padding: 2rem 0;
+}
+
+.highlights-card {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  height: 380px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.highlights-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(212, 175, 55, 0.25);
+}
+
+.highlights-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+  border-radius: 12px;
+  transition: transform 0.5s ease, filter 0.5s ease;
+}
+
+.highlights-card:hover img {
+  transform: scale(1.05);
+  filter: brightness(0.4) saturate(0.5);
+}
+
+.highlights-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 2rem;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.95));
+  color: #ffffff;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 2;
+}
+
+.highlights-overlay h4 {
+  color: #D4AF37;
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.highlights-overlay p {
+  color: #ffffff;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+/* Only show overlay on hover */
+.highlights-card:hover .highlights-overlay {
+  opacity: 1;
+}
+
+@media (max-width: 900px) {
+  .highlights-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .highlights-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .highlights-card {
+    height: 320px;
+  }
+}

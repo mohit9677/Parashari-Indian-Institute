@@ -139,7 +139,7 @@
 }
 
 /* Responsive Tablet Search - 50% fluid width centered */
-@media (min-width: 601px) and (max-width: 900px) {
+@media (min-width: 601px) and (max-width: 1150px) {
   .tablet-search-container {
     width: 50% !important;
     margin: 10px 0 10px 20px !important;

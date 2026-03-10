@@ -224,7 +224,7 @@ header {
   display: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1150px) {
   .mobile-menu {
     display: none;
     position: absolute;
@@ -395,7 +395,7 @@ header {
 }
 
 /* ============ RESPONSIVE ============ */
-@media (max-width: 768px) {
+@media (max-width: 1150px) {
   .hamburger {
     display: flex;
   }
@@ -729,7 +729,7 @@ header {
 }
 
 /* Mobile Fallback */
-@media (max-width: 768px) {
+@media (max-width: 1150px) {
   .mega-menu {
     display: none !important;
     opacity: 0 !important;
