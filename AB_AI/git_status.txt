@@ -1,0 +1,254 @@
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	deleted:    ../.gitattributes
+	modified:   6-stairs-remedies.html
+	modified:   6-stairs.html
+	modified:   assets/css/gallery.css
+	modified:   assets/css/main.css
+	modified:   assets/css/responsive.css
+	modified:   assets/js/courses-data.js
+	modified:   assets/js/navbar.js
+	modified:   assets/js/search.js
+	modified:   astrology.html
+	modified:   chakra-balancing.html
+	modified:   courses.html
+	modified:   face-reading.html
+	modified:   fee-structure.html
+	modified:   gallery.html
+	modified:   gemstone.html
+	modified:   index.html
+	modified:   kp-astrology.html
+	modified:   lal-kitab.html
+	modified:   mantra.html
+	modified:   nakshatra.html
+	modified:   numerology.html
+	modified:   palmistry.html
+	modified:   plrt.html
+	modified:   profile.html
+	modified:   reiki.html
+	modified:   rudraksha.html
+	modified:   tantra.html
+	modified:   tarot.html
+	modified:   vastu.html
+	modified:   yantra.html
+	deleted:    ../Astro Bharat AI Education Details.pdf
+	deleted:    ../AstroBharatAI aacharya website/.gitignore
+	deleted:    ../AstroBharatAI aacharya website/client/index.html
+	deleted:    ../AstroBharatAI aacharya website/client/package.json
+	deleted:    ../AstroBharatAI aacharya website/client/src/App.css
+	deleted:    ../AstroBharatAI aacharya website/client/src/App.jsx
+	deleted:    ../AstroBharatAI aacharya website/client/src/api/axios.js
+	deleted:    ../AstroBharatAI aacharya website/client/src/assets/ajai_bhambi.png
+	deleted:    ../AstroBharatAI aacharya website/client/src/assets/blue_sapphire.jpg
+	deleted:    ../AstroBharatAI aacharya website/client/src/assets/chatbot_active.webp
+	deleted:    ../AstroBharatAI aacharya website/client/src/assets/chatbot_icon.png
+	deleted:    ../AstroBharatAI aacharya website/client/src/assets/chatbot_idle.webp
+	deleted:    ../AstroBharatAI aacharya website/client/src/assets/crystal_pyramid.jpg
+	deleted:    ../AstroBharatAI aacharya website/client/src/assets/deepak_kapoor.png
+	deleted:    ../AstroBharatAI aacharya website/client/src/assets/ganesh_idol.jpg
+	deleted:    ../AstroBharatAI aacharya website/client/src/assets/gd_vashist.png
+	deleted:    ../AstroBharatAI aacharya website/client/src/assets/hemant_barua.png
+	deleted:    ../AstroBharatAI aacharya website/client/src/assets/indu_prakash.png
+	deleted:    ../AstroBharatAI aacharya website/client/src/assets/kn_rao.png
+	deleted:    ../AstroBharatAI aacharya website/client/src/assets/logo.svg
+	deleted:    ../AstroBharatAI aacharya website/client/src/assets/nakshatras_course.png
+	deleted:    ../AstroBharatAI aacharya website/client/src/assets/numerology_course.jpg
+	deleted:    ../AstroBharatAI aacharya website/client/src/assets/palmistry_course.png
+	deleted:    ../AstroBharatAI aacharya website/client/src/assets/prem_sharma.png
+	deleted:    ../AstroBharatAI aacharya website/client/src/assets/ruby_stone.webp
+	deleted:    ../AstroBharatAI aacharya website/client/src/assets/rudraksha_mala.webp
+	deleted:    ../AstroBharatAI aacharya website/client/src/assets/sandalwood_incense.webp
+	deleted:    ../AstroBharatAI aacharya website/client/src/assets/sandeep_kochar.png
+	deleted:    ../AstroBharatAI aacharya website/client/src/assets/sanjay_jumaani.png
+	deleted:    ../AstroBharatAI aacharya website/client/src/assets/sohini_shastri.png
+	deleted:    ../AstroBharatAI aacharya website/client/src/assets/tarot_course.png
+	deleted:    ../AstroBharatAI aacharya website/client/src/assets/vastu_course.webp
+	deleted:    ../AstroBharatAI aacharya website/client/src/assets/vedic_astrology_course.png
+	deleted:    ../AstroBharatAI aacharya website/client/src/components/ChatInterface.jsx
+	deleted:    ../AstroBharatAI aacharya website/client/src/components/FloatingChatbot.jsx
+	deleted:    ../AstroBharatAI aacharya website/client/src/components/layout/Footer.css
+	deleted:    ../AstroBharatAI aacharya website/client/src/components/layout/Footer.jsx
+	deleted:    ../AstroBharatAI aacharya website/client/src/components/layout/Navbar.css
+	deleted:    ../AstroBharatAI aacharya website/client/src/components/layout/Navbar.jsx
+	deleted:    ../AstroBharatAI aacharya website/client/src/context/AuthContext.jsx
+	deleted:    ../AstroBharatAI aacharya website/client/src/hooks/useFormValidation.js
+	deleted:    ../AstroBharatAI aacharya website/client/src/main.jsx
+	deleted:    ../AstroBharatAI aacharya website/client/src/pages/AIAstrologersPage.jsx
+	deleted:    ../AstroBharatAI aacharya website/client/src/pages/AboutPage.css
+	deleted:    ../AstroBharatAI aacharya website/client/src/pages/AboutPage.jsx
+	deleted:    ../AstroBharatAI aacharya website/client/src/pages/ArticleDetailPage.jsx
+	deleted:    ../AstroBharatAI aacharya website/client/src/pages/AstrologersPage.jsx
+	deleted:    ../AstroBharatAI aacharya website/client/src/pages/Auth.css
+	deleted:    ../AstroBharatAI aacharya website/client/src/pages/BlogPage.jsx
+	deleted:    ../AstroBharatAI aacharya website/client/src/pages/BookingPage.css
+	deleted:    ../AstroBharatAI aacharya website/client/src/pages/BookingPage.jsx
+	deleted:    ../AstroBharatAI aacharya website/client/src/pages/ContactPage.css
+	deleted:    ../AstroBharatAI aacharya website/client/src/pages/ContactPage.jsx
+	deleted:    ../AstroBharatAI aacharya website/client/src/pages/HomePage.css
+	deleted:    ../AstroBharatAI aacharya website/client/src/pages/HomePage.jsx
+	deleted:    ../AstroBharatAI aacharya website/client/src/pages/HoroscopePage.jsx
+	deleted:    ../AstroBharatAI aacharya website/client/src/pages/LearningPage.jsx
+	deleted:    ../AstroBharatAI aacharya website/client/src/pages/LoginPage.jsx
+	deleted:    ../AstroBharatAI aacharya website/client/src/pages/MandirPage.jsx
+	deleted:    ../AstroBharatAI aacharya website/client/src/pages/MartPage.jsx
+	deleted:    ../AstroBharatAI aacharya website/client/src/pages/NotFoundPage.jsx
+	deleted:    ../AstroBharatAI aacharya website/client/src/pages/NumerologyPage.jsx
+	deleted:    ../AstroBharatAI aacharya website/client/src/pages/PanchangPage.jsx
+	deleted:    ../AstroBharatAI aacharya website/client/src/pages/ReportsPage.css
+	deleted:    ../AstroBharatAI aacharya website/client/src/pages/ReportsPage.jsx
+	deleted:    ../AstroBharatAI aacharya website/client/src/pages/ServiceDetailPage.css
+	deleted:    ../AstroBharatAI aacharya website/client/src/pages/ServiceDetailPage.jsx
+	deleted:    ../AstroBharatAI aacharya website/client/src/pages/ServicesPage.css
+	deleted:    ../AstroBharatAI aacharya website/client/src/pages/ServicesPage.jsx
+	deleted:    ../AstroBharatAI aacharya website/client/src/pages/SignupPage.jsx
+	deleted:    ../AstroBharatAI aacharya website/client/vite.config.js
+	deleted:    ../AstroBharatAI aacharya website/logo.svg
+	deleted:    ../AstroBharatAI aacharya website/package.json
+	deleted:    ../AstroBharatAI aacharya website/server/.env.example
+	deleted:    ../AstroBharatAI aacharya website/server/config/db.js
+	deleted:    ../AstroBharatAI aacharya website/server/controllers/appointmentController.js
+	deleted:    ../AstroBharatAI aacharya website/server/controllers/articleController.js
+	deleted:    ../AstroBharatAI aacharya website/server/controllers/authController.js
+	deleted:    ../AstroBharatAI aacharya website/server/controllers/contactController.js
+	deleted:    ../AstroBharatAI aacharya website/server/controllers/reportController.js
+	deleted:    ../AstroBharatAI aacharya website/server/controllers/serviceController.js
+	deleted:    ../AstroBharatAI aacharya website/server/index.js
+	deleted:    ../AstroBharatAI aacharya website/server/middleware/authMiddleware.js
+	deleted:    ../AstroBharatAI aacharya website/server/middleware/errorHandler.js
+	deleted:    ../AstroBharatAI aacharya website/server/middleware/validate.js
+	deleted:    ../AstroBharatAI aacharya website/server/models/Appointment.js
+	deleted:    ../AstroBharatAI aacharya website/server/models/Article.js
+	deleted:    ../AstroBharatAI aacharya website/server/models/Contact.js
+	deleted:    ../AstroBharatAI aacharya website/server/models/Report.js
+	deleted:    ../AstroBharatAI aacharya website/server/models/Service.js
+	deleted:    ../AstroBharatAI aacharya website/server/models/User.js
+	deleted:    ../AstroBharatAI aacharya website/server/package.json
+	deleted:    ../AstroBharatAI aacharya website/server/routes/appointmentRoutes.js
+	deleted:    ../AstroBharatAI aacharya website/server/routes/articleRoutes.js
+	deleted:    ../AstroBharatAI aacharya website/server/routes/authRoutes.js
+	deleted:    ../AstroBharatAI aacharya website/server/routes/contactRoutes.js
+	deleted:    ../AstroBharatAI aacharya website/server/routes/reportRoutes.js
+	deleted:    ../AstroBharatAI aacharya website/server/routes/serviceRoutes.js
+	deleted:    ../AstroBharatAI aacharya website/server/seed/seedData.js
+	deleted:    ../AstroBharatAI aacharya website/server/utils/sanitize.js
+	deleted:    ../AstroBharatAI aacharya website/server/utils/securityUtils.js
+	deleted:    ../AstroBharatAI aacharya website/server/utils/sendEmail.js
+	deleted:    ../Email.jpg
+	deleted:    ../Gemini_Generated_Image_wnwrbywnwrbywnwr.png
+	deleted:    ../ParashariTeam backup/Parashari-Indian-Institute-Of-Astrology-And-Research-center-
+	deleted:    ../address image.jpg
+	deleted:    ../admission.jpg
+	deleted:    ../chat_with_us.jpg
+	modified:   ../learningPortal/client/src/App.jsx
+	modified:   ../learningPortal/client/src/context/AuthContext.jsx
+	modified:   ../learningPortal/client/src/pages/Landing.jsx
+	modified:   ../learningPortal/client/vite.config.js
+	modified:   ../learningPortal/server/middleware/auth.js
+	modified:   ../learningPortal/server/routes/auth.js
+	deleted:    ../office-hours.webp
+	deleted:    ../phone 2.gif
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	assets/css/trust-content.css
+	assets/images/.gitattributes
+	assets/images/1772021561257.png
+	assets/images/1772021595427.png
+	assets/images/1772021650039.png
+	assets/images/1772021678548.png
+	assets/images/1772021734971.png
+	assets/images/1772021784594.png
+	assets/images/6-Stairs.png
+	assets/images/Astro Bharat AI Education Details.pdf
+	assets/images/DSC03540.JPG
+	assets/images/Email.jpg
+	assets/images/Gemini_Generated_Image_wnwrbywnwrbywnwr.png
+	assets/images/Govt-Approved.png
+	assets/images/Harshit sir with some politician.jpeg
+	assets/images/VEDIC.jpg.jpeg
+	assets/images/WhatsApp Image 2026-03-06 at 12.41.56 PM.jpeg
+	assets/images/WhatsApp Image 2026-03-06 at 12.41.57 PM.jpeg
+	assets/images/WhatsApp Image 2026-03-06 at 12.41.58 PM (1).jpeg
+	assets/images/WhatsApp Image 2026-03-06 at 12.41.58 PM.jpeg
+	assets/images/WhatsApp Image 2026-03-06 at 12.41.59 PM (1).jpeg
+	assets/images/WhatsApp Image 2026-03-06 at 12.41.59 PM.jpeg
+	assets/images/address image.jpg
+	assets/images/blog.png
+	assets/images/call us.jpg
+	assets/images/chakra balancing.jpg.jpeg
+	assets/images/chat with us.jpg
+	assets/images/chat_with_us.jpg
+	assets/images/explore.png
+	assets/images/face reading 7.jpg.jpeg
+	assets/images/fee structure.png
+	assets/images/gemstone.4.jpg.jpeg
+	assets/images/healing 8.jpg.jpeg
+	assets/images/hero-astrology.png
+	assets/images/hero-face-reading.png
+	assets/images/hero-gemstone.png
+	assets/images/hero-kp.png
+	assets/images/hero-lal-kitab.png
+	assets/images/hero-nakshatra.png
+	assets/images/hero-numerology.png
+	assets/images/hero-palmistry.jpg
+	assets/images/hero-reiki.png
+	assets/images/hero-rudraksha.jpg
+	assets/images/hero-tarot.png
+	assets/images/hero-vastu.png
+	assets/images/image-13.jpg.jpeg
+	assets/images/image-20.jpg.jpeg
+	assets/images/image-22.jpg.jpeg
+	assets/images/image-23.jpg.jpeg
+	assets/images/image-26.jpg.jpeg
+	assets/images/image-27.jpg.jpeg
+	assets/images/image-28.jpg (1).jpeg
+	assets/images/image-31.jpg.jpeg
+	assets/images/image-33.jpg.jpeg
+	assets/images/integriity.jpeg
+	assets/images/kp astrology.3.jpg.jpeg
+	assets/images/lal kitab 6.jpg.jpeg
+	assets/images/mantra.jpg.jpeg
+	assets/images/numerology.1.jpg.jpeg
+	assets/images/office-hours.webp
+	assets/images/palmistry 11.jpg.jpeg
+	assets/images/parashari image.png
+	assets/images/past life.jpg.jpeg
+	assets/images/phone 2.gif
+	assets/images/redmedies.jpg.jpeg
+	assets/images/rudraksha 10.jpg.jpeg
+	assets/images/student 12.jpg
+	assets/images/student 13.jpg
+	assets/images/student 14.jpg
+	assets/images/student 15.jpg
+	assets/images/student 16.jpg
+	assets/images/student 17.jpg
+	assets/images/tantra.jpg.jpeg
+	assets/images/tarot card 9.jpg.jpeg
+	assets/images/vastu shastra.5.jpg.jpeg
+	assets/images/vedic astrology.2.jpg.jpeg
+	assets/images/yantra.jpg.jpeg
+	categories.json
+	git_status.txt
+	out.txt
+	scripts/__pycache__/
+	../Picture1.png
+	../Picture10.png
+	../Picture11.png
+	../Picture12.jpg
+	../Picture13.jpg
+	../Picture14.png
+	../Picture3.png
+	../Picture4.png
+	../Picture5.png
+	../Picture6.png
+	../Picture7.png
+	../Picture8.png
+	../Picture9.png
+	../learningPortal/server/check_db.js
+	../temp_script.js
+
+no changes added to commit (use "git add" and/or "git commit -a")

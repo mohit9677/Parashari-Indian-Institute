@@ -20,6 +20,7 @@
   <link rel="stylesheet" href="assets/css/cinematic-hero.css">
   <script src="assets/js/cinematic-hero.js" defer></script>
   <link rel="stylesheet" href="assets/css/urgency.css">
+  <link rel="stylesheet" href="assets/css/trust-content.css">
 </head>
 
 <body style="background-color: #ffffff;">
@@ -166,6 +167,10 @@
     </div>
     <div class="about-split-content">
       <div class="about-content-inner" data-animate>
+        <div class="inline-placement-bar">
+          <i class="fas fa-handshake"></i>
+          100% Placement Support Guaranteed
+        </div>
         <h2 class="card-section-title text-left mb-1-5">About Parashari Institute</h2>
         <h3 class="mb-1-5">Decades of Excellence in Astrology Education</h3>
         <p class="mb-1">Parashari Institute stands as the beacon of authentic Vedic knowledge. With over 25 years of
@@ -185,6 +190,7 @@
       </div>
     </div>
   </section>
+
 
   <section class="hero-with-bg zodiac-section">
     <div class="container-wide">
@@ -404,11 +410,9 @@
   <section>
     <div class="container-wide">
       <h2 class="card-section-title">Our Accreditations</h2>
-      <div class="grid grid-4 grid-gap-2 grid-align-center accreditation-grid">
+      <div class="grid grid-4 grid-gap-2 accreditation-grid">
         <!-- Certification 1: ISO -->
-        <div class="faculty-card"
-          style="width: 100%; min-width: auto; height: auto !important; max-height: none !important; border: 2px solid #D4AF37 !important;"
-          data-animate>
+        <div class="faculty-card" style="width: 100%; min-width: auto; height: auto !important; max-height: none !important; border: 2px solid #D4AF37 !important;" data-animate>
           <div class="faculty-img-wrapper" style="height: 200px;">
             <img src="assets/images/iso-certification.jpg" alt="ISO 9001:2015" class="faculty-img">
           </div>
@@ -468,13 +472,78 @@
     </div>
   </section>
 
+  <!-- Free Video Masterclass Section -->
+  <section class="video-masterclass-section">
+    <div class="container-wide">
+      <h2 class="card-section-title">Masterclass: Start Learning Today (Free)</h2>
+      <div class="masterclass-grid">
+        <!-- Main Featured Video -->
+        <div class="featured-video-container">
+          <div class="featured-video video-placeholder" id="mainMasterclassVideo"
+            data-video-url="https://drive.google.com/file/d/1EeSlZNorC3rfVjnx2CU-vsXmO7Y3pYi6/preview">
+            <span class="video-badge">FREE LESSON</span>
+            <img src="assets/images/video-poster-1.jpg" alt="Featured Masterclass" class="video-cover">
+            <div class="play-button-overlay">
+              <div class="play-icon">▶</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Playlist Sidebar -->
+        <div class="playlist-sidebar">
+          <div class="playlist-item active" onclick="switchMainVideo('https://drive.google.com/file/d/1EeSlZNorC3rfVjnx2CU-vsXmO7Y3pYi6/preview', 'assets/images/video-poster-1.jpg', this)">
+            <img src="assets/images/video-poster-1.jpg" class="playlist-thumb">
+            <div class="playlist-info">
+              <h5>Introduction to Astrology</h5>
+              <span>Part 1: The Basics (15 min)</span>
+            </div>
+          </div>
+          <div class="playlist-item" onclick="switchMainVideo('https://drive.google.com/file/d/1pGuy1R19WNCPFncZB2CPOF6oBHjk-B9m/preview', 'assets/images/video-poster-2.png', this)">
+            <img src="assets/images/video-poster-2.png" class="playlist-thumb">
+            <div class="playlist-info">
+              <h5>The Secret of Zodiacs</h5>
+              <span>Part 2: Hidden Meanings (22 min)</span>
+            </div>
+          </div>
+          <div class="playlist-item" onclick="switchMainVideo('https://drive.google.com/file/d/1ueubDhCuricSLb2Lyhtw30bMWQJ2sXW6/preview', 'assets/images/video-poster-3.png', this)">
+            <img src="assets/images/video-poster-3.png" class="playlist-thumb">
+            <div class="playlist-info">
+              <h5>Vastu for Prosperity</h5>
+              <span>Masterclass Preview (18 min)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    function switchMainVideo(url, poster, element) {
+      const mainPlayer = document.getElementById('mainMasterclassVideo');
+      
+      // Update featured area
+      mainPlayer.setAttribute('data-video-url', url);
+      mainPlayer.innerHTML = `
+        <span class="video-badge">FREE LESSON</span>
+        <img src="${poster}" alt="Featured Masterclass" class="video-cover">
+        <div class="play-button-overlay">
+          <div class="play-icon">▶</div>
+        </div>
+      `;
+      
+      // Reset playlist active state
+      document.querySelectorAll('.playlist-item').forEach(item => item.classList.remove('active'));
+      element.classList.add('active');
+    }
+  </script>
+
   <section class="light-bg">
     <div class="container-wide">
       <h2 class="card-section-title">Our Courses</h2>
       <div class="grid-responsive grid-gap-2">
                 <!-- 1. Vedic Astrology -->
-        <div class="premium-gold-card" style="padding: 0 !important;" data-animate data-category="Crash Course">
-          <span class="discount-tag" data-discount="63% Discount"></span>
+        <div class="premium-gold-card" style="padding: 0 !important;" data-animate data-category="Diploma">
+          <span class="discount-tag" data-discount="24% Discount"></span>
           <div class="card-image-container">
             <img src="assets/images/vedic-astrology-new.jpg" alt="Vedic Astrology" class="card-image">
           </div>
@@ -485,12 +554,12 @@
             </div>
             <p>Master the ancient science of Vedic Astrology. Learn natal charts, planetary movements, and predictions.</p>
             <div class="mb-1">
-              <span class="category-badge" style="background:#4CAF50">Crash Course · Beginner</span>
+              <span class="category-badge" style="background:#2196F3">Diploma · Popular</span>
               <span class="certification-badge">✓ Certification</span>
             </div>
             <h4 class="color-secondary mb-1 text-center"><del
-                style="color:#999;font-size:0.65em;margin-right:8px;vertical-align:middle;">₹7,999</del><strong
-                style="color:#FFD700;font-size:1.1em;">₹2,999</strong></h4>
+                style="color:#999;font-size:0.65em;margin-right:8px;vertical-align:middle;">₹5,499</del><strong
+                style="color:#FFD700;font-size:1.1em;">₹4,199</strong></h4>
             <div class="course-footer">
               <a href="astrology.html" class="learn-more">
                 <span class="circle" aria-hidden="true">
@@ -502,27 +571,27 @@
           </div>
         </div>
 
-        <!-- 2. Nadi Jyotish -->
-        <div class="premium-gold-card" style="padding: 0 !important;" data-animate data-category="Crash Course">
-          <span class="discount-tag" data-discount="63% Discount"></span>
+        <!-- 2. Numerology -->
+        <div class="premium-gold-card" style="padding: 0 !important;" data-animate data-category="Diploma">
+          <span class="discount-tag" data-discount="24% Discount"></span>
           <div class="card-image-container">
-            <img src="assets/images/taurus-card.png" alt="Nadi Jyotish" class="card-image">
+            <img src="assets/images/numerology-new.jpg" alt="Numerology" class="card-image">
           </div>
           <div class="card-body">
             <div class="card-header">
-              <div class="card-header-icon">📜</div>
-              <h3 class="card-title">Nadi Jyotish</h3>
+              <div class="card-header-icon">🔢</div>
+              <h3 class="card-title">Numerology</h3>
             </div>
-            <p>Learn precise prediction techniques using Nadi astrology principles and leaf reading concepts.</p>
+            <p>Numerology studies how numbers connected to your name and birthdate reveal personality, life path, and opportunities.</p>
             <div class="mb-1">
-              <span class="category-badge" style="background:#4CAF50">Crash Course · Beginner</span>
+              <span class="category-badge" style="background:#2196F3">Diploma · Popular</span>
               <span class="certification-badge">✓ Certification</span>
             </div>
             <h4 class="color-secondary mb-1 text-center"><del
-                style="color:#999;font-size:0.65em;margin-right:8px;vertical-align:middle;">₹7,999</del><strong
-                style="color:#FFD700;font-size:1.1em;">₹2,999</strong></h4>
+                style="color:#999;font-size:0.65em;margin-right:8px;vertical-align:middle;">₹5,499</del><strong
+                style="color:#FFD700;font-size:1.1em;">₹4,199</strong></h4>
             <div class="course-footer">
-              <a href="nadi-jyotish.html" class="learn-more">
+              <a href="numerology.html" class="learn-more">
                 <span class="circle" aria-hidden="true">
                   <span class="icon arrow"></span>
                 </span>
@@ -532,27 +601,27 @@
           </div>
         </div>
 
-        <!-- 3. Lal Kitab Remedies -->
+        <!-- 3. KP Astrology -->
         <div class="premium-gold-card" style="padding: 0 !important;" data-animate data-category="Diploma">
-          <span class="discount-tag" data-discount="50% Discount"></span>
+          <span class="discount-tag" data-discount="24% Discount"></span>
           <div class="card-image-container">
-            <img src="assets/images/lal-kitab-new.jpg" alt="Lal Kitab Remedies" class="card-image">
+            <img src="assets/images/kp-astrology-new.jpg" alt="KP Astrology" class="card-image">
           </div>
           <div class="card-body">
             <div class="card-header">
-              <div class="card-header-icon">📕</div>
-              <h3 class="card-title">Lal Kitab Remedies</h3>
+              <div class="card-header-icon">⭐</div>
+              <h3 class="card-title">KP Astrology</h3>
             </div>
-            <p>Simple yet effective remedies for complex life problems using the wisdom of Lal Kitab.</p>
+            <p>Krishnamurti Paddhati system for pinpoint accuracy in timing events and predictions.</p>
             <div class="mb-1">
               <span class="category-badge" style="background:#2196F3">Diploma · Popular</span>
               <span class="certification-badge">✓ Certification</span>
             </div>
             <h4 class="color-secondary mb-1 text-center"><del
-                style="color:#999;font-size:0.65em;margin-right:8px;vertical-align:middle;">₹10,000</del><strong
-                style="color:#FFD700;font-size:1.1em;">₹4,999</strong></h4>
+                style="color:#999;font-size:0.65em;margin-right:8px;vertical-align:middle;">₹5,499</del><strong
+                style="color:#FFD700;font-size:1.1em;">₹4,199</strong></h4>
             <div class="course-footer">
-              <a href="lal-kitab.html" class="learn-more">
+              <a href="kp-astrology.html" class="learn-more">
                 <span class="circle" aria-hidden="true">
                   <span class="icon arrow"></span>
                 </span>
@@ -562,27 +631,27 @@
           </div>
         </div>
 
-        <!-- 4. Remedy Course -->
+        <!-- 4. Vastu Shastra -->
         <div class="premium-gold-card" style="padding: 0 !important;" data-animate data-category="Diploma">
-          <span class="discount-tag" data-discount="33% Discount"></span>
+          <span class="discount-tag" data-discount="24% Discount"></span>
           <div class="card-image-container">
-            <img src="assets/images/cancer-card.png" alt="Remedy Course" class="card-image">
+            <img src="assets/images/vastu-new.jpg" alt="Vastu Shastra" class="card-image">
           </div>
           <div class="card-body">
             <div class="card-header">
-              <div class="card-header-icon">🕉️</div>
-              <h3 class="card-title">Remedy Course</h3>
+              <div class="card-header-icon">🏠</div>
+              <h3 class="card-title">Vastu Shastra</h3>
             </div>
-            <p>Comprehensive training on effective astrological remedies for health, wealth, and relationships.</p>
+            <p>Transform your space. Learn the principles of Vastu for prosperity, health, and harmony.</p>
             <div class="mb-1">
               <span class="category-badge" style="background:#2196F3">Diploma · Popular</span>
               <span class="certification-badge">✓ Certification</span>
             </div>
             <h4 class="color-secondary mb-1 text-center"><del
-                style="color:#999;font-size:0.65em;margin-right:8px;vertical-align:middle;">₹30,000</del><strong
-                style="color:#FFD700;font-size:1.1em;">₹19,999</strong></h4>
+                style="color:#999;font-size:0.65em;margin-right:8px;vertical-align:middle;">₹5,499</del><strong
+                style="color:#FFD700;font-size:1.1em;">₹4,199</strong></h4>
             <div class="course-footer">
-              <a href="remedy-course.html" class="learn-more">
+              <a href="vastu.html" class="learn-more">
                 <span class="circle" aria-hidden="true">
                   <span class="icon arrow"></span>
                 </span>
@@ -682,7 +751,7 @@
           <h4 class="color-primary header-sm">Beginners Crash Course</h4>
           <div class="font-2xl color-secondary price-display">
             <span
-              style="text-decoration: line-through; color: #999; font-size: 0.7em; margin-right: 10px;">₹2,999</span>₹2,499
+              style="text-decoration: line-through; color: #999; font-size: 0.7em; margin-right: 10px;">₹3,999</span>₹2,999
           </div>
           <p class="card-small-text" style="color: #d32f2f !important; font-weight: bold;">Discounted Price</p>
           <p class="card-small-text">4 Weeks</p>
@@ -723,7 +792,7 @@
 
           <div class="testimonial-card-slide">
             <div class="testimonial-img-wrapper">
-              <img src="assets/images/student 8.jpg" alt="Student">
+              <img src="assets/images/student 15.jpg" alt="Student">
             </div>
             <div class="testimonial-info">
               <h4 class="color-primary mt-2">Shikha Pandey</h4>
@@ -794,7 +863,7 @@
           </div>
           <div class="testimonial-card-slide">
             <div class="testimonial-img-wrapper">
-              <img src="assets/images/student 8.jpg" alt="Student">
+              <img src="assets/images/student 15.jpg" alt="Student">
             </div>
             <div class="testimonial-info">
               <h4 class="color-primary mt-2">Sneha Reddy</h4>

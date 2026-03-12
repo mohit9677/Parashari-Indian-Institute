@@ -1,0 +1,404 @@
+{
+  "Crash Course": [
+    {
+      "image": "assets/images/past-life.jpg",
+      "alt": "Past Life Regression Theory (PLRT)",
+      "icon": "🕰️",
+      "title": "Past Life Regression Theory (PLRT)",
+      "url": "plrt.html"
+    },
+    {
+      "image": "assets/images/vastu-new.jpg",
+      "alt": "Bhoomi Vastu & Prasada Vastu",
+      "icon": "🏠",
+      "title": "Bhoomi Vastu & Prasada Vastu",
+      "url": "vastu.html"
+    },
+    {
+      "image": "assets/images/palmistry-new.jpg",
+      "alt": "Modern Western Palmistry",
+      "icon": "✋",
+      "title": "Modern Western Palmistry",
+      "url": "palmistry.html"
+    },
+    {
+      "image": "assets/images/numerology-new.jpg",
+      "alt": "Mobile Numerology",
+      "icon": "📱",
+      "title": "Mobile Numerology",
+      "url": "numerology.html"
+    },
+    {
+      "image": "assets/images/face-reading-new.jpg",
+      "alt": "(Face Reading) Western Physiognomy",
+      "icon": "👤",
+      "title": "(Face Reading) Western Physiognomy",
+      "url": "face-reading.html"
+    },
+    {
+      "image": "assets/images/scorpio-card.png",
+      "alt": "Financial Astrology (Artha)",
+      "icon": "📈",
+      "title": "Financial Astrology (Artha)",
+      "url": "astrology.html"
+    },
+    {
+      "image": "assets/images/gemini-card.png",
+      "alt": "Lal Kitab Basics",
+      "icon": "📕",
+      "title": "Lal Kitab Basics",
+      "url": "lal-kitab.html"
+    },
+    {
+      "image": "assets/images/scorpio-card.png",
+      "alt": "Medical Astrology",
+      "icon": "⚕️",
+      "title": "Medical Astrology",
+      "url": "medical-astrology.html"
+    },
+    {
+      "image": "assets/images/virgo-card.jpg",
+      "alt": "BNN Intensive Mastery",
+      "icon": "🔍",
+      "title": "The BNN Intensive: A 14-Day Mastery",
+      "url": "bnn-astrology.html"
+    },
+    {
+      "image": "assets/images/leo-card.png",
+      "alt": "Modern Career Astrology",
+      "icon": "💼",
+      "title": "Modern Career Astrology",
+      "url": "astrology.html"
+    },
+    {
+      "image": "assets/images/numerology-new.jpg",
+      "alt": "Business Numerology",
+      "icon": "🏢",
+      "title": "Business Numerology",
+      "url": "numerology.html"
+    },
+    {
+      "image": "assets/images/numerology-new.jpg",
+      "alt": "Vedic Numerology",
+      "icon": "🔢",
+      "title": "Vedic Numerology",
+      "url": "numerology.html"
+    },
+    {
+      "image": "assets/images/taurus-card.png",
+      "alt": "Nadi Jyotish",
+      "icon": "📜",
+      "title": "Nadi Jyotish",
+      "url": "nadi-jyotish.html"
+    },
+    {
+      "image": "assets/images/healing.jpg",
+      "alt": "Healing",
+      "icon": "🙌",
+      "title": "Healing",
+      "url": "reiki.html"
+    },
+    {
+      "image": "assets/images/institute-building-modern.jpg",
+      "alt": "Feng Shui",
+      "icon": "⛩️",
+      "title": "Feng Shui",
+      "url": "feng-shui.html"
+    }
+  ],
+  "Diploma": [
+    {
+      "image": "assets/images/vedic-astrology-new.jpg",
+      "alt": "Vedic Astrology",
+      "icon": "♈",
+      "title": "Vedic Astrology (Jyotish)",
+      "url": "astrology.html"
+    },
+    {
+      "image": "assets/images/numerology-new.jpg",
+      "alt": "Numerology",
+      "icon": "🔢",
+      "title": "Numerology (Pythagorean & Chaldean)",
+      "url": "numerology.html"
+    },
+    {
+      "image": "assets/images/kp-astrology-new.jpg",
+      "alt": "KP Astrology",
+      "icon": "⭐",
+      "title": "KP Astrology (Krishnamurti Padhdhati)",
+      "url": "kp-astrology.html"
+    },
+    {
+      "image": "assets/images/gemstone.jpg",
+      "alt": "Gemstone Science",
+      "icon": "💎",
+      "title": "Gemstone Science (Ratna Vigyan)",
+      "url": "gemstone.html"
+    },
+    {
+      "image": "assets/images/vastu-new.jpg",
+      "alt": "Vastu Shastra",
+      "icon": "🏠",
+      "title": "Vastu Shastra",
+      "url": "vastu.html"
+    },
+    {
+      "image": "assets/images/lal-kitab-new.jpg",
+      "alt": "Lal Kitab",
+      "icon": "📕",
+      "title": "Lal Kitab",
+      "url": "lal-kitab.html"
+    },
+    {
+      "image": "assets/images/face-reading-new.jpg",
+      "alt": "Face Reading",
+      "icon": "👤",
+      "title": "Face Reading (Physiognomy)",
+      "url": "face-reading.html"
+    },
+    {
+      "image": "assets/images/healing.jpg",
+      "alt": "Reiki Healing",
+      "icon": "🙌",
+      "title": "Reiki Healing",
+      "url": "reiki.html"
+    },
+    {
+      "image": "assets/images/tarot-new.jpg",
+      "alt": "Tarot Reading",
+      "icon": "🃏",
+      "title": "Tarot Reading",
+      "url": "tarot.html"
+    },
+    {
+      "image": "assets/images/gold_zodiac_wheel.png",
+      "alt": "Nakshatra",
+      "icon": "✨",
+      "title": "Nakshatra (Lunar Mansions)",
+      "url": "nakshatra.html"
+    },
+    {
+      "image": "assets/images/crystal-healing-new.jpg",
+      "alt": "Crystal",
+      "icon": "🔮",
+      "title": "Crystal Rudraksha",
+      "url": "crystal-healing.html"
+    },
+    {
+      "image": "assets/images/palmistry-new.jpg",
+      "alt": "Palmistry",
+      "icon": "✋",
+      "title": "Palmistry (Chirognomy & Chiromancy)",
+      "url": "palmistry.html"
+    },
+    {
+      "image": "assets/images/cancer-card.png",
+      "alt": "Remedy Course",
+      "icon": "🕉️",
+      "title": "Remedy Course",
+      "url": "remedy-course.html"
+    },
+    {
+      "image": "assets/images/gemini-card.png",
+      "alt": "Gemini Jyotish",
+      "icon": "♊",
+      "title": "Gemini Jyotish",
+      "url": "gemini-jyotish.html"
+    }
+  ],
+  "Grand Master": [
+    {
+      "image": "assets/images/rudraksha-new.jpg",
+      "alt": "Rudraksha",
+      "icon": "📿",
+      "title": "Rudraksha",
+      "url": "rudraksha.html"
+    },
+    {
+      "image": "assets/images/virgo-card.jpg",
+      "alt": "BNN Advance",
+      "icon": "🔍",
+      "title": "BNN Advance",
+      "url": "bnn-astrology.html"
+    },
+    {
+      "image": "assets/images/past-life.jpg",
+      "alt": "Past Life Prediction",
+      "icon": "🕰️",
+      "title": "Past Life Prediction",
+      "url": "plrt.html"
+    }
+  ],
+  "Bachelor": [
+    {
+      "image": "assets/images/vedic-astrology-new.jpg",
+      "alt": "Vedic Astrology",
+      "icon": "♈",
+      "title": "Vedic Astrology (Jyotish)",
+      "url": "astrology.html"
+    },
+    {
+      "image": "assets/images/numerology-new.jpg",
+      "alt": "Numerology",
+      "icon": "🔢",
+      "title": "Numerology (Pythagorean & Chaldean)",
+      "url": "numerology.html"
+    },
+    {
+      "image": "assets/images/kp-astrology-new.jpg",
+      "alt": "KP Astrology",
+      "icon": "⭐",
+      "title": "KP Astrology (Krishnamurti Padhdhati)",
+      "url": "kp-astrology.html"
+    },
+    {
+      "image": "assets/images/gemstone.jpg",
+      "alt": "Gemstone Science",
+      "icon": "💎",
+      "title": "Gemstone Science (Ratna Vigyan)",
+      "url": "gemstone.html"
+    },
+    {
+      "image": "assets/images/vastu-new.jpg",
+      "alt": "Vastu Shastra",
+      "icon": "🏠",
+      "title": "Vastu Shastra",
+      "url": "vastu.html"
+    },
+    {
+      "image": "assets/images/lal-kitab-new.jpg",
+      "alt": "Lal Kitab",
+      "icon": "📕",
+      "title": "Lal Kitab",
+      "url": "lal-kitab.html"
+    },
+    {
+      "image": "assets/images/face-reading-new.jpg",
+      "alt": "Face Reading",
+      "icon": "👤",
+      "title": "Face Reading (Physiognomy)",
+      "url": "face-reading.html"
+    },
+    {
+      "image": "assets/images/healing.jpg",
+      "alt": "Reiki Healing",
+      "icon": "🙌",
+      "title": "Reiki Healing",
+      "url": "reiki.html"
+    },
+    {
+      "image": "assets/images/tarot-new.jpg",
+      "alt": "Tarot Reading",
+      "icon": "🃏",
+      "title": "Tarot Reading",
+      "url": "tarot.html"
+    },
+    {
+      "image": "assets/images/gold_zodiac_wheel.png",
+      "alt": "Nakshatra",
+      "icon": "✨",
+      "title": "Nakshatra (Lunar Mansions) 1",
+      "url": "nakshatra.html"
+    },
+    {
+      "image": "assets/images/crystal-healing-new.jpg",
+      "alt": "Crystal Rudraksha",
+      "icon": "🔮",
+      "title": "Crystal Rudraksha",
+      "url": "crystal-healing.html"
+    },
+    {
+      "image": "assets/images/palmistry-new.jpg",
+      "alt": "Palmistry",
+      "icon": "✋",
+      "title": "Palmistry (Chirognomy & Chiromancy)",
+      "url": "palmistry.html"
+    }
+  ],
+  "Master": [
+    {
+      "image": "assets/images/numerology-new.jpg",
+      "alt": "Numerology",
+      "icon": "🔢",
+      "title": "Numerology (Pythagorean & Chaldean)",
+      "url": "numerology.html"
+    },
+    {
+      "image": "assets/images/vedic-astrology-new.jpg",
+      "alt": "Vedic Astrology",
+      "icon": "♈",
+      "title": "Vedic Astrology (Jyotish)",
+      "url": "astrology.html"
+    },
+    {
+      "image": "assets/images/kp-astrology-new.jpg",
+      "alt": "KP Astrology",
+      "icon": "⭐",
+      "title": "KP Astrology (Krishnamurti Padhdhati)",
+      "url": "kp-astrology.html"
+    },
+    {
+      "image": "assets/images/gemstone.jpg",
+      "alt": "Gemstone Science",
+      "icon": "💎",
+      "title": "Gemstone Science (Ratna Vigyan)",
+      "url": "gemstone.html"
+    },
+    {
+      "image": "assets/images/vastu-new.jpg",
+      "alt": "Vastu Shastra",
+      "icon": "🏠",
+      "title": "Vastu Shastra",
+      "url": "vastu.html"
+    },
+    {
+      "image": "assets/images/lal-kitab-new.jpg",
+      "alt": "Lal Kitab",
+      "icon": "📕",
+      "title": "Lal Kitab",
+      "url": "lal-kitab.html"
+    },
+    {
+      "image": "assets/images/face-reading-new.jpg",
+      "alt": "Face Reading",
+      "icon": "👤",
+      "title": "Face Reading (Physiognomy)",
+      "url": "face-reading.html"
+    },
+    {
+      "image": "assets/images/healing.jpg",
+      "alt": "Reiki Healing",
+      "icon": "🙌",
+      "title": "Reiki Healing",
+      "url": "reiki.html"
+    },
+    {
+      "image": "assets/images/tarot-new.jpg",
+      "alt": "Tarot Reading",
+      "icon": "🃏",
+      "title": "Tarot Reading",
+      "url": "tarot.html"
+    },
+    {
+      "image": "assets/images/gold_zodiac_wheel.png",
+      "alt": "Nakshatra",
+      "icon": "✨",
+      "title": "Nakshatra (Lunar Mansions)",
+      "url": "nakshatra.html"
+    },
+    {
+      "image": "assets/images/crystal-healing-new.jpg",
+      "alt": "Crystal Rudraksha",
+      "icon": "🔮",
+      "title": "Crystal Rudraksha",
+      "url": "crystal-healing.html"
+    },
+    {
+      "image": "assets/images/palmistry-new.jpg",
+      "alt": "Palmistry",
+      "icon": "✋",
+      "title": "Palmistry (Chirognomy & Chiromancy)",
+      "url": "palmistry.html"
+    }
+  ]
+}
