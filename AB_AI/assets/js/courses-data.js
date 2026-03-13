@@ -160,7 +160,7 @@ const coursesData = [
     {
         id: 13,
         title: "BNN Advanced",
-        isCategory: "Grand Master",   // Elite
+        isCategory: "Hidden",   // Elite
         icon: "🔍",
         image: "assets/images/virgo-card.jpg",
         description: "Bhrigu Nandi Nadi advanced predictive techniques for professional astrologers.",
@@ -171,7 +171,7 @@ const coursesData = [
     {
         id: 14,
         title: "Rudraksha Remedies",
-        isCategory: "Grand Master",   // Elite
+        isCategory: "Hidden",   // Elite
         icon: "📿",
         image: "assets/images/capricorn-card.png",
         description: "Understand the power of different Mukhi Rudrakshas and their therapeutic benefits.",
@@ -182,7 +182,7 @@ const coursesData = [
     {
         id: 15,
         title: "1-on-1 Mentorship",
-        isCategory: "Grand Master",   // Elite
+        isCategory: "Hidden",   // Elite
         icon: "🤝",
         image: "assets/images/libra-card.png",
         description: "Personalized guidance and advanced training with expert gurus for serious learners.",

@@ -30,9 +30,12 @@ const PORT = process.env.PORT || 3000;
 mongoose.connect(process.env.MONGODB_URI)
     .then(() => {
         console.log('✅ MongoDB Connected');
-        app.listen(PORT, () => console.log(`🚀 Server running on port ${PORT}`));
     })
     .catch(err => {
-        console.error('❌ MongoDB Connection Error:', err);
-        process.exit(1); // Exit if DB fails — don't serve broken requests
+        console.error('❌ MongoDB Connection Error:', err.message);
+        console.log('⚠️ Running server in bypass mode. Database features will be disabled.');
+        // process.exit(1); // Exit if DB fails — don't serve broken requests
     });
+
+// Always start the server for UI development
+app.listen(PORT, () => console.log(`🚀 Server running on port ${PORT}`));

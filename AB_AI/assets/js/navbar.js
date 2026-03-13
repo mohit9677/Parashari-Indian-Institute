@@ -75,7 +75,8 @@ const crashCourseList = [
   { name: 'Vedic Numerology', meta: 'Vedic', url: 'numerology.html', icon: 'fas fa-sort-numeric-up' },
   { name: 'Nadi Jyotish', meta: 'Nadi', url: 'nadi-jyotish.html', icon: 'fas fa-scroll' },
   { name: 'Healing', meta: 'Healing', url: 'reiki.html', icon: 'fas fa-hand-holding-medical' },
-  { name: 'Feng Shui', meta: 'Feng', url: 'feng-shui.html', icon: 'fas fa-yin-yang' }
+  { name: 'Feng Shui', meta: 'Feng', url: 'feng-shui.html', icon: 'fas fa-yin-yang' },
+  { name: 'Gemini Jyotish', meta: 'Gemini', url: 'gemini-jyotish.html', icon: 'fas fa-users' }
 ];
 const diplomaList = [
   { name: 'Vedic Astrology (Jyotish)', meta: 'Vedic', url: 'astrology.html', icon: 'fas fa-om' },
@@ -122,13 +123,7 @@ const masterList = [
   { name: 'Rudraksha', meta: 'Rudraksha', url: 'rudraksha.html', icon: 'fas fa-seedling' },
   { name: 'Palmistry (Chirognomy & Chiromancy)', meta: 'Palmistry', url: 'palmistry.html', icon: 'fas fa-hand-paper' }
 ];
-const grandMasterList = [
-  { name: 'Rudraksha', meta: 'Rudraksha', url: 'rudraksha.html', icon: 'fas fa-seedling' },
-  { name: 'BNN Advance', meta: 'BNN', url: 'bnn-astrology.html', icon: 'fas fa-code-branch' },
-  { name: 'Past Life Prediction', meta: 'Past', url: 'plrt.html', icon: 'fas fa-hourglass-half' },
-  { name: 'Remedy Course', meta: 'Remedy', url: 'remedy-course.html', icon: 'fas fa-hand-holding-heart' },
-  { name: 'Gemini Jyotish', meta: 'Gemini', url: 'gemini-jyotish.html', icon: 'fas fa-users' }
-];
+const grandMasterList = [];
 
 const courseDomains = [
   {
