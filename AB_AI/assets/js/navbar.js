@@ -655,6 +655,18 @@ function initMobileBottomNav() {
       const courseList = document.createElement('div');
       courseList.className = 'mcp-course-list';
 
+      // Add category description if available
+      if (domain.specialContent) {
+        const descDiv = document.createElement('div');
+        descDiv.className = 'mcp-category-desc';
+        descDiv.innerHTML = `
+          <div class="mcp-desc-title">${domain.specialContent.title}</div>
+          <p class="mcp-desc-meta"><strong>Who it's for:</strong> ${domain.specialContent.whoItIsFor}</p>
+          <p class="mcp-desc-meta"><strong>Objective:</strong> ${domain.specialContent.objective}</p>
+        `;
+        courseList.appendChild(descDiv);
+      }
+
       if (domain.courses && domain.courses.length > 0) {
         domain.courses.forEach(course => {
           const courseLink = document.createElement('a');

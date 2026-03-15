@@ -1072,5 +1072,31 @@ header {
     font-size: 0.8rem;
     flex-shrink: 0;
   }
+
+  .mcp-category-desc {
+    padding: 10px 12px;
+    margin-bottom: 6px;
+    border-left: 3px solid var(--secondary-color, #D4AF37);
+    background: rgba(89, 28, 33, 0.03);
+    border-radius: 0 6px 6px 0;
+  }
+
+  .mcp-desc-title {
+    font-size: 0.88rem;
+    font-weight: 700;
+    color: var(--primary-color, #591C21);
+    margin-bottom: 4px;
+  }
+
+  .mcp-desc-meta {
+    font-size: 0.78rem;
+    color: #555;
+    margin: 2px 0;
+    line-height: 1.4;
+  }
+
+  .mcp-desc-meta strong {
+    color: var(--dark-text, #333);
+  }
 }
 
