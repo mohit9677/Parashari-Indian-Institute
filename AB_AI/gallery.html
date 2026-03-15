@@ -507,13 +507,17 @@
   <script>
     document.querySelectorAll('.video-placeholder').forEach(placeholder => {
       placeholder.addEventListener('click', function () {
-        const videoUrl = this.getAttribute('data-video-url');
+        let videoUrl = this.getAttribute('data-video-url');
+        
+        // Convert Google Drive 'preview' link to 'view' link for better embedding,
+        // or just use preview if it works but make sure iframe attributes allow it.
+        // Google drive preview requires allow="autoplay"
         this.innerHTML = `
           <iframe 
-            src="${videoUrl}?autoplay=1" 
+            src="${videoUrl}" 
             width="100%" 
             height="100%" 
-            allow="autoplay; encrypted-media" 
+            allow="autoplay" 
             allowfullscreen 
             style="border:none; border-radius: 20px;">
           </iframe>

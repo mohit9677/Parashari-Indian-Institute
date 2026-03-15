@@ -61,7 +61,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 /* ============ MEGA MENU LOGIC ============ */
 const crashCourseList = [
-  { name: 'Past Life Regression Theory (PLRT)', meta: 'Past', url: 'plrt.html', icon: 'fas fa-hourglass-half' },
+  { name: 'Past Life Regression Theory (PLRT)', meta: 'Past', url: 'plrt-6-stairs.html', icon: 'fas fa-hourglass-half' },
   { name: 'Bhoomi Vastu & Prasada Vastu', meta: 'Bhoomi', url: 'vastu.html', icon: 'fas fa-home' },
   { name: 'Modern Western Palmistry', meta: 'Modern', url: 'palmistry.html', icon: 'fas fa-hand-paper' },
   { name: 'Mobile Numerology', meta: 'Mobile', url: 'numerology.html', icon: 'fas fa-sort-numeric-up' },
@@ -273,7 +273,7 @@ const courseDomains = [
       { name: 'Tantra', meta: 'Esoteric Practices', url: 'tantra.html', icon: 'fas fa-pray' },
       { name: 'Chakra Balancing', meta: 'Energy Centers', url: 'chakra-balancing.html', icon: 'fas fa-yin-yang' },
       { name: 'Remedies', meta: 'Astrological Solutions', url: '6-stairs-remedies.html', icon: 'fas fa-leaf' },
-      { name: 'PLRT', meta: 'Past Life Regression', url: 'plrt.html', icon: 'fas fa-hourglass-half' }
+      { name: 'PLRT', meta: 'Past Life Regression', url: 'plrt-6-stairs.html', icon: 'fas fa-hourglass-half' }
     ]
   }
 ];
