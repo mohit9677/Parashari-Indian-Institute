@@ -135,7 +135,22 @@
       line-height: 1.4;
     }
 
+  
+    @media (max-width: 768px) {
+      .category-filter-container {
+        display: none !important;
+      }
+      }
+
   </style>
+<style>
+/* Mobile Dropdown CSS */
+.mobile-category-dropdown { display: none; margin-bottom: 20px; }
+@media (max-width: 768px) {
+  .category-filter-container { display: none !important; }
+  .mobile-category-dropdown { display: block; }
+}
+</style>
 </head>
 
 <body>
@@ -145,11 +160,11 @@
       <div class="header-top-left">
         <div class="header-top-item">
           <span class="header-top-icon">📞</span>
-          <a href="tel:+919999999999">+91 9999-999-999</a>
+          <a href="tel:+919621051159">+91 962 105 1159</a>
         </div>
         <div class="header-top-item">
           <span class="header-top-icon">✉️</span>
-          <a href="mailto:info@parashari.com">info@parashari.com</a>
+          <a href="mailto:info@astrobharatai.com">info@astrobharatai.com</a>
         </div>
       </div>
       <div class="header-top-right">Online Classes | ISO Certified</div>
@@ -258,7 +273,8 @@
         <a href="login.html" class="btn btn-outline btn-sm">Login</a>
         <a href="register.html" class="btn btn-primary btn-sm">Register</a>
       </div>
-      <button class="hamburger" title="Toggle navigation menu" aria-label="Toggle navigation menu">
+            
+<button class="hamburger" title="Toggle navigation menu" aria-label="Toggle navigation menu">
         <span>
         </span>
         <span>
@@ -335,6 +351,32 @@
         <p class="color-light-text">Explore our diverse range of certification programs designed for all levels</p>
       </div>
 
+      
+      <!-- Mobile Category Dropdown -->
+      <div class="mobile-category-dropdown">
+        <select id="mobileCategorySelect" class="form-control" style="
+          background: url(&quot;data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='white' width='24' height='24'%3e%3cpath d='M7 10l5 5 5-5z'/%3e%3c/svg%3e&quot;) no-repeat right 15px center, linear-gradient(135deg, #c8960c, #8b4513);
+          -webkit-appearance: none;
+          -moz-appearance: none;
+          appearance: none;
+          color: #fff; 
+          font-weight: bold; 
+          border-radius: 50px; 
+          text-align: center; 
+          font-size: 1.1rem; 
+          padding: 12px 40px 12px 20px; 
+          width: 100%; 
+          border: 2px solid #e0d5c8; 
+          box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+          cursor: pointer;">
+          <option value="all">All Courses</option>
+          <option value="Crash Course">Crash Course</option>
+          <option value="Diploma">Diploma</option>
+          <option value="Bachelor">Bachelor</option>
+          <option value="Master">Master</option>
+        </select>
+      </div>
+
       <!-- Category Filter -->
       <div class="category-filter-container">
         <button class="filter-tab active" data-filter="all">All Courses</button>
@@ -345,6 +387,9 @@
         <button class="filter-tab" data-filter="Grand Master">Grand Master</button>
       </div>
 
+
+
+
       <div class="grid-responsive grid-gap-2 all-courses-active" id="courseGrid">
         <!-- 15 CRASH COURSES (Grouped at top) -->
         <div class="premium-gold-card" style="padding: 0 !important;" data-animate data-category="Crash Course" data-course-id="plrt">
@@ -354,7 +399,7 @@
           </div>
           <div class="card-body">
             <div class="card-header">
-              <div class="card-header-icon">🕰️</div>
+              <div class="card-header-icon"><i class="fa-solid fa-hourglass-half"></i></div>
               <h3 class="card-title">Past Life Regression Theory (PLRT)</h3>
             </div>
             <p class="course-desc-text">Uncover unresolved past karma to heal current life blocks. Empower yourself to live with greater clarity, purpose, and emotional freedom.</p>
@@ -383,7 +428,7 @@
           </div>
           <div class="card-body">
             <div class="card-header">
-              <div class="card-header-icon">🏠</div>
+              <div class="card-header-icon"><i class="fa-solid fa-house-chimney"></i></div>
               <h3 class="card-title">Bhoomi Vastu & Prasada Vastu</h3>
             </div>
             <p class="course-desc-text">Master the ancient science of architecture. Transform spaces to attract positive energy, prosperity, and lasting harmony into your life.</p>
@@ -412,7 +457,7 @@
           </div>
           <div class="card-body">
             <div class="card-header">
-              <div class="card-header-icon">✋</div>
+              <div class="card-header-icon"><i class="fa-solid fa-hand-sparkles"></i></div>
               <h3 class="card-title">Modern Western Palmistry</h3>
             </div>
             <p class="course-desc-text">Decode the lines of destiny hidden in your hands. Master this art to confidently guide yourself and others through life's defining moments.</p>
@@ -437,11 +482,11 @@
         <div class="premium-gold-card" style="padding: 0 !important;" data-animate data-category="Crash Course" data-course-id="numerology-mobile">
           <span class="discount-tag" data-discount="25% Discount"></span>
           <div class="card-image-container">
-            <img src="assets/images/numerology-new.jpg" alt="Mobile Numerology" class="card-image">
+            <img src="assets/images/mobile numerology.png" alt="Mobile Numerology" class="card-image">
           </div>
           <div class="card-body">
             <div class="card-header">
-              <div class="card-header-icon">📱</div>
+              <div class="card-header-icon"><i class="fa-solid fa-mobile-screen"></i></div>
               <h3 class="card-title">Mobile Numerology</h3>
             </div>
             <p class="course-desc-text">Unlock the hidden meaning behind numbers. Use this powerful knowledge to attract success, improve relationships, and align with your potential.</p>
@@ -466,11 +511,11 @@
         <div class="premium-gold-card" style="padding: 0 !important;" data-animate data-category="Crash Course" data-course-id="face-reading">
           <span class="discount-tag" data-discount="25% Discount"></span>
           <div class="card-image-container">
-            <img src="assets/images/face-reading-new.jpg" alt="(Face Reading) Western Physiognomy" class="card-image">
+            <img src="assets/images/(Face Reading) Western Physiognomy (Character Analysis.png" alt="(Face Reading) Western Physiognomy" class="card-image">
           </div>
           <div class="card-body">
             <div class="card-header">
-              <div class="card-header-icon">👤</div>
+              <div class="card-header-icon"><i class="fa-solid fa-user"></i></div>
               <h3 class="card-title">(Face Reading) Western Physiognomy</h3>
             </div>
             <p class="course-desc-text">Read facial features to reveal hidden personality traits. Enhance your relationships and negotiation skills by truly understanding anyone.</p>
@@ -495,11 +540,11 @@
         <div class="premium-gold-card" style="padding: 0 !important;" data-animate data-category="Crash Course" data-course-id="astrology-financial">
           <span class="discount-tag" data-discount="25% Discount"></span>
           <div class="card-image-container">
-            <img src="assets/images/scorpio-card.png" alt="Financial Astrology (Artha)" class="card-image">
+            <img src="assets/images/Financial Astrology (Artha).png" alt="Financial Astrology (Artha)" class="card-image">
           </div>
           <div class="card-body">
             <div class="card-header">
-              <div class="card-header-icon">📈</div>
+              <div class="card-header-icon"><i class="fa-solid fa-chart-line"></i></div>
               <h3 class="card-title">Financial Astrology (Artha)</h3>
             </div>
             <p class="course-desc-text">Discover the profound secrets of astrology. Learn practical techniques to guide life choices, anticipate events, and help others find their path.</p>
@@ -524,11 +569,11 @@
         <div class="premium-gold-card" style="padding: 0 !important;" data-animate data-category="Crash Course" data-course-id="lal-kitab-basics">
           <span class="discount-tag" data-discount="25% Discount"></span>
           <div class="card-image-container">
-            <img src="assets/images/gemini-card.png" alt="Lal Kitab Basics" class="card-image">
+            <img src="assets/images/Lal Kitab Basics.png" alt="Lal Kitab Basics" class="card-image">
           </div>
           <div class="card-body">
             <div class="card-header">
-              <div class="card-header-icon">📕</div>
+              <div class="card-header-icon"><i class="fa-solid fa-book-journal-whills"></i></div>
               <h3 class="card-title">Lal Kitab Basics</h3>
             </div>
             <p class="course-desc-text">Discover potent traditional remedies. Learn precise, practical solutions to overcome life's biggest obstacles and manifest your desired outcomes.</p>
@@ -553,11 +598,11 @@
         <div class="premium-gold-card" style="padding: 0 !important;" data-animate data-category="Crash Course" data-course-id="medical-astrology">
           <span class="discount-tag" data-discount="25% Discount"></span>
           <div class="card-image-container">
-            <img src="assets/images/scorpio-card.png" alt="Medical Astrology" class="card-image">
+            <img src="assets/images/Medical Astrology.png" alt="Medical Astrology" class="card-image">
           </div>
           <div class="card-body">
             <div class="card-header">
-              <div class="card-header-icon">⚕️</div>
+              <div class="card-header-icon"><i class="fa-solid fa-staff-snake"></i></div>
               <h3 class="card-title">Medical Astrology</h3>
             </div>
             <p class="course-desc-text">Discover the profound secrets of astrology. Learn practical techniques to guide life choices, anticipate events, and help others find their path.</p>
@@ -582,11 +627,11 @@
         <div class="premium-gold-card" style="padding: 0 !important;" data-animate data-category="Crash Course" data-course-id="bnn-intensive">
           <span class="discount-tag" data-discount="25% Discount"></span>
           <div class="card-image-container">
-            <img src="assets/images/virgo-card.jpg" alt="BNN Intensive Mastery" class="card-image">
+            <img src="assets/images/The BNN Intensive A 14-Day Mastery of Bhrigu Nandi Nadi.png" alt="BNN Intensive Mastery" class="card-image">
           </div>
           <div class="card-body">
             <div class="card-header">
-              <div class="card-header-icon">🔍</div>
+              <div class="card-header-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
               <h3 class="card-title">The BNN Intensive: A 14-Day Mastery</h3>
             </div>
             <p class="course-desc-text">Dive into advanced predictive techniques. Gain mastery over specialized systems that offer pinpoint accuracy and clarity for the future.</p>
@@ -611,11 +656,11 @@
         <div class="premium-gold-card" style="padding: 0 !important;" data-animate data-category="Crash Course" data-course-id="astrology-career">
           <span class="discount-tag" data-discount="25% Discount"></span>
           <div class="card-image-container">
-            <img src="assets/images/leo-card.png" alt="Modern Career Astrology" class="card-image">
+            <img src="assets/images/Modern Career Astrology.png" alt="Modern Career Astrology" class="card-image">
           </div>
           <div class="card-body">
             <div class="card-header">
-              <div class="card-header-icon">💼</div>
+              <div class="card-header-icon"><i class="fa-solid fa-briefcase"></i></div>
               <h3 class="card-title">Modern Career Astrology</h3>
             </div>
             <p class="course-desc-text">Discover the profound secrets of astrology. Learn practical techniques to guide life choices, anticipate events, and help others find their path.</p>
@@ -640,11 +685,11 @@
         <div class="premium-gold-card" style="padding: 0 !important;" data-animate data-category="Crash Course" data-course-id="numerology-business">
           <span class="discount-tag" data-discount="25% Discount"></span>
           <div class="card-image-container">
-            <img src="assets/images/numerology-new.jpg" alt="Business Numerology" class="card-image">
+            <img src="assets/images/Business Numerology.png" alt="Business Numerology" class="card-image">
           </div>
           <div class="card-body">
             <div class="card-header">
-              <div class="card-header-icon">🏢</div>
+              <div class="card-header-icon"><i class="fa-solid fa-building"></i></div>
               <h3 class="card-title">Business Numerology</h3>
             </div>
             <p class="course-desc-text">Unlock the hidden meaning behind numbers. Use this powerful knowledge to attract success, improve relationships, and align with your potential.</p>
@@ -669,11 +714,11 @@
         <div class="premium-gold-card" style="padding: 0 !important;" data-animate data-category="Crash Course" data-course-id="numerology-vedic">
           <span class="discount-tag" data-discount="25% Discount"></span>
           <div class="card-image-container">
-            <img src="assets/images/numerology-new.jpg" alt="Vedic Numerology" class="card-image">
+            <img src="assets/images/Vedic Numerology.png" alt="Vedic Numerology" class="card-image">
           </div>
           <div class="card-body">
             <div class="card-header">
-              <div class="card-header-icon">🔢</div>
+              <div class="card-header-icon"><i class="fa-solid fa-hashtag"></i></div>
               <h3 class="card-title">Vedic Numerology</h3>
             </div>
             <p class="course-desc-text">Unlock the hidden meaning behind numbers. Use this powerful knowledge to attract success, improve relationships, and align with your potential.</p>
@@ -698,11 +743,11 @@
         <div class="premium-gold-card" style="padding: 0 !important;" data-animate data-category="Crash Course" data-course-id="nadi-jyotish">
           <span class="discount-tag" data-discount="25% Discount"></span>
           <div class="card-image-container">
-            <img src="assets/images/taurus-card.png" alt="Nadi Jyotish" class="card-image">
+            <img src="assets/images/Nadi Jyotish.png" alt="Nadi Jyotish" class="card-image">
           </div>
           <div class="card-body">
             <div class="card-header">
-              <div class="card-header-icon">📜</div>
+              <div class="card-header-icon"><i class="fa-solid fa-scroll"></i></div>
               <h3 class="card-title">Nadi Jyotish</h3>
             </div>
             <p class="course-desc-text">Dive into advanced predictive techniques. Gain mastery over specialized systems that offer pinpoint accuracy and clarity for the future.</p>
@@ -727,11 +772,11 @@
         <div class="premium-gold-card" style="padding: 0 !important;" data-animate data-category="Crash Course" data-course-id="reiki">
           <span class="discount-tag" data-discount="25% Discount"></span>
           <div class="card-image-container">
-            <img src="assets/images/healing.jpg" alt="Healing" class="card-image">
+            <img src="assets/images/Healing.png" alt="Healing" class="card-image">
           </div>
           <div class="card-body">
             <div class="card-header">
-              <div class="card-header-icon">🙌</div>
+              <div class="card-header-icon"><i class="fa-solid fa-hands-holding-circle"></i></div>
               <h3 class="card-title">Healing</h3>
             </div>
             <p class="course-desc-text">Harness universal energy for profound healing. Learn to clear energetic blocks, restore vitality, and bring deep peace to the mind and body.</p>
@@ -756,11 +801,11 @@
         <div class="premium-gold-card" style="padding: 0 !important;" data-animate data-category="Crash Course" data-course-id="feng-shui">
           <span class="discount-tag" data-discount="25% Discount"></span>
           <div class="card-image-container">
-            <img src="assets/images/institute-building-modern.jpg" alt="Feng Shui" class="card-image">
+            <img src="assets/images/feng-shui-astrology.jpg" alt="Feng Shui" class="card-image">
           </div>
           <div class="card-body">
             <div class="card-header">
-              <div class="card-header-icon">⛩️</div>
+              <div class="card-header-icon"><i class="fa-solid fa-torii-gate"></i></div>
               <h3 class="card-title">Feng Shui</h3>
             </div>
             <p class="course-desc-text">Deepen your understanding of Feng Shui. Gain unique insights and practical skills that will empower you to create positive change in your life.</p>
@@ -790,7 +835,7 @@
           </div>
           <div class="card-body">
             <div class="card-header">
-              <div class="card-header-icon">♈</div>
+              <div class="card-header-icon"><i class="fa-solid fa-om"></i></div>
               <h3 class="card-title">Vedic Astrology (Jyotish)</h3>
             </div>
             <p class="course-desc-text">Discover the profound secrets of astrology. Learn practical techniques to guide life choices, anticipate events, and help others find their path.</p>
@@ -819,7 +864,7 @@
           </div>
           <div class="card-body">
             <div class="card-header">
-              <div class="card-header-icon">🔢</div>
+              <div class="card-header-icon"><i class="fa-solid fa-hashtag"></i></div>
               <h3 class="card-title">Numerology (Pythagorean & Chaldean)</h3>
             </div>
             <p class="course-desc-text">Unlock the hidden meaning behind numbers. Use this powerful knowledge to attract success, improve relationships, and align with your potential.</p>
@@ -848,7 +893,7 @@
           </div>
           <div class="card-body">
             <div class="card-header">
-              <div class="card-header-icon">⭐</div>
+              <div class="card-header-icon"><i class="fa-solid fa-star"></i></div>
               <h3 class="card-title">KP Astrology (Krishnamurti Padhdhati)</h3>
             </div>
             <p class="course-desc-text">Dive into advanced predictive techniques. Gain mastery over specialized systems that offer pinpoint accuracy and clarity for the future.</p>
@@ -877,7 +922,7 @@
           </div>
           <div class="card-body">
             <div class="card-header">
-              <div class="card-header-icon">💎</div>
+              <div class="card-header-icon"><i class="fa-regular fa-gem"></i></div>
               <h3 class="card-title">Gemstone Science (Ratna Vigyan)</h3>
             </div>
             <p class="course-desc-text">Discover potent traditional remedies. Learn precise, practical solutions to overcome life's biggest obstacles and manifest your desired outcomes.</p>
@@ -906,7 +951,7 @@
           </div>
           <div class="card-body">
             <div class="card-header">
-              <div class="card-header-icon">🏠</div>
+              <div class="card-header-icon"><i class="fa-solid fa-house-chimney"></i></div>
               <h3 class="card-title">Vastu Shastra</h3>
             </div>
             <p class="course-desc-text">Master the ancient science of architecture. Transform spaces to attract positive energy, prosperity, and lasting harmony into your life.</p>
@@ -935,7 +980,7 @@
           </div>
           <div class="card-body">
             <div class="card-header">
-              <div class="card-header-icon">📕</div>
+              <div class="card-header-icon"><i class="fa-solid fa-book-journal-whills"></i></div>
               <h3 class="card-title">Lal Kitab</h3>
             </div>
             <p class="course-desc-text">Discover potent traditional remedies. Learn precise, practical solutions to overcome life's biggest obstacles and manifest your desired outcomes.</p>
@@ -964,7 +1009,7 @@
           </div>
           <div class="card-body">
             <div class="card-header">
-              <div class="card-header-icon">👤</div>
+              <div class="card-header-icon"><i class="fa-solid fa-user"></i></div>
               <h3 class="card-title">Face Reading (Physiognomy)</h3>
             </div>
             <p class="course-desc-text">Read facial features to reveal hidden personality traits. Enhance your relationships and negotiation skills by truly understanding anyone.</p>
@@ -993,7 +1038,7 @@
           </div>
           <div class="card-body">
             <div class="card-header">
-              <div class="card-header-icon">🙌</div>
+              <div class="card-header-icon"><i class="fa-solid fa-hands-holding-circle"></i></div>
               <h3 class="card-title">Reiki Healing</h3>
             </div>
             <p class="course-desc-text">Harness universal energy for profound healing. Learn to clear energetic blocks, restore vitality, and bring deep peace to the mind and body.</p>
@@ -1022,7 +1067,7 @@
           </div>
           <div class="card-body">
             <div class="card-header">
-              <div class="card-header-icon">🃏</div>
+              <div class="card-header-icon"><i class="fa-solid fa-layer-group"></i></div>
               <h3 class="card-title">Tarot Reading</h3>
             </div>
             <p class="course-desc-text">Connect with your intuition through Tarot. Learn how to interpret the cards accurately to provide deep insights and empowering guidance.</p>
@@ -1051,7 +1096,7 @@
           </div>
           <div class="card-body">
             <div class="card-header">
-              <div class="card-header-icon">✨</div>
+              <div class="card-header-icon"><i class="fa-solid fa-star-half-stroke"></i></div>
               <h3 class="card-title">Nakshatra (Lunar Mansions)</h3>
             </div>
             <p class="course-desc-text">Dive into advanced predictive techniques. Gain mastery over specialized systems that offer pinpoint accuracy and clarity for the future.</p>
@@ -1080,7 +1125,7 @@
           </div>
           <div class="card-body">
             <div class="card-header">
-              <div class="card-header-icon">🔮</div>
+              <div class="card-header-icon"><i class="fa-solid fa-gem"></i></div>
               <h3 class="card-title">Crystal Healing</h3>
             </div>
             <p class="course-desc-text">Harness universal energy for profound healing. Learn to clear energetic blocks, restore vitality, and bring deep peace to the mind and body.</p>
@@ -1109,7 +1154,7 @@
           </div>
           <div class="card-body">
             <div class="card-header">
-              <div class="card-header-icon">📿</div>
+              <div class="card-header-icon"><i class="fa-solid fa-om"></i></div>
               <h3 class="card-title">Rudraksha</h3>
             </div>
             <p class="course-desc-text">Discover potent traditional remedies. Learn precise, practical solutions to overcome life's biggest obstacles and manifest your desired outcomes.</p>
@@ -1138,7 +1183,7 @@
           </div>
           <div class="card-body">
             <div class="card-header">
-              <div class="card-header-icon">📿</div>
+              <div class="card-header-icon"><i class="fa-solid fa-om"></i></div>
               <h3 class="card-title">Rudraksha</h3>
             </div>
             <p class="course-desc-text">Discover potent traditional remedies. Learn precise, practical solutions to overcome life's biggest obstacles and manifest your desired outcomes.</p>
@@ -1167,7 +1212,7 @@
           </div>
           <div class="card-body">
             <div class="card-header">
-              <div class="card-header-icon">✋</div>
+              <div class="card-header-icon"><i class="fa-solid fa-hand-sparkles"></i></div>
               <h3 class="card-title">Palmistry (Chirognomy & Chiromancy)</h3>
             </div>
             <p class="course-desc-text">Decode the lines of destiny hidden in your hands. Master this art to confidently guide yourself and others through life's defining moments.</p>
@@ -1197,7 +1242,7 @@
           </div>
           <div class="card-body">
             <div class="card-header">
-              <div class="card-header-icon">🔍</div>
+              <div class="card-header-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
               <h3 class="card-title">BNN Advance</h3>
             </div>
             <p class="course-desc-text">Dive into advanced predictive techniques. Gain mastery over specialized systems that offer pinpoint accuracy and clarity for the future.</p>
@@ -1227,7 +1272,7 @@
           </div>
           <div class="card-body">
             <div class="card-header">
-              <div class="card-header-icon">🕰️</div>
+              <div class="card-header-icon"><i class="fa-solid fa-hourglass-half"></i></div>
               <h3 class="card-title">Past Life Prediction</h3>
             </div>
             <p class="course-desc-text">Uncover unresolved past karma to heal current life blocks. Empower yourself to live with greater clarity, purpose, and emotional freedom.</p>
@@ -1256,7 +1301,7 @@
           </div>
           <div class="card-body">
             <div class="card-header">
-              <div class="card-header-icon">🕉️</div>
+              <div class="card-header-icon"><i class="fa-solid fa-om"></i></div>
               <h3 class="card-title">Remedy Course</h3>
             </div>
             <p class="course-desc-text">Discover potent traditional remedies. Learn precise, practical solutions to overcome life's biggest obstacles and manifest your desired outcomes.</p>
@@ -1281,21 +1326,21 @@
         <div class="premium-gold-card" style="padding: 0 !important;" data-animate data-category="Crash Course" data-course-id="gemini-jyotish">
           <span class="discount-tag" data-discount="25% Discount"></span>
           <div class="card-image-container">
-            <img src="assets/images/gemini-card.png" alt="Gemini Jyotish" class="card-image">
+            <img src="assets/images/gemini jyotishi.png" alt="Gemini Jyotish" class="card-image">
           </div>
           <div class="card-body">
             <div class="card-header">
-              <div class="card-header-icon">♊</div>
+              <div class="card-header-icon"><i class="fa-solid fa-user-group"></i></div>
               <h3 class="card-title">Gemini Jyotish</h3>
             </div>
             <p class="course-desc-text">Discover the profound secrets of astrology. Learn practical techniques to guide life choices, anticipate events, and help others find their path.</p>
             <div class="mb-1">
-              <span class="category-badge" style="background:#ff9800">Crash Course</span>
+              <span class="category-badge" style="background:#4CAF50">Crash Course · Beginner</span>
               <span class="certification-badge">✓ Certification</span>
             </div>
             <h4 class="color-secondary mb-1 text-center"><del
-                style="color:#999;font-size:0.65em;margin-right:8px;vertical-align:middle;">₹34,999</del><strong
-                style="color:#FFD700;font-size:1.1em;">₹24,999</strong></h4>
+                style="color:#999;font-size:0.65em;margin-right:8px;vertical-align:middle;">₹3,999</del><strong
+                style="color:#FFD700;font-size:1.1em;">₹2,999</strong></h4>
             <div class="course-footer">
               <a href="gemini-jyotish.html" class="learn-more">
                 <span class="circle" aria-hidden="true">
@@ -1314,7 +1359,7 @@
           </div>
           <div class="card-body">
             <div class="card-header">
-              <div class="card-header-icon">♈</div>
+              <div class="card-header-icon"><i class="fa-solid fa-om"></i></div>
               <h3 class="card-title">Vedic Astrology (Jyotish)</h3>
             </div>
             <p class="course-desc-text">Discover the profound secrets of astrology. Learn practical techniques to guide life choices, anticipate events, and help others find their path.</p>
@@ -1343,7 +1388,7 @@
           </div>
           <div class="card-body">
             <div class="card-header">
-              <div class="card-header-icon">🔢</div>
+              <div class="card-header-icon"><i class="fa-solid fa-hashtag"></i></div>
               <h3 class="card-title">Numerology (Pythagorean & Chaldean)</h3>
             </div>
             <p class="course-desc-text">Unlock the hidden meaning behind numbers. Use this powerful knowledge to attract success, improve relationships, and align with your potential.</p>
@@ -1372,7 +1417,7 @@
           </div>
           <div class="card-body">
             <div class="card-header">
-              <div class="card-header-icon">⭐</div>
+              <div class="card-header-icon"><i class="fa-solid fa-star"></i></div>
               <h3 class="card-title">KP Astrology (Krishnamurti Padhdhati)</h3>
             </div>
             <p class="course-desc-text">Dive into advanced predictive techniques. Gain mastery over specialized systems that offer pinpoint accuracy and clarity for the future.</p>
@@ -1401,7 +1446,7 @@
           </div>
           <div class="card-body">
             <div class="card-header">
-              <div class="card-header-icon">💎</div>
+              <div class="card-header-icon"><i class="fa-regular fa-gem"></i></div>
               <h3 class="card-title">Gemstone Science (Ratna Vigyan)</h3>
             </div>
             <p class="course-desc-text">Discover potent traditional remedies. Learn precise, practical solutions to overcome life's biggest obstacles and manifest your desired outcomes.</p>
@@ -1430,7 +1475,7 @@
           </div>
           <div class="card-body">
             <div class="card-header">
-              <div class="card-header-icon">🏠</div>
+              <div class="card-header-icon"><i class="fa-solid fa-house-chimney"></i></div>
               <h3 class="card-title">Vastu Shastra</h3>
             </div>
             <p class="course-desc-text">Master the ancient science of architecture. Transform spaces to attract positive energy, prosperity, and lasting harmony into your life.</p>
@@ -1459,7 +1504,7 @@
           </div>
           <div class="card-body">
             <div class="card-header">
-              <div class="card-header-icon">📕</div>
+              <div class="card-header-icon"><i class="fa-solid fa-book-journal-whills"></i></div>
               <h3 class="card-title">Lal Kitab</h3>
             </div>
             <p class="course-desc-text">Discover potent traditional remedies. Learn precise, practical solutions to overcome life's biggest obstacles and manifest your desired outcomes.</p>
@@ -1488,7 +1533,7 @@
           </div>
           <div class="card-body">
             <div class="card-header">
-              <div class="card-header-icon">👤</div>
+              <div class="card-header-icon"><i class="fa-solid fa-user"></i></div>
               <h3 class="card-title">Face Reading (Physiognomy)</h3>
             </div>
             <p class="course-desc-text">Read facial features to reveal hidden personality traits. Enhance your relationships and negotiation skills by truly understanding anyone.</p>
@@ -1517,7 +1562,7 @@
           </div>
           <div class="card-body">
             <div class="card-header">
-              <div class="card-header-icon">🙌</div>
+              <div class="card-header-icon"><i class="fa-solid fa-hands-holding-circle"></i></div>
               <h3 class="card-title">Reiki Healing</h3>
             </div>
             <p class="course-desc-text">Harness universal energy for profound healing. Learn to clear energetic blocks, restore vitality, and bring deep peace to the mind and body.</p>
@@ -1546,7 +1591,7 @@
           </div>
           <div class="card-body">
             <div class="card-header">
-              <div class="card-header-icon">🃏</div>
+              <div class="card-header-icon"><i class="fa-solid fa-layer-group"></i></div>
               <h3 class="card-title">Tarot Reading</h3>
             </div>
             <p class="course-desc-text">Connect with your intuition through Tarot. Learn how to interpret the cards accurately to provide deep insights and empowering guidance.</p>
@@ -1575,7 +1620,7 @@
           </div>
           <div class="card-body">
             <div class="card-header">
-              <div class="card-header-icon">✨</div>
+              <div class="card-header-icon"><i class="fa-solid fa-star-half-stroke"></i></div>
               <h3 class="card-title">Nakshatra (Lunar Mansions) 1</h3>
             </div>
             <p class="course-desc-text">Dive into advanced predictive techniques. Gain mastery over specialized systems that offer pinpoint accuracy and clarity for the future.</p>
@@ -1604,7 +1649,7 @@
           </div>
           <div class="card-body">
             <div class="card-header">
-              <div class="card-header-icon">🔮</div>
+              <div class="card-header-icon"><i class="fa-solid fa-gem"></i></div>
               <h3 class="card-title">Crystal Healing</h3>
             </div>
             <p class="course-desc-text">Harness universal energy for profound healing. Learn to clear energetic blocks, restore vitality, and bring deep peace to the mind and body.</p>
@@ -1633,7 +1678,7 @@
           </div>
           <div class="card-body">
             <div class="card-header">
-              <div class="card-header-icon">📿</div>
+              <div class="card-header-icon"><i class="fa-solid fa-om"></i></div>
               <h3 class="card-title">Rudraksha</h3>
             </div>
             <p class="course-desc-text">Discover potent traditional remedies. Learn precise, practical solutions to overcome life's biggest obstacles and manifest your desired outcomes.</p>
@@ -1662,7 +1707,7 @@
           </div>
           <div class="card-body">
             <div class="card-header">
-              <div class="card-header-icon">✋</div>
+              <div class="card-header-icon"><i class="fa-solid fa-hand-sparkles"></i></div>
               <h3 class="card-title">Palmistry (Chirognomy & Chiromancy)</h3>
             </div>
             <p class="course-desc-text">Decode the lines of destiny hidden in your hands. Master this art to confidently guide yourself and others through life's defining moments.</p>
@@ -1691,7 +1736,7 @@
           </div>
           <div class="card-body">
             <div class="card-header">
-              <div class="card-header-icon">🔢</div>
+              <div class="card-header-icon"><i class="fa-solid fa-hashtag"></i></div>
               <h3 class="card-title">Numerology (Pythagorean & Chaldean)</h3>
             </div>
             <p class="course-desc-text">Unlock the hidden meaning behind numbers. Use this powerful knowledge to attract success, improve relationships, and align with your potential.</p>
@@ -1720,7 +1765,7 @@
           </div>
           <div class="card-body">
             <div class="card-header">
-              <div class="card-header-icon">♈</div>
+              <div class="card-header-icon"><i class="fa-solid fa-om"></i></div>
               <h3 class="card-title">Vedic Astrology (Jyotish)</h3>
             </div>
             <p class="course-desc-text">Discover the profound secrets of astrology. Learn practical techniques to guide life choices, anticipate events, and help others find their path.</p>
@@ -1749,7 +1794,7 @@
           </div>
           <div class="card-body">
             <div class="card-header">
-              <div class="card-header-icon">⭐</div>
+              <div class="card-header-icon"><i class="fa-solid fa-star"></i></div>
               <h3 class="card-title">KP Astrology (Krishnamurti Padhdhati)</h3>
             </div>
             <p class="course-desc-text">Dive into advanced predictive techniques. Gain mastery over specialized systems that offer pinpoint accuracy and clarity for the future.</p>
@@ -1778,7 +1823,7 @@
           </div>
           <div class="card-body">
             <div class="card-header">
-              <div class="card-header-icon">💎</div>
+              <div class="card-header-icon"><i class="fa-regular fa-gem"></i></div>
               <h3 class="card-title">Gemstone Science (Ratna Vigyan)</h3>
             </div>
             <p class="course-desc-text">Discover potent traditional remedies. Learn precise, practical solutions to overcome life's biggest obstacles and manifest your desired outcomes.</p>
@@ -1807,7 +1852,7 @@
           </div>
           <div class="card-body">
             <div class="card-header">
-              <div class="card-header-icon">🏠</div>
+              <div class="card-header-icon"><i class="fa-solid fa-house-chimney"></i></div>
               <h3 class="card-title">Vastu Shastra</h3>
             </div>
             <p class="course-desc-text">Master the ancient science of architecture. Transform spaces to attract positive energy, prosperity, and lasting harmony into your life.</p>
@@ -1836,7 +1881,7 @@
           </div>
           <div class="card-body">
             <div class="card-header">
-              <div class="card-header-icon">📕</div>
+              <div class="card-header-icon"><i class="fa-solid fa-book-journal-whills"></i></div>
               <h3 class="card-title">Lal Kitab</h3>
             </div>
             <p class="course-desc-text">Discover potent traditional remedies. Learn precise, practical solutions to overcome life's biggest obstacles and manifest your desired outcomes.</p>
@@ -1865,7 +1910,7 @@
           </div>
           <div class="card-body">
             <div class="card-header">
-              <div class="card-header-icon">👤</div>
+              <div class="card-header-icon"><i class="fa-solid fa-user"></i></div>
               <h3 class="card-title">Face Reading (Physiognomy)</h3>
             </div>
             <p class="course-desc-text">Read facial features to reveal hidden personality traits. Enhance your relationships and negotiation skills by truly understanding anyone.</p>
@@ -1894,7 +1939,7 @@
           </div>
           <div class="card-body">
             <div class="card-header">
-              <div class="card-header-icon">🙌</div>
+              <div class="card-header-icon"><i class="fa-solid fa-hands-holding-circle"></i></div>
               <h3 class="card-title">Reiki Healing</h3>
             </div>
             <p class="course-desc-text">Harness universal energy for profound healing. Learn to clear energetic blocks, restore vitality, and bring deep peace to the mind and body.</p>
@@ -1923,7 +1968,7 @@
           </div>
           <div class="card-body">
             <div class="card-header">
-              <div class="card-header-icon">🃏</div>
+              <div class="card-header-icon"><i class="fa-solid fa-layer-group"></i></div>
               <h3 class="card-title">Tarot Reading</h3>
             </div>
             <p class="course-desc-text">Connect with your intuition through Tarot. Learn how to interpret the cards accurately to provide deep insights and empowering guidance.</p>
@@ -1952,7 +1997,7 @@
           </div>
           <div class="card-body">
             <div class="card-header">
-              <div class="card-header-icon">✨</div>
+              <div class="card-header-icon"><i class="fa-solid fa-star-half-stroke"></i></div>
               <h3 class="card-title">Nakshatra (Lunar Mansions)</h3>
             </div>
             <p class="course-desc-text">Dive into advanced predictive techniques. Gain mastery over specialized systems that offer pinpoint accuracy and clarity for the future.</p>
@@ -1981,7 +2026,7 @@
           </div>
           <div class="card-body">
             <div class="card-header">
-              <div class="card-header-icon">🔮</div>
+              <div class="card-header-icon"><i class="fa-solid fa-gem"></i></div>
               <h3 class="card-title">Crystal Healing</h3>
             </div>
             <p class="course-desc-text">Harness universal energy for profound healing. Learn to clear energetic blocks, restore vitality, and bring deep peace to the mind and body.</p>
@@ -2010,7 +2055,7 @@
           </div>
           <div class="card-body">
             <div class="card-header">
-              <div class="card-header-icon">📿</div>
+              <div class="card-header-icon"><i class="fa-solid fa-om"></i></div>
               <h3 class="card-title">Rudraksha</h3>
             </div>
             <p class="course-desc-text">Discover potent traditional remedies. Learn precise, practical solutions to overcome life's biggest obstacles and manifest your desired outcomes.</p>
@@ -2039,7 +2084,7 @@
           </div>
           <div class="card-body">
             <div class="card-header">
-              <div class="card-header-icon">✋</div>
+              <div class="card-header-icon"><i class="fa-solid fa-hand-sparkles"></i></div>
               <h3 class="card-title">Palmistry (Chirognomy & Chiromancy)</h3>
             </div>
             <p class="course-desc-text">Decode the lines of destiny hidden in your hands. Master this art to confidently guide yourself and others through life's defining moments.</p>
@@ -2183,7 +2228,7 @@
         <a href="courses.html" class="marquee-btn">View Courses</a>
       </div>
       <div class="marquee-item">
-        <span class="marquee-icon">⭐</span> Join Parashari Institute Today — Scholarship Available for Top Performers!
+        <span class="marquee-icon"><i class="fa-solid fa-star"></i></span> Join Parashari Institute Today — Scholarship Available for Top Performers!
         <a href="register.html" class="marquee-btn">Apply Now</a>
       </div>
       <!-- Duplicate for seamless scrolling -->
@@ -2197,7 +2242,7 @@
         <a href="courses.html" class="marquee-btn">View Courses</a>
       </div>
       <div class="marquee-item">
-        <span class="marquee-icon">⭐</span> Join Parashari Institute Today — Scholarship Available for Top Performers!
+        <span class="marquee-icon"><i class="fa-solid fa-star"></i></span> Join Parashari Institute Today — Scholarship Available for Top Performers!
         <a href="register.html" class="marquee-btn">Apply Now</a>
       </div>
     </div>
@@ -2267,7 +2312,7 @@
           <div class="contact-icon">📞</div>
           <div class="contact-text">
             <p class="p-reset">
-              <a href="tel:+919999999999">+91 9999-999-999</a>
+              <a href="tel:+919621051159">+91 962 105 1159</a>
             </p>
           </div>
         </div>
@@ -2394,10 +2439,99 @@
             });
           }
           */
-        });
       });
     });
   </script>
+
+  <!-- QUICK VIEW MODAL STRUCTURE -->
+  <div id="quickViewOverlay" class="quick-view-overlay">
+    <div class="quick-view-modal">
+      <div class="qv-close" id="qvClose"><i class="fa-solid fa-xmark"></i></div>
+      <img src="" id="qvImage" class="qv-image" alt="Course Image">
+      <div class="qv-body">
+        <h3 id="qvTitle" class="qv-title">Course Title</h3>
+        <p id="qvDesc" class="qv-desc">Course Description</p>
+      </div>
+      <div class="qv-landscape-bar">
+        <div class="qv-prices">
+          <span id="qvOldPrice" class="qv-old-price">₹3,999</span>
+          <span id="qvNewPrice" class="qv-new-price">₹2,999</span>
+        </div>
+        <a href="#" id="qvEnrollBtn" class="qv-enroll-btn">Enroll Now</a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const overlay = document.getElementById('quickViewOverlay');
+      if (!overlay) return;
+      
+      const closeBtn = document.getElementById('qvClose');
+      const qvImage = document.getElementById('qvImage');
+      const qvTitle = document.getElementById('qvTitle');
+      const qvDesc = document.getElementById('qvDesc');
+      const qvOldPrice = document.getElementById('qvOldPrice');
+      const qvNewPrice = document.getElementById('qvNewPrice');
+      const qvEnrollBtn = document.getElementById('qvEnrollBtn');
+
+      closeBtn.addEventListener('click', () => {
+        overlay.classList.remove('show');
+      });
+
+      overlay.addEventListener('click', (e) => {
+        if (e.target === overlay) overlay.classList.remove('show');
+      });
+
+      document.body.addEventListener('click', function(e) {
+        const btn = e.target.closest('.learn-more');
+        if (!btn) return;
+
+        // Try standard card first
+        let card = btn.closest('.premium-gold-card');
+        if (!card) card = btn.closest('.card'); // For index.html
+        if (!card) return;
+
+        const category = card.getAttribute('data-category');
+        if (category === 'Crash Course') {
+          e.preventDefault(); 
+          
+          let imgEl = card.querySelector('.card-image');
+          let titleEl = card.querySelector('.card-title');
+          let descEl = card.querySelector('p'); // Fallback to 'p' tag if '.course-desc-text' not found
+          let descElSpecific = card.querySelector('.course-desc-text');
+          let delEl = card.querySelector('del');
+          let strongEl = card.querySelector('strong');
+
+          if (imgEl && titleEl && (descElSpecific || descEl) && delEl && strongEl) {
+            qvImage.src = imgEl.src;
+            qvTitle.innerText = titleEl.innerText;
+            qvDesc.innerText = descElSpecific ? descElSpecific.innerText : descEl.innerText;
+            qvOldPrice.innerText = delEl.innerText;
+            qvNewPrice.innerText = strongEl.innerText;
+            
+            qvEnrollBtn.href = btn.getAttribute('href');
+            overlay.classList.add('show');
+          }
+        }
+      });
+    });
+  </script>
+
+<script>
+    // Mobile Dropdown Logic
+    const mobileSelect = document.getElementById('mobileCategorySelect');
+    if(mobileSelect) {
+      mobileSelect.addEventListener('change', function() {
+        const selectedFilter = this.value;
+        // Trigger the existing tab logic
+        const targetTab = document.querySelector(`.filter-tab[data-filter="${selectedFilter}"]`);
+        if (targetTab) {
+          targetTab.click();
+        }
+      });
+    }
+</script>
 </body>
 
 </html>

@@ -10,8 +10,7 @@ export default function Landing() {
     };
 
     const handleFreeCoursesClick = () => {
-        // Placeholder - functionality to be added later
-        console.log('Free Courses button clicked - functionality pending');
+        navigate('/categories');
     };
 
     return (

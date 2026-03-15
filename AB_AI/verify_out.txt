@@ -1,0 +1,4 @@
+YES! gemini jyotishi.png is in courses.html
+YES! feng-shui-astrology.jpg is in courses-data.js
+YES! mobile numerology.png is in courses-data.js
+YES! mobile numerology.png is in courses.html

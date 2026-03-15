@@ -7,3 +7,5 @@ export default defineConfig({
         historyApiFallback: true
     }
 });
+
+// force reload

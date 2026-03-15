@@ -18,14 +18,10 @@ function StrictProtectedRoute({ children }) {
   const isDev = import.meta.env.DEV; // Vite environment variable
 
   // BYPASS: Allow access in Development mode if token exists
-  // REMOVED BYPASS PER USER REQUEST - STRICT REDIRECT ALWAYS
-  /*
   if (isDev && token && !cameFromABAI) {
     console.log('[DEV MODE] Bypassing StrictProtectedRoute session check');
     sessionStorage.setItem('ab_ai_entry', 'true-dev-bypass');
-  } else 
-  */
-  if (!cameFromABAI) {
+  } else if (!cameFromABAI) {
     // If not dev and no session flag -> Redirect
     console.log('Direct access blocked - redirecting to AB_AI');
     // window.location.href = 'http://localhost:3000/login.html'; // OLD

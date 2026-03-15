@@ -1,0 +1,35 @@
+--- Checking courses.html ---
+Line 194: <a href="nadi-jyotish.html">Nadi Jyotish</a>
+Line 698: <div class="premium-gold-card" style="padding: 0 !important;" data-animate data-category="Crash Course" data-course-id="nadi-jyotish">
+Line 701: <img src="assets/images/Nadi Jyotish.png" alt="Nadi Jyotish" class="card-image">
+Line 706: <h3 class="card-title">Nadi Jyotish</h3>
+Line 717: <a href="nadi-jyotish.html" class="learn-more">
+Line 794: <h3 class="card-title">Vedic Astrology (Jyotish)</h3>
+Line 1281: <div class="premium-gold-card" style="padding: 0 !important;" data-animate data-category="Crash Course" data-course-id="gemini-jyotish">
+Line 1284: <img src="assets/images/gemini-card.png" alt="Gemini Jyotish" class="card-image">
+Line 1289: <h3 class="card-title">Gemini Jyotish</h3>
+Line 1300: <a href="gemini-jyotish.html" class="learn-more">
+Line 1318: <h3 class="card-title">Vedic Astrology (Jyotish)</h3>
+Line 1724: <h3 class="card-title">Vedic Astrology (Jyotish)</h3>
+
+Checking for mobile numerology / feng shui:
+Line 440: <img src="assets/images/numerology-new.jpg" alt="Mobile Numerology" class="card-image">
+Line 445: <h3 class="card-title">Mobile Numerology</h3>
+Line 759: <img src="assets/images/institute-building-modern.jpg" alt="Feng Shui" class="card-image">
+Line 764: <h3 class="card-title">Feng Shui</h3>
+Line 766: <p class="course-desc-text">Deepen your understanding of Feng Shui. Gain unique insights and practical skills that will empower you to create positive change in your life.</p>
+--- Checking assets/js/courses-data.js ---
+Line 22: title: "Vedic Astrology (Jyotish)",
+Line 33: title: "Nadi Jyotish",
+Line 36: image: "assets/images/Nadi Jyotish.png",
+Line 40: link: "nadi-jyotish.html"
+Line 60: image: "assets/images/gemini-card.png",
+Line 82: image: "assets/images/gemini-card.png",
+Line 196: title: "Vedic Astrology (Jyotish)",
+Line 254: image: "assets/images/gemini-card.png",
+Line 287: image: "assets/images/gemini-card.png",
+Line 350: title: "Vedic Astrology (Jyotish)",
+
+Checking for mobile numerology / feng shui:
+Line 328: title: "Feng Shui",
+Line 505: title: "Mobile Numerology",

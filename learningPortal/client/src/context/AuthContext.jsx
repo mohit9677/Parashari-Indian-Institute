@@ -62,6 +62,8 @@ export const AuthProvider = ({ children }) => {
         setToken(data.token);
         setUser(data.user);
         localStorage.setItem('token', data.token);
+        // Set session flag so StrictProtectedRoute allows access (same as AB_AI redirect flow)
+        sessionStorage.setItem('ab_ai_entry', 'true');
         return data.user;
     };
 

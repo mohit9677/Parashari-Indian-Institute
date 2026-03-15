@@ -37,7 +37,7 @@ router.post('/signup', async (req, res) => {
         // Generate token
         const token = jwt.sign(
             { userId: user._id },
-            process.env.JWT_SECRET,
+            process.env.JWT_SECRET || 'dev-secret-key-12345',
             { expiresIn: '7d' }
         );
 
@@ -83,7 +83,7 @@ router.post('/login', async (req, res) => {
         // Generate token
         const token = jwt.sign(
             { userId: user._id },
-            process.env.JWT_SECRET,
+            process.env.JWT_SECRET || 'dev-secret-key-12345',
             { expiresIn: '7d' }
         );
 
@@ -114,7 +114,7 @@ router.get('/me', async (req, res) => {
         }
 
         console.log('Verifying token:', token.substring(0, 10) + '...');
-        const decoded = jwt.verify(token, process.env.JWT_SECRET);
+        const decoded = jwt.verify(token, process.env.JWT_SECRET || 'dev-secret-key-12345');
         console.log('Token decoded userId:', decoded.userId);
 
         const user = await User.findById(decoded.userId).select('-password');
@@ -143,7 +143,7 @@ router.put('/update-profile', async (req, res) => {
             return res.status(401).json({ error: 'Not authenticated' });
         }
 
-        const decoded = jwt.verify(token, process.env.JWT_SECRET);
+        const decoded = jwt.verify(token, process.env.JWT_SECRET || 'dev-secret-key-12345');
         const { name, contact } = req.body;
 
         const user = await User.findById(decoded.userId);
