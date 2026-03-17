@@ -124,7 +124,7 @@ const masterList = [
   { name: 'Palmistry (Chirognomy & Chiromancy)', meta: 'Palmistry', url: 'palmistry.html', icon: 'fas fa-hand-paper' }
 ];
 const grandMasterList = [
-  { name: 'Grand Master Program', meta: 'Lifetime Mastery', url: 'courses.html', icon: 'fas fa-crown' }
+  { name: 'Grand Master Program', meta: 'Lifetime Mastery', url: 'courses.html#grand-master-section', icon: 'fas fa-crown' }
 ];
 
 const courseDomains = [

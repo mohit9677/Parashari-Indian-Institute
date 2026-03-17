@@ -44,49 +44,32 @@
     }
 
     .filter-tab {
-      padding: 12px 24px;
+      padding: 6px 16px;
       border-radius: 50px;
       background: #fff;
-      border: 2px solid #e0d5c8;
-      color: #5a1e1e;
-      font-weight: 600;
+      border: 1px solid #d0d0d0;
+      color: #6c757d;
+      font-weight: 700;
       cursor: pointer;
       transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-      font-size: 0.95rem;
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+      font-size: 0.9rem;
       position: relative;
       overflow: hidden;
-    }
-
-    .filter-tab::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: linear-gradient(135deg, #c8960c, #8b4513);
-      opacity: 0;
-      transition: opacity 0.3s ease;
-      z-index: -1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
 
     .filter-tab:hover {
-      border-color: #c8960c;
-      transform: translateY(-3px);
-      box-shadow: 0 8px 25px rgba(200, 150, 12, 0.2);
+      border-color: #8b0000;
+      color: #8b0000;
     }
 
     .filter-tab.active {
-      background: linear-gradient(135deg, #c8960c, #8b4513);
-      border-color: transparent;
+      background: #8b0000;
+      border-color: #8b0000;
       color: #fff;
-      transform: scale(1.05);
-      box-shadow: 0 10px 30px rgba(139, 69, 19, 0.3);
-    }
-
-    .filter-tab.active::before {
-      opacity: 1;
+      box-shadow: 0 4px 10px rgba(139, 0, 0, 0.4);
     }
 
     /* Animation for cards when filtering */
@@ -103,26 +86,20 @@
     @media (max-width: 768px) {
       .category-filter-container {
         justify-content: flex-start;
-        overflow-x: auto;
-        padding-bottom: 10px;
-        flex-wrap: nowrap;
-        -webkit-overflow-scrolling: touch;
-        gap: 10px;
-        scrollbar-width: none;
-      }
-      .category-filter-container::-webkit-scrollbar {
-        display: none;
+        flex-wrap: wrap;
+        gap: 8px;
+        padding: 0 10px 10px;
       }
       .filter-tab {
-        flex: 0 0 auto;
-        padding: 10px 20px;
-        font-size: 0.85rem;
+        padding: 6px 14px;
+        font-size: 0.82rem;
       }
     }
 
     #courseGrid.all-courses-active .category-badge {
       display: none !important;
     }
+  
   
     /* Guarantee structured alignment for all course cards */
     .course-desc-text {
@@ -135,22 +112,25 @@
       line-height: 1.4;
     }
 
-  
-    @media (max-width: 768px) {
-      .category-filter-container {
-        display: none !important;
-      }
-      }
+    /* Filter Badges */
+    .filter-badge {
+      font-size: 0.65rem;
+      padding: 2px 8px;
+      border-radius: 12px;
+      margin-left: 6px;
+      font-weight: 800;
+      color: #fff;
+      vertical-align: middle;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .filter-badge.beginner { background-color: #4CAF50; }
+    .filter-badge.popular { background-color: #2196F3; }
+    .filter-badge.pro { background-color: #9C27B0; }
+    .filter-badge.advanced { background-color: #FF9800; }
+    .filter-badge.elite { background-color: #D4AF37; }
 
   </style>
-<style>
-/* Mobile Dropdown CSS */
-.mobile-category-dropdown { display: none; margin-bottom: 20px; }
-@media (max-width: 768px) {
-  .category-filter-container { display: none !important; }
-  .mobile-category-dropdown { display: block; }
-}
-</style>
 </head>
 
 <body>
@@ -351,41 +331,14 @@
         <p class="color-light-text">Explore our diverse range of certification programs designed for all levels</p>
       </div>
 
-      
-      <!-- Mobile Category Dropdown -->
-      <div class="mobile-category-dropdown">
-        <select id="mobileCategorySelect" class="form-control" style="
-          background: url(&quot;data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='white' width='24' height='24'%3e%3cpath d='M7 10l5 5 5-5z'/%3e%3c/svg%3e&quot;) no-repeat right 15px center, linear-gradient(135deg, #c8960c, #8b4513);
-          -webkit-appearance: none;
-          -moz-appearance: none;
-          appearance: none;
-          color: #fff; 
-          font-weight: bold; 
-          border-radius: 50px; 
-          text-align: center; 
-          font-size: 1.1rem; 
-          padding: 12px 40px 12px 20px; 
-          width: 100%; 
-          border: 2px solid #e0d5c8; 
-          box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-          cursor: pointer;">
-          <option value="all">All Courses</option>
-          <option value="Crash Course">Crash Course</option>
-          <option value="Diploma">Diploma</option>
-          <option value="Bachelor">Bachelor</option>
-          <option value="Master">Master</option>
-          <option value="Grand Master">Grand Master</option>
-        </select>
-      </div>
-
       <!-- Category Filter -->
       <div class="category-filter-container">
-        <button class="filter-tab active" data-filter="all">All Courses</button>
-        <button class="filter-tab" data-filter="Crash Course">Crash Course</button>
-        <button class="filter-tab" data-filter="Diploma">Diploma</button>
-        <button class="filter-tab" data-filter="Bachelor">Bachelor</button>
-        <button class="filter-tab" data-filter="Master">Master</button>
-        <button class="filter-tab" data-filter="Grand Master">Grand Master</button>
+        <button class="filter-tab active" data-filter="all">All</button>
+        <button class="filter-tab" data-filter="Crash Course">Crash Course <span class="filter-badge beginner">Beginner</span></button>
+        <button class="filter-tab" data-filter="Diploma">Diploma <span class="filter-badge popular">Popular</span></button>
+        <button class="filter-tab" data-filter="Bachelor">Bachelor <span class="filter-badge pro">Pro</span></button>
+        <button class="filter-tab" data-filter="Master">Master <span class="filter-badge advanced">Advanced</span></button>
+        <button class="filter-tab" data-filter="Grand Master">Grand Master <span class="filter-badge elite">Elite</span></button>
       </div>
 
 
@@ -1993,7 +1946,8 @@
         </div>
 
         <!-- GRAND MASTER MEGA CARD -->
-        <div class="grand-master-mega-card" data-animate data-category="Grand Master" data-course-id="grand-master" style="grid-column: 1 / -1; background: #591C21; border: 3px solid #D4AF37; padding: 0; position: relative; overflow: hidden; font-family: 'Poppins', sans-serif;">
+        <div id="grand-master-section" class="grand-master-mega-card hidden" data-animate data-category="Grand Master" data-course-id="grand-master" style="grid-column: 1 / -1; background: #591C21; border: 3px solid #D4AF37; padding: 0; position: relative; overflow: hidden; font-family: 'Poppins', sans-serif;">
+
           
           <span class="discount-tag" data-discount="29% DISCOUNT" style="z-index: 10;"></span>
 
@@ -2019,27 +1973,27 @@
             </div>
             <div style="background: #fff; border: 1px solid #e3ca88; border-top: none; border-radius: 0 0 8px 8px; margin-bottom: 2.5rem; overflow: hidden;">
               <table style="width: 100%; border-collapse: collapse; font-size: 0.95rem; color: #333;">
-                <tr><td style="padding: 14px 25px; border-bottom: 1px solid #f0e8d9; border-right: 1px solid #f0e8d9; width: 50%;"><strong style="color: #591C21; margin-right: 15px;">01</strong> <a href="numerology.html" style="color: inherit; text-decoration: none; font-weight: 600;">Numerology</a></td><td style="padding: 14px 25px; border-bottom: 1px solid #f0e8d9;"><strong style="color: #591C21; margin-right: 15px;">02</strong> <a href="astrology.html" style="color: inherit; text-decoration: none; font-weight: 600;">Vedic Astrology</a></td></tr>
-                <tr><td style="padding: 14px 25px; border-bottom: 1px solid #f0e8d9; border-right: 1px solid #f0e8d9;"><strong style="color: #591C21; margin-right: 15px;">03</strong> <a href="kp-astrology.html" style="color: inherit; text-decoration: none; font-weight: 600;">KP Astrology</a></td><td style="padding: 14px 25px; border-bottom: 1px solid #f0e8d9;"><strong style="color: #591C21; margin-right: 15px;">04</strong> <a href="gemstone.html" style="color: inherit; text-decoration: none; font-weight: 600;">Gemstone Science</a></td></tr>
-                <tr><td style="padding: 14px 25px; border-bottom: 1px solid #f0e8d9; border-right: 1px solid #f0e8d9;"><strong style="color: #591C21; margin-right: 15px;">05</strong> <a href="vastu.html" style="color: inherit; text-decoration: none; font-weight: 600;">Vastu Shastra</a></td><td style="padding: 14px 25px; border-bottom: 1px solid #f0e8d9;"><strong style="color: #591C21; margin-right: 15px;">06</strong> <a href="lal-kitab.html" style="color: inherit; text-decoration: none; font-weight: 600;">Lal Kitab</a></td></tr>
-                <tr><td style="padding: 14px 25px; border-bottom: 1px solid #f0e8d9; border-right: 1px solid #f0e8d9;"><strong style="color: #591C21; margin-right: 15px;">07</strong> <a href="face-reading.html" style="color: inherit; text-decoration: none; font-weight: 600;">Face Reading</a></td><td style="padding: 14px 25px; border-bottom: 1px solid #f0e8d9;"><strong style="color: #591C21; margin-right: 15px;">08</strong> <a href="reiki.html" style="color: inherit; text-decoration: none; font-weight: 600;">Reiki Healing</a></td></tr>
-                <tr><td style="padding: 14px 25px; border-bottom: 1px solid #f0e8d9; border-right: 1px solid #f0e8d9;"><strong style="color: #591C21; margin-right: 15px;">09</strong> <a href="tarot.html" style="color: inherit; text-decoration: none; font-weight: 600;">Tarot Reading</a></td><td style="padding: 14px 25px; border-bottom: 1px solid #f0e8d9;"><strong style="color: #591C21; margin-right: 15px;">10</strong> <a href="nakshatra.html" style="color: inherit; text-decoration: none; font-weight: 600;">Nakshatra</a></td></tr>
-                <tr><td style="padding: 14px 25px; border-right: 1px solid #f0e8d9;"><strong style="color: #591C21; margin-right: 15px;">11</strong> <a href="rudraksha.html" style="color: inherit; text-decoration: none; font-weight: 600;">Crystal Rudraksha</a></td><td style="padding: 14px 25px;"><strong style="color: #591C21; margin-right: 15px;">12</strong> <a href="palmistry.html" style="color: inherit; text-decoration: none; font-weight: 600;">Palmistry</a></td></tr>
+                <tr><td style="padding: 12px 10px; border-bottom: 1px solid #f0e8d9; border-right: 1px solid #f0e8d9; width: 50%;"><strong style="color: #591C21; margin-right: 8px;">01</strong> <a href="numerology.html" style="color: inherit; text-decoration: none; font-weight: 600;">Numerology</a></td><td style="padding: 12px 10px; border-bottom: 1px solid #f0e8d9;"><strong style="color: #591C21; margin-right: 8px;">02</strong> <a href="astrology.html" style="color: inherit; text-decoration: none; font-weight: 600;">Vedic Astrology</a></td></tr>
+                <tr><td style="padding: 12px 10px; border-bottom: 1px solid #f0e8d9; border-right: 1px solid #f0e8d9;"><strong style="color: #591C21; margin-right: 8px;">03</strong> <a href="kp-astrology.html" style="color: inherit; text-decoration: none; font-weight: 600;">KP Astrology</a></td><td style="padding: 12px 10px; border-bottom: 1px solid #f0e8d9;"><strong style="color: #591C21; margin-right: 8px;">04</strong> <a href="gemstone.html" style="color: inherit; text-decoration: none; font-weight: 600;">Gemstone Science</a></td></tr>
+                <tr><td style="padding: 12px 10px; border-bottom: 1px solid #f0e8d9; border-right: 1px solid #f0e8d9;"><strong style="color: #591C21; margin-right: 8px;">05</strong> <a href="vastu.html" style="color: inherit; text-decoration: none; font-weight: 600;">Vastu Shastra</a></td><td style="padding: 12px 10px; border-bottom: 1px solid #f0e8d9;"><strong style="color: #591C21; margin-right: 8px;">06</strong> <a href="lal-kitab.html" style="color: inherit; text-decoration: none; font-weight: 600;">Lal Kitab</a></td></tr>
+                <tr><td style="padding: 12px 10px; border-bottom: 1px solid #f0e8d9; border-right: 1px solid #f0e8d9;"><strong style="color: #591C21; margin-right: 8px;">07</strong> <a href="face-reading.html" style="color: inherit; text-decoration: none; font-weight: 600;">Face Reading</a></td><td style="padding: 12px 10px; border-bottom: 1px solid #f0e8d9;"><strong style="color: #591C21; margin-right: 8px;">08</strong> <a href="reiki.html" style="color: inherit; text-decoration: none; font-weight: 600;">Reiki Healing</a></td></tr>
+                <tr><td style="padding: 12px 10px; border-bottom: 1px solid #f0e8d9; border-right: 1px solid #f0e8d9;"><strong style="color: #591C21; margin-right: 8px;">09</strong> <a href="tarot.html" style="color: inherit; text-decoration: none; font-weight: 600;">Tarot Reading</a></td><td style="padding: 12px 10px; border-bottom: 1px solid #f0e8d9;"><strong style="color: #591C21; margin-right: 8px;">10</strong> <a href="nakshatra.html" style="color: inherit; text-decoration: none; font-weight: 600;">Nakshatra</a></td></tr>
+                <tr><td style="padding: 12px 10px; border-right: 1px solid #f0e8d9;"><strong style="color: #591C21; margin-right: 8px;">11</strong> <a href="rudraksha.html" style="color: inherit; text-decoration: none; font-weight: 600;">Crystal Rudraksha</a></td><td style="padding: 12px 10px;"><strong style="color: #591C21; margin-right: 8px;">12</strong> <a href="palmistry.html" style="color: inherit; text-decoration: none; font-weight: 600;">Palmistry</a></td></tr>
               </table>
             </div>
 
             <!-- 6 SPIRITUAL STAIRS -->
-            <div style="background: linear-gradient(90deg, #A24EB5, #C47BD7, #A24EB5); color: white; text-align: center; padding: 12px 20px; border-radius: 8px 8px 0 0; font-weight: 800; font-size: 1.05rem; letter-spacing: 1px; border: 1px solid #A24EB5; position: relative;">
-              <i class="fas fa-gift" style="font-size: 0.9em; margin-right: 8px;"></i> 6 SPIRITUAL STAIRS
-              <span style="position: absolute; right: 20px; top: 50%; transform: translateY(-50%); display: flex; align-items: center; gap: 6px; color: #FFEB3B; font-size: 0.95rem; font-weight: 900; letter-spacing: 1px; text-shadow: 0 0 10px rgba(255,235,59,0.8); animation: pulse 2s infinite;">
+            <div style="background: linear-gradient(90deg, #A24EB5, #C47BD7, #A24EB5); color: white; padding: 12px 20px; border-radius: 8px 8px 0 0; font-weight: 800; font-size: 1.05rem; letter-spacing: 1px; border: 1px solid #A24EB5; display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 10px;">
+              <span><i class="fas fa-gift" style="font-size: 0.9em; margin-right: 8px;"></i> 6 SPIRITUAL STAIRS</span>
+              <span style="display: flex; align-items: center; gap: 6px; color: #FFEB3B; font-size: 0.95rem; font-weight: 900; letter-spacing: 1px; text-shadow: 0 0 10px rgba(255,235,59,0.8); animation: pulse 2s infinite;">
                 <i class="fas fa-star" style="font-size: 1.1em; filter: drop-shadow(0 0 8px #FFEB3B);"></i> FREE
               </span>
             </div>
             <div style="background: #fff; border: 1px solid #A24EB5; border-top: none; border-radius: 0 0 8px 8px; margin-bottom: 2rem; overflow: hidden;">
               <table style="width: 100%; border-collapse: collapse; font-size: 0.95rem; color: #333;">
-                <tr><td style="padding: 14px 25px; border-bottom: 1px solid #f3e6f5; border-right: 1px solid #f3e6f5; width: 50%;"><strong style="color: #591C21; margin-right: 15px;">13</strong> <a href="yantra.html" style="color: inherit; text-decoration: none; font-weight: 600;">Yantra</a></td><td style="padding: 14px 25px; border-bottom: 1px solid #f3e6f5;"><strong style="color: #591C21; margin-right: 15px;">14</strong> <a href="mantra.html" style="color: inherit; text-decoration: none; font-weight: 600;">Mantra</a></td></tr>
-                <tr><td style="padding: 14px 25px; border-bottom: 1px solid #f3e6f5; border-right: 1px solid #f3e6f5;"><strong style="color: #591C21; margin-right: 15px;">15</strong> <a href="tantra.html" style="color: inherit; text-decoration: none; font-weight: 600;">Tantra</a></td><td style="padding: 14px 25px; border-bottom: 1px solid #f3e6f5;"><strong style="color: #591C21; margin-right: 15px;">16</strong> <a href="chakra-balancing.html" style="color: inherit; text-decoration: none; font-weight: 600;">Chakra Balancing</a></td></tr>
-                <tr><td style="padding: 14px 25px; border-right: 1px solid #f3e6f5;"><strong style="color: #591C21; margin-right: 15px;">17</strong> <a href="6-stairs-remedies.html" style="color: inherit; text-decoration: none; font-weight: 600;">Remedies</a></td><td style="padding: 14px 25px;"><strong style="color: #591C21; margin-right: 15px;">18</strong> <a href="plrt-6-stairs.html" style="color: inherit; text-decoration: none; font-weight: 600;">Past Life Regression Theory (PLRT)</a></td></tr>
+                <tr><td style="padding: 12px 10px; border-bottom: 1px solid #f3e6f5; border-right: 1px solid #f3e6f5; width: 50%;"><strong style="color: #591C21; margin-right: 8px;">13</strong> <a href="yantra.html" style="color: inherit; text-decoration: none; font-weight: 600;">Yantra</a></td><td style="padding: 12px 10px; border-bottom: 1px solid #f3e6f5;"><strong style="color: #591C21; margin-right: 8px;">14</strong> <a href="mantra.html" style="color: inherit; text-decoration: none; font-weight: 600;">Mantra</a></td></tr>
+                <tr><td style="padding: 12px 10px; border-bottom: 1px solid #f3e6f5; border-right: 1px solid #f3e6f5;"><strong style="color: #591C21; margin-right: 8px;">15</strong> <a href="tantra.html" style="color: inherit; text-decoration: none; font-weight: 600;">Tantra</a></td><td style="padding: 12px 10px; border-bottom: 1px solid #f3e6f5;"><strong style="color: #591C21; margin-right: 8px;">16</strong> <a href="chakra-balancing.html" style="color: inherit; text-decoration: none; font-weight: 600;">Chakra Balancing</a></td></tr>
+                <tr><td style="padding: 12px 10px; border-right: 1px solid #f3e6f5;"><strong style="color: #591C21; margin-right: 8px;">17</strong> <a href="6-stairs-remedies.html" style="color: inherit; text-decoration: none; font-weight: 600;">Remedies</a></td><td style="padding: 12px 10px;"><strong style="color: #591C21; margin-right: 8px;">18</strong> <a href="plrt-6-stairs.html" style="color: inherit; text-decoration: none; font-weight: 600;">Past Life Regression (PLRT)</a></td></tr>
               </table>
             </div>
 
@@ -2424,7 +2378,9 @@
 
             if (filterValue === 'all') {
               // De-duplication logic for "All Courses"
-              if (courseId && shownIds.has(courseId)) {
+              if (cardCategory === 'Grand Master') {
+                card.classList.add('hidden');
+              } else if (courseId && shownIds.has(courseId)) {
                 card.classList.add('hidden');
               } else {
                 card.classList.remove('hidden');
@@ -2450,38 +2406,23 @@
         });
       });
 
-      // Mobile Dropdown Filter Logic
-      const mobileSelect = document.getElementById('mobileCategorySelect');
-      if (mobileSelect) {
-        mobileSelect.addEventListener('change', function() {
-          const filterValue = this.value;
-          const grid = document.getElementById('courseGrid');
-          
-          if (filterValue === 'all') {
-            grid.classList.add('all-courses-active');
-          } else {
-            grid.classList.remove('all-courses-active');
-          }
 
-          const shownIds = new Set();
-          courseCards.forEach(card => {
-            const cardCategory = card.getAttribute('data-category');
-            const courseId = card.getAttribute('data-course-id');
-
-            if (filterValue === 'all') {
-              if (courseId && shownIds.has(courseId)) {
-                card.classList.add('hidden');
-              } else {
-                card.classList.remove('hidden');
-                if (courseId) shownIds.add(courseId);
-              }
-            } else if (filterValue === cardCategory) {
-              card.classList.remove('hidden');
-            } else {
-              card.classList.add('hidden');
+      // Handle direct hash links to specific filters
+      if (window.location.hash === '#grand-master-section') {
+        const gmFilter = document.querySelector('.filter-tab[data-filter="Grand Master"]');
+        if (gmFilter) {
+          gmFilter.click();
+          // Scroll slightly above the grid to show the filters and the card
+          setTimeout(() => {
+            const grid = document.getElementById('courseGrid');
+            if (grid) {
+              window.scrollTo({
+                top: grid.offsetTop - 100,
+                behavior: 'smooth'
+              });
             }
-          });
-        });
+          }, 100);
+        }
       }
     });
   </script>
@@ -2561,20 +2502,7 @@
     });
   </script>
 
-<script>
-    // Mobile Dropdown Logic
-    const mobileSelect = document.getElementById('mobileCategorySelect');
-    if(mobileSelect) {
-      mobileSelect.addEventListener('change', function() {
-        const selectedFilter = this.value;
-        // Trigger the existing tab logic
-        const targetTab = document.querySelector(`.filter-tab[data-filter="${selectedFilter}"]`);
-        if (targetTab) {
-          targetTab.click();
-        }
-      });
-    }
-</script>
+
 </body>
 
 </html>

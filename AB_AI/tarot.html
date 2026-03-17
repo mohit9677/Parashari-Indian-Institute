@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -15,80 +15,20 @@
     <link rel="stylesheet" href="assets/css/chatbot.css">
     <link rel="stylesheet" href="assets/css/urgency.css">
     <style>
-        .category-filter-container {
-            margin: 20px 0 40px;
-            display: flex;
-            justify-content: center;
-            gap: 12px;
-            flex-wrap: wrap;
-        }
-        .filter-tab {
-            padding: 12px 24px;
-            border-radius: 50px;
-            background: #fff;
-            border: 2px solid #e0d5c8;
-            color: #5a1e1e;
-            font-weight: 600;
-            cursor: pointer;
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-            font-size: 0.95rem;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-            position: relative;
-            overflow: hidden;
-            z-index: 1;
-        }
-        .filter-tab::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(135deg, #c8960c, #8b4513);
-            opacity: 0;
-            transition: opacity 0.3s ease;
-            z-index: -1;
-        }
-        .filter-tab:hover {
-            border-color: #c8960c;
-            transform: translateY(-3px);
-            box-shadow: 0 8px 25px rgba(200, 150, 12, 0.2);
-        }
-        .filter-tab.active {
-            background: linear-gradient(135deg, #c8960c, #8b4513);
-            border-color: transparent;
-            color: #fff;
-            transform: scale(1.05);
-            box-shadow: 0 10px 30px rgba(139, 69, 19, 0.3);
-        }
-        .filter-tab.active::before {
-            opacity: 1;
-        }
-        .program-tab-content {
-            animation: fadeIn 0.4s ease-in-out;
-        }
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(10px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
+        .category-filter-container { margin: 20px 0 40px; display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; }
+        .filter-tab { padding: 6px 16px; border-radius: 50px; background: #fff; border: 1px solid #d0d0d0; color: #6c757d; font-weight: 700; cursor: pointer; transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); font-size: 0.9rem; position: relative; overflow: hidden; z-index: 1; display: flex; align-items: center; justify-content: center; }
+        .filter-tab:hover { border-color: #8b0000; color: #8b0000; }
+        .filter-tab.active { background: #8b0000; border-color: #8b0000; color: #fff; box-shadow: 0 4px 10px rgba(139, 0, 0, 0.4); }
+        .filter-badge { font-size: 0.65rem; padding: 2px 8px; border-radius: 12px; margin-left: 6px; font-weight: 800; color: #fff; vertical-align: middle; text-transform: uppercase; letter-spacing: 0.5px; }
+        .filter-badge.popular { background-color: #2196F3; }
+        .filter-badge.pro { background-color: #9C27B0; }
+        .filter-badge.advanced { background-color: #FF9800; }
+        .filter-badge.elite { background-color: #D4AF37; }
+        .program-tab-content { animation: fadeIn 0.4s ease-in-out; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
         @media (max-width: 768px) {
-            .category-filter-container {
-                justify-content: flex-start;
-                overflow-x: auto;
-                padding-bottom: 10px;
-                flex-wrap: nowrap;
-                -webkit-overflow-scrolling: touch;
-                gap: 10px;
-                scrollbar-width: none;
-            }
-            .category-filter-container::-webkit-scrollbar {
-                display: none;
-            }
-            .filter-tab {
-                flex: 0 0 auto;
-                padding: 10px 20px;
-                font-size: 0.85rem;
-            }
+            .category-filter-container { justify-content: center; flex-wrap: wrap; gap: 8px; padding: 0 10px 10px; }
+            .filter-tab { padding: 6px 14px; font-size: 0.82rem; }
         }
         
         .landscape-pricing-card {
@@ -238,8 +178,8 @@
     <div class="header-top">
         <div class="header-top-content">
             <div class="header-top-left">
-                <div class="header-top-item"><span class="header-top-icon">📞</span><a href="tel:+919621051159">+91 962 105 1159</a></div>
-                <div class="header-top-item"><span class="header-top-icon">✉️</span><a
+                <div class="header-top-item"><span class="header-top-icon">ðŸ“ž</span><a href="tel:+919621051159">+91 962 105 1159</a></div>
+                <div class="header-top-item"><span class="header-top-icon">âœ‰ï¸</span><a
                         href="mailto:info@astrobharatai.com">info@astrobharatai.com</a></div>
             </div>
             <div class="header-top-right">Online Classes | ISO Certified</div>
@@ -365,7 +305,7 @@
     <div class="container" data-animate>
       <h2>What is Tarot Reading?</h2>
       <p>Tarot Reading is a practice that involves using a deck of symbolic cards to gain insights into personal situations, emotions, and possible life directions. Each tarot card contains imagery and symbolism that readers interpret to explore questions related to life, relationships, career, and personal development.</p>
-      <p>The modern tarot system is commonly associated with decks such as the Rider–Waite Tarot Deck, which includes 78 cards divided into the Major Arcana and Minor Arcana. Tarot reading is often used as a reflective tool to help individuals think about their circumstances from new perspectives and consider different possibilities for decision-making and personal growth.</p>
+      <p>The modern tarot system is commonly associated with decks such as the Riderâ€“Waite Tarot Deck, which includes 78 cards divided into the Major Arcana and Minor Arcana. Tarot reading is often used as a reflective tool to help individuals think about their circumstances from new perspectives and consider different possibilities for decision-making and personal growth.</p>
       
       <h3 style="margin-top: 2rem; margin-bottom: 1rem;">Why Should You Study Tarot Reading?</h3>
       <p>Studying tarot reading helps individuals understand the symbolism and structure of tarot cards and how they are traditionally interpreted during readings.</p>
@@ -385,21 +325,21 @@
       <h3 style="margin-top: 2rem; margin-bottom: 1rem;">Can Someone Build a Career in Tarot Reading?</h3>
       <p>Yes, individuals who study tarot seriously and gain practical experience may develop professional opportunities related to tarot reading. Possible career paths include:</p>
       <ul class="list-reset">
-        <li class="mb-0-75">✓ Tarot reader offering consultations</li>
-        <li class="mb-0-75">✓ Tarot instructor or workshop facilitator</li>
-        <li class="mb-0-75">✓ Author or content creator on tarot and symbolism</li>
-        <li class="mb-0-75">✓ Online tarot consultant</li>
-        <li>✓ Personal guidance or self-development advisor</li>
+        <li class="mb-0-75">âœ“ Tarot reader offering consultations</li>
+        <li class="mb-0-75">âœ“ Tarot instructor or workshop facilitator</li>
+        <li class="mb-0-75">âœ“ Author or content creator on tarot and symbolism</li>
+        <li class="mb-0-75">âœ“ Online tarot consultant</li>
+        <li>âœ“ Personal guidance or self-development advisor</li>
       </ul>
       <p style="margin-top: 1rem;">However, building credibility in this field requires practice, ethical responsibility, and continuous learning when offering readings to others.</p>
 
       <h3 style="margin-top: 2rem; margin-bottom: 1rem;">Five Key Reasons to Study Tarot Reading</h3>
       <ul class="list-reset">
-        <li class="mb-0-75">✓ Learn the rich symbolic imagery and archetypal meanings of the cards</li>
-        <li class="mb-0-75">✓ Develop intuitive interpretation skills and pattern recognition</li>
-        <li class="mb-0-75">✓ Improve self-reflection and awareness through reflective card study</li>
-        <li class="mb-0-75">✓ Explore a traditional divination practice studied across cultures for centuries</li>
-        <li>✓ Build a skill for personal guidance, reflection sessions, or educational purposes</li>
+        <li class="mb-0-75">âœ“ Learn the rich symbolic imagery and archetypal meanings of the cards</li>
+        <li class="mb-0-75">âœ“ Develop intuitive interpretation skills and pattern recognition</li>
+        <li class="mb-0-75">âœ“ Improve self-reflection and awareness through reflective card study</li>
+        <li class="mb-0-75">âœ“ Explore a traditional divination practice studied across cultures for centuries</li>
+        <li>âœ“ Build a skill for personal guidance, reflection sessions, or educational purposes</li>
       </ul>
     </div>
   </section>
@@ -410,10 +350,10 @@
             <h2 class="card-section-title">Our Tarot Reading Program</h2>
             
             <div class="category-filter-container">
-                <button class="filter-tab active" data-program="diploma">Diploma</button>
-                <button class="filter-tab" data-program="bachelors">Bachelors</button>
-                <button class="filter-tab" data-program="masters">Masters</button>
-                <button class="filter-tab" data-program="grand-master">Grand Master</button>
+                <button class="filter-tab active" data-program="diploma">Diploma <span class="filter-badge popular">Popular</span></button>
+                <button class="filter-tab" data-program="bachelors">Bachelors <span class="filter-badge pro">Pro</span></button>
+                <button class="filter-tab" data-program="masters">Masters <span class="filter-badge advanced">Advanced</span></button>
+                <button class="filter-tab" data-program="grand-master">Grand Master <span class="filter-badge elite">Elite</span></button>
             </div>
 
             <!-- DIPLOMA TAB -->
@@ -423,7 +363,7 @@
                         <h3 class="color-primary mb-1 text-center" style="font-size: 1.5rem;">Certification Modules (Part 1)</h3>
                         <ul class="list-reset" style="text-align: left;">
                             <li class="mb-2"><strong>Module 1: The Fool's Journey</strong><br>An in-depth study of the 22 Major Arcana cards, representing significant life lessons and the soul's path toward spiritual enlightenment.</li>
-                            <li class="mb-0-75"><strong>Module 2: The Minor Arcana</strong><br>Explores the four suited elements—Cups (Water), Wands (Fire), Swords (Air), and Pentacles (Earth)—to decode daily life events and emotions.</li>
+                            <li class="mb-0-75"><strong>Module 2: The Minor Arcana</strong><br>Explores the four suited elementsâ€”Cups (Water), Wands (Fire), Swords (Air), and Pentacles (Earth)â€”to decode daily life events and emotions.</li>
                         </ul>
                     </div>
                     <div class="card card-auto p-4" data-animate>
@@ -444,8 +384,8 @@
                         </p>
                     </div>
                     <div class="pricing-block">
-                        <div style="text-decoration: line-through; color: #999; font-size: 1.1rem; margin-bottom: 2px;">Regular Price: ₹5,499</div>
-                        <strong style="color: #c8960c; font-size: 2.5rem; line-height: 1; font-weight: 800;">₹4,199</strong>
+                        <div style="text-decoration: line-through; color: #999; font-size: 1.1rem; margin-bottom: 2px;">Regular Price: â‚¹5,499</div>
+                        <strong style="color: #c8960c; font-size: 2.5rem; line-height: 1; font-weight: 800;">â‚¹4,199</strong>
                     </div>
                     <div class="enroll-block">
                         <a href="register.html" class="btn btn-primary" style="padding: 14px 35px; border-radius: 50px; font-weight: 700; letter-spacing: 0.5px; font-size: 1.05rem; box-shadow: 0 4px 15px rgba(200, 150, 12, 0.3);">Enroll Now</a>
@@ -466,7 +406,7 @@
                     <div class="card card-auto p-4" data-animate>
                         <h3 class="color-primary mb-1 text-center" style="font-size: 1.3rem;">Spreads & Intuition (Part 2)</h3>
                         <ul class="list-reset" style="text-align: left;">
-                            <li class="mb-2"><strong>Module 3: Minor Arcana</strong><br>Analyses the numerical progression (1–10) and the four court cards, focusing on Elemental Dignities to interpret situational energy shifts.</li>
+                            <li class="mb-2"><strong>Module 3: Minor Arcana</strong><br>Analyses the numerical progression (1â€“10) and the four court cards, focusing on Elemental Dignities to interpret situational energy shifts.</li>
                             <li class="mb-0-75"><strong>Module 4: Advanced Spreads</strong><br>Mastering complex layouts like the Wheel of the Year, Zodiac Spread, and Relationship Tree for comprehensive, long-term life path forecasting.</li>
                         </ul>
                     </div>
@@ -488,8 +428,8 @@
                         </p>
                     </div>
                     <div class="pricing-block">
-                        <div style="text-decoration: line-through; color: #999; font-size: 1.1rem; margin-bottom: 2px;">Regular Price: ₹11,999</div>
-                        <strong style="color: #c8960c; font-size: 2.5rem; line-height: 1; font-weight: 800;">₹8,999</strong>
+                        <div style="text-decoration: line-through; color: #999; font-size: 1.1rem; margin-bottom: 2px;">Regular Price: â‚¹11,999</div>
+                        <strong style="color: #c8960c; font-size: 2.5rem; line-height: 1; font-weight: 800;">â‚¹8,999</strong>
                     </div>
                     <div class="enroll-block">
                         <a href="register.html" class="btn btn-primary" style="padding: 14px 35px; border-radius: 50px; font-weight: 700; letter-spacing: 0.5px; font-size: 1.05rem; box-shadow: 0 4px 15px rgba(200, 150, 12, 0.3);">Enroll Now</a>
@@ -510,7 +450,7 @@
                     <div class="card card-auto p-4" data-animate>
                         <h3 class="color-primary mb-1 text-center" style="font-size: 1.4rem;">Arcana & Spreads (Part 2)</h3>
                         <ul class="list-reset" style="text-align: left;">
-                            <li class="mb-2"><strong>Module 3: Minor Arcana</strong><br>Analyses the numerical progression (1–10) and the four court cards, focusing on Elemental Dignities to interpret energy shifts.</li>
+                            <li class="mb-2"><strong>Module 3: Minor Arcana</strong><br>Analyses the numerical progression (1â€“10) and the four court cards, focusing on Elemental Dignities to interpret energy shifts.</li>
                             <li class="mb-0-75"><strong>Module 4: Advanced Spreads</strong><br>Mastering complex layouts like the Celtic Cross, Zodiac Spread, and Wheel of the Year for comprehensive, long-term life forecasting.</li>
                         </ul>
                     </div>
@@ -539,8 +479,8 @@
                         </p>
                     </div>
                     <div class="pricing-block">
-                        <div style="text-decoration: line-through; color: #999; font-size: 1.1rem; margin-bottom: 2px;">Regular Price: ₹24,999</div>
-                        <strong style="color: #c8960c; font-size: 2.5rem; line-height: 1; font-weight: 800;">₹18,699</strong>
+                        <div style="text-decoration: line-through; color: #999; font-size: 1.1rem; margin-bottom: 2px;">Regular Price: â‚¹24,999</div>
+                        <strong style="color: #c8960c; font-size: 2.5rem; line-height: 1; font-weight: 800;">â‚¹18,699</strong>
                     </div>
                     <div class="enroll-block">
                         <a href="register.html" class="btn btn-primary" style="padding: 14px 35px; border-radius: 50px; font-weight: 700; letter-spacing: 0.5px; font-size: 1.05rem; box-shadow: 0 4px 15px rgba(200, 150, 12, 0.3);">Enroll Now</a>
@@ -561,7 +501,7 @@
                     <div class="card card-auto p-4" data-animate>
                         <h3 class="color-primary mb-1 text-center" style="font-size: 1.4rem;">Arcana & Spreads (Part 2)</h3>
                         <ul class="list-reset" style="text-align: left;">
-                            <li class="mb-2"><strong>Module 3: Minor Arcana (Advanced)</strong><br>Analyses the numerical progression (1–10) and the four court cards, focusing on Elemental Dignities to interpret energy shifts.</li>
+                            <li class="mb-2"><strong>Module 3: Minor Arcana (Advanced)</strong><br>Analyses the numerical progression (1â€“10) and the four court cards, focusing on Elemental Dignities to interpret energy shifts.</li>
                             <li class="mb-0-75"><strong>Module 4: Advanced Spreads (Advanced)</strong><br>Mastering complex layouts like the Celtic Cross, Zodiac Spread, and Wheel of the Year for comprehensive, long-term life forecasting.</li>
                         </ul>
                     </div>
@@ -590,8 +530,8 @@
                         </p>
                     </div>
                     <div class="pricing-block">
-                        <div style="text-decoration: line-through; color: #999; font-size: 1.1rem; margin-bottom: 2px;">Regular Price: ₹34,999</div>
-                        <strong style="color: #c8960c; font-size: 2.5rem; line-height: 1; font-weight: 800;">₹24,999</strong>
+                        <div style="text-decoration: line-through; color: #999; font-size: 1.1rem; margin-bottom: 2px;">Regular Price: â‚¹34,999</div>
+                        <strong style="color: #c8960c; font-size: 2.5rem; line-height: 1; font-weight: 800;">â‚¹24,999</strong>
                     </div>
                     <div class="enroll-block">
                         <a href="register.html" class="btn btn-primary" style="padding: 14px 35px; border-radius: 50px; font-weight: 700; letter-spacing: 0.5px; font-size: 1.05rem; box-shadow: 0 4px 15px rgba(200, 150, 12, 0.3);">Enroll Now</a>
@@ -615,19 +555,19 @@
                             <th style="background: #fff; border-right: 2px solid #f0f0f0;"></th>
                             <th class="tier-diploma">
                                 <span class="tier-title">Diploma</span>
-                                <span class="tier-price">₹4,199</span>
+                                <span class="tier-price">â‚¹4,199</span>
                             </th>
                             <th class="tier-bachelors">
                                 <span class="tier-title">Bachelors</span>
-                                <span class="tier-price">₹8,999</span>
+                                <span class="tier-price">â‚¹8,999</span>
                             </th>
                             <th class="tier-masters">
                                 <span class="tier-title">Masters</span>
-                                <span class="tier-price">₹18,699</span>
+                                <span class="tier-price">â‚¹18,699</span>
                             </th>
                             <th class="tier-grand-master">
                                 <span class="tier-title">Grand Master</span>
-                                <span class="tier-price">₹24,999</span>
+                                <span class="tier-price">â‚¹24,999</span>
                             </th>
                         </tr>
                     </thead>
@@ -727,33 +667,33 @@
     <div class="urgency-marquee-container">
         <div class="urgency-marquee-content">
             <div class="marquee-item">
-                <span class="marquee-icon">🎓</span> Admissions Open! Register Now for Upcoming Batches — Limited Seats
+                <span class="marquee-icon">ðŸŽ“</span> Admissions Open! Register Now for Upcoming Batches â€” Limited Seats
                 Available! <div class="marquee-timer timer-pulse">Ends in: <span
                         class="marquee-timer-val">47:59:59</span></div> <a href="register.html" class="marquee-btn">Fast
                     Register</a>
             </div>
             <div class="marquee-item">
-                <span class="marquee-icon">🔥</span> Fast Track Your Career with 100% Placement Assistance
+                <span class="marquee-icon">ðŸ”¥</span> Fast Track Your Career with 100% Placement Assistance
                 <a href="courses.html" class="marquee-btn">View Courses</a>
             </div>
             <div class="marquee-item">
-                <span class="marquee-icon"><i class="fa-solid fa-star"></i></span> Join Parashari Institute Today — Scholarship Available for Top
+                <span class="marquee-icon"><i class="fa-solid fa-star"></i></span> Join Parashari Institute Today â€” Scholarship Available for Top
                 Performers!
                 <a href="register.html" class="marquee-btn">Apply Now</a>
             </div>
             <!-- Duplicate for seamless scrolling -->
             <div class="marquee-item">
-                <span class="marquee-icon">🎓</span> Admissions Open! Register Now for Upcoming Batches — Limited Seats
+                <span class="marquee-icon">ðŸŽ“</span> Admissions Open! Register Now for Upcoming Batches â€” Limited Seats
                 Available! <div class="marquee-timer timer-pulse">Ends in: <span
                         class="marquee-timer-val">47:59:59</span></div> <a href="register.html" class="marquee-btn">Fast
                     Register</a>
             </div>
             <div class="marquee-item">
-                <span class="marquee-icon">🔥</span> Fast Track Your Career with 100% Placement Assistance
+                <span class="marquee-icon">ðŸ”¥</span> Fast Track Your Career with 100% Placement Assistance
                 <a href="courses.html" class="marquee-btn">View Courses</a>
             </div>
             <div class="marquee-item">
-                <span class="marquee-icon"><i class="fa-solid fa-star"></i></span> Join Parashari Institute Today — Scholarship Available for Top
+                <span class="marquee-icon"><i class="fa-solid fa-star"></i></span> Join Parashari Institute Today â€” Scholarship Available for Top
                 Performers!
                 <a href="register.html" class="marquee-btn">Apply Now</a>
             </div>
@@ -815,13 +755,13 @@
             <div class="footer-section">
                 <h4>Contact</h4>
                 <div class="contact-info">
-                    <div class="contact-icon">📍</div>
+                    <div class="contact-icon">ðŸ“</div>
                     <div class="contact-text">
                         <p class="p-reset">123 Vedic Street, Delhi - 110001</p>
                     </div>
                 </div>
                 <div class="contact-info">
-                    <div class="contact-icon">📞</div>
+                    <div class="contact-icon">ðŸ“ž</div>
                     <div class="contact-text">
                         <p class="p-reset"><a href="tel:+919621051159">+91 962 105 1159</a></p>
                     </div>
@@ -920,3 +860,7 @@
 </body>
 
 </html>
+
+
+
+
