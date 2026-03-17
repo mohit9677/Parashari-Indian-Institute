@@ -53,6 +53,7 @@
         .comparison-table th.tier-diploma { background: #fdfbf7; }
         .comparison-table th.tier-bachelors { background: #f5eedc; }
         .comparison-table th.tier-masters { background: #e0d5c8; }
+        .comparison-table th.tier-grand-master { background: #d4a991; }
         
         .tier-title { display: block; font-size: 1.3rem; color: #5a1e1e; margin-bottom: 5px; }
         .tier-price { display: block; font-size: 1.1rem; color: #c8960c; font-weight: 700; }
@@ -61,6 +62,7 @@
         .col-diploma { background: #fdfbf7 !important; }
         .col-bachelors { background: #f5eedc !important; }
         .col-masters { background: #e0d5c8 !important; }
+        .col-grand-master { background: #d4a991 !important; }
         
         .c-icon.check { color: #4CAF50; font-size: 1.2rem; }
         .c-icon.cross { color: #f44336; font-size: 1.1rem; opacity: 0.6; }
@@ -232,6 +234,7 @@
                 <button class="filter-tab active" data-program="diploma">Diploma</button>
                 <button class="filter-tab" data-program="bachelors">Bachelors</button>
                 <button class="filter-tab" data-program="masters">Masters</button>
+                <button class="filter-tab" data-program="grand-master">Grand Master</button>
             </div>
 
             <div id="diploma" class="program-tab-content" style="display: block;">
@@ -363,6 +366,60 @@
                 </div>
             </div>
 
+
+
+            <!-- GRAND MASTER TAB -->
+
+            <div id="grand-master" class="program-tab-content" style="display: none;">
+                <div class="grid grid-2 grid-gap-3">
+                    <div class="card card-auto p-4" data-animate>
+                        <h3 class="color-primary mb-1 text-center" style="font-size: 1.4rem;">Foundation (Part 1)</h3>
+                        <ul class="list-reset" style="text-align: left;">
+                            <li class="mb-2"><strong>Module 1: Grammar of Lal Kitab (Advanced)</strong><br>Introduces unique terminology like Dharmi Teva (pious chart) and Andha Teva (blind chart), defining how planets behave in specific houses.</li>
+                            <li class="mb-0-75"><strong>Module 2: House Swaps &amp; Aspects (Advanced)</strong><br>Mastering Lal Kitab's unique planetary aspects and house swaps, where planets exchange influences differently than in traditional Vedic astrology.</li>
+                        </ul>
+                    </div>
+                    <div class="card card-auto p-4" data-animate>
+                        <h3 class="color-primary mb-1 text-center" style="font-size: 1.4rem;">Karmic Analysis (Part 2)</h3>
+                        <ul class="list-reset" style="text-align: left;">
+                            <li class="mb-2"><strong>Module 3: Analysing Pitra Rin (Advanced)</strong><br>Identifying Pitra Rin (ancestral curses) through specific planetary combinations and applying targeted remedies to clear deep-seated family karmic debts.</li>
+                            <li class="mb-0-75"><strong>Module 4: Annual Charts (Varshphal) (Advanced)</strong><br>Learning to construct and interpret the Lal Kitab Varshphal, predicting year-by-year events by rotating planets within the annual chart.</li>
+                        </ul>
+                    </div>
+                    <div class="card card-auto p-4" data-animate>
+                        <h3 class="color-primary mb-1 text-center" style="font-size: 1.4rem;">Advanced Remedies (Part 3)</h3>
+                        <ul class="list-reset" style="text-align: left;">
+                            <li class="mb-2"><strong>Module 5: The Logic of Remedies (Advanced)</strong><br>Explaining the symbolic logic of Upay, such as why specific objects are submerged in water or buried in earth.</li>
+                            <li class="mb-0-75"><strong>Module 6: Debt &amp; Sacrifice (Bali) (Advanced)</strong><br>Studying the concept of sacrificial planets (Bali ka Bakra), where one planet's negative influence is transferred to another for protection.</li>
+                        </ul>
+                    </div>
+                    <div class="card card-auto p-4" data-animate>
+                        <h3 class="color-primary mb-1 text-center" style="font-size: 1.4rem;">Mastery (Part 4)</h3>
+                        <ul class="list-reset" style="text-align: left;">
+                            <li class="mb-2"><strong>Module 7: Blind &amp; Half-Blind Charts (Advanced)</strong><br>Advanced analysis of Andha and Dharmi Tevas, focusing on how to "awaken" dormant houses and planets through specific rituals.</li>
+                            <li class="mb-0-75"><strong>Module 8: Professional Integration (Advanced)</strong><br>Combining ancient Lal Kitab wisdom with modern lifestyle adjustments, ensuring remedies remain practical and effective in today's urban environments.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="landscape-pricing-card" data-animate>
+                   <div class="pricing-info-left">
+                        <span class="save-badge"><i class="fas fa-tag" style="margin-right: 4px;"></i> Save 29% Today</span>
+                        <h3 class="color-primary" style="font-size: 1.8rem; margin: 5px 0 10px 0;">Grand Master Lal Kitab</h3>
+                        <p class="mb-0" style="font-size: 1rem; color: #555; display: flex; align-items: center; gap: 8px;">
+                            <i class="far fa-clock" style="color: #c8960c; font-size: 1.1rem;"></i> <strong>Duration:</strong> 48 WEEKS comprehensive program
+                        </p>
+                    </div>
+                    <div class="pricing-block">
+                        <div style="text-decoration: line-through; color: #999; font-size: 1.1rem; margin-bottom: 2px;">Regular Price: ₹34,999</div>
+                        <strong style="color: #c8960c; font-size: 2.5rem; line-height: 1; font-weight: 800;">₹24,999</strong>
+                    </div>
+                    <div class="enroll-block">
+                        <a href="register.html" class="btn btn-primary" style="padding: 14px 35px; border-radius: 50px; font-weight: 700; letter-spacing: 0.5px; font-size: 1.05rem; box-shadow: 0 4px 15px rgba(200, 150, 12, 0.3);">Enroll Now</a>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </section>
 
@@ -389,6 +446,10 @@
                                 <span class="tier-title">Masters</span>
                                 <span class="tier-price">₹18,699</span>
                             </th>
+                            <th class="tier-grand-master">
+                                <span class="tier-title">Grand Master</span>
+                                <span class="tier-price">₹24,999</span>
+                            </th>
                         </tr>
                     </thead>
                     <tbody>
@@ -397,50 +458,79 @@
                             <td class="col-diploma"><i class="fas fa-check c-icon check"></i></td>
                             <td class="col-bachelors"><i class="fas fa-check c-icon check"></i></td>
                             <td class="col-masters"><i class="fas fa-check c-icon check"></i></td>
+                            <td class="col-grand-master"><i class="fas fa-check c-icon check"></i></td>
                         </tr>
                         <tr>
                             <td>Module 2: Aspects &amp; Planetary States</td>
                             <td class="col-diploma"><i class="fas fa-check c-icon check"></i></td>
                             <td class="col-bachelors"><i class="fas fa-check c-icon check"></i></td>
                             <td class="col-masters"><i class="fas fa-check c-icon check"></i></td>
+                            <td class="col-grand-master"><i class="fas fa-check c-icon check"></i></td>
                         </tr>
                         <tr>
                             <td>Module 3: Debts / Pitra Rin &amp; Kayam Planets</td>
                             <td class="col-diploma"><i class="fas fa-check c-icon check"></i></td>
                             <td class="col-bachelors"><i class="fas fa-check c-icon check"></i></td>
                             <td class="col-masters"><i class="fas fa-check c-icon check"></i></td>
+                            <td class="col-grand-master"><i class="fas fa-check c-icon check"></i></td>
                         </tr>
                         <tr>
                             <td>Module 4: The Art of Remedies / Varshphal</td>
                             <td class="col-diploma"><i class="fas fa-check c-icon check"></i></td>
                             <td class="col-bachelors"><i class="fas fa-check c-icon check"></i></td>
                             <td class="col-masters"><i class="fas fa-check c-icon check"></i></td>
+                            <td class="col-grand-master"><i class="fas fa-check c-icon check"></i></td>
                         </tr>
                         <tr>
                             <td>Module 5: Logic of Remedies</td>
                             <td class="col-diploma"><i class="fas fa-times c-icon cross"></i></td>
                             <td class="col-bachelors"><i class="fas fa-check c-icon check"></i></td>
                             <td class="col-masters"><i class="fas fa-check c-icon check"></i></td>
+                            <td class="col-grand-master"><i class="fas fa-check c-icon check"></i></td>
                         </tr>
                         <tr>
                             <td>Module 6: Modern Integration / Debt &amp; Sacrifice</td>
                             <td class="col-diploma"><i class="fas fa-times c-icon cross"></i></td>
                             <td class="col-bachelors"><i class="fas fa-check c-icon check"></i></td>
                             <td class="col-masters"><i class="fas fa-check c-icon check"></i></td>
+                            <td class="col-grand-master"><i class="fas fa-check c-icon check"></i></td>
                         </tr>
                         <tr>
                             <td>Module 7: Blind &amp; Half-Blind Charts</td>
                             <td class="col-diploma"><i class="fas fa-times c-icon cross"></i></td>
                             <td class="col-bachelors"><i class="fas fa-times c-icon cross"></i></td>
                             <td class="col-masters"><i class="fas fa-check c-icon check"></i></td>
+                            <td class="col-grand-master"><i class="fas fa-check c-icon check"></i></td>
                         </tr>
                         <tr>
                             <td>Module 8: Professional Integration</td>
                             <td class="col-diploma"><i class="fas fa-times c-icon cross"></i></td>
                             <td class="col-bachelors"><i class="fas fa-times c-icon cross"></i></td>
                             <td class="col-masters"><i class="fas fa-check c-icon check"></i></td>
+                            <td class="col-grand-master"><i class="fas fa-check c-icon check"></i></td>
                         </tr>
-                    </tbody>
+                                            <tr>
+                            <td>Extended 48-Week Access</td>
+                            <td class="col-diploma"><i class="fas fa-times c-icon cross"></i></td>
+                            <td class="col-bachelors"><i class="fas fa-times c-icon cross"></i></td>
+                            <td class="col-masters"><i class="fas fa-times c-icon cross"></i></td>
+                            <td class="col-grand-master"><i class="fas fa-check c-icon check"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Free 6 Spiritual Stairs Pathway</td>
+                            <td class="col-diploma"><i class="fas fa-times c-icon cross"></i></td>
+                            <td class="col-bachelors"><i class="fas fa-times c-icon cross"></i></td>
+                            <td class="col-masters"><i class="fas fa-times c-icon cross"></i></td>
+                            <td class="col-grand-master"><i class="fas fa-check c-icon check"></i></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Digital Badge / E-Certificate</strong></td>
+                            <td class="col-diploma"><i class="fas fa-check c-icon check"></i></td>
+                            <td class="col-bachelors"><i class="fas fa-check c-icon check"></i></td>
+                            <td class="col-masters"><i class="fas fa-check c-icon check"></i></td>
+                            <td class="col-grand-master"><i class="fas fa-check c-icon check"></i></td>
+                        </tr>
+</tbody>
                 </table>
             </div>
         </div>

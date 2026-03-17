@@ -123,7 +123,9 @@ const masterList = [
   { name: 'Rudraksha', meta: 'Rudraksha', url: 'rudraksha.html', icon: 'fas fa-seedling' },
   { name: 'Palmistry (Chirognomy & Chiromancy)', meta: 'Palmistry', url: 'palmistry.html', icon: 'fas fa-hand-paper' }
 ];
-const grandMasterList = [];
+const grandMasterList = [
+  { name: 'Grand Master Program', meta: 'Lifetime Mastery', url: 'contact.html', icon: 'fas fa-crown' }
+];
 
 const courseDomains = [
   {
@@ -728,4 +730,4 @@ function initMobileBottomNav() {
     allNavItems.forEach(navItem => navItem.remove());
   }
 }
-
+

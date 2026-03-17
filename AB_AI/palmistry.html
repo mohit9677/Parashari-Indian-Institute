@@ -202,6 +202,7 @@
         .comparison-table th.tier-diploma { background: #fdfbf7; }
         .comparison-table th.tier-bachelors { background: #f5eedc; }
         .comparison-table th.tier-masters { background: #e0d5c8; }
+        .comparison-table th.tier-grand-master { background: #d4a991; }
         
         .tier-title {
             display: block;
@@ -224,6 +225,7 @@
         .col-diploma { background: #fdfbf7 !important; }
         .col-bachelors { background: #f5eedc !important; }
         .col-masters { background: #e0d5c8 !important; }
+        .col-grand-master { background: #d4a991 !important; }
         
         .c-icon.check { color: #4CAF50; font-size: 1.2rem; }
         .c-icon.cross { color: #f44336; font-size: 1.1rem; opacity: 0.6; }
@@ -412,6 +414,7 @@
                 <button class="filter-tab active" data-program="diploma">Diploma</button>
                 <button class="filter-tab" data-program="bachelors">Bachelors</button>
                 <button class="filter-tab" data-program="masters">Masters</button>
+                <button class="filter-tab" data-program="grand-master">Grand Master</button>
             </div>
 
             <!-- DIPLOMA TAB -->
@@ -544,6 +547,57 @@
                         <a href="register.html" class="btn btn-primary" style="padding: 14px 35px; border-radius: 50px; font-weight: 700; letter-spacing: 0.5px; font-size: 1.05rem; box-shadow: 0 4px 15px rgba(200, 150, 12, 0.3);">Enroll Now</a>
                     </div>
                 </div>
+            </div>
+
+            <!-- GRAND MASTER TAB -->
+            <div id="grand-master" class="program-tab-content" style="display: none;">
+                <div class="grid grid-2 grid-gap-3">
+                    <div class="card card-auto p-4" data-animate>
+                        <h3 class="color-primary mb-1 text-center" style="font-size: 1.4rem;">Foundation (Part 1)</h3>
+                        <ul class="list-reset" style="text-align: left;">
+                            <li class="mb-2"><strong>Module 1: Chirognomy &amp; Hand Types (Advanced)</strong><br>Analyses hand shapes, finger lengths, and thumb flexibility to decode fundamental personality traits, willpower, and an individual's natural temperament.</li>
+                            <li class="mb-0-75"><strong>Module 2: Chiromancy &amp; Primary Lines (Advanced)</strong><br>Mastering the 3 Primary lines (Life, Head, Heart) to map out physical vitality, mental capacity, and emotional life paths.</li>
+                        </ul>
+                    </div>
+                    <div class="card card-auto p-4" data-animate>
+                        <h3 class="color-primary mb-1 text-center" style="font-size: 1.4rem;">Lines &amp; Mounts (Part 2)</h3>
+                        <ul class="list-reset" style="text-align: left;">
+                            <li class="mb-2"><strong>Module 3: Secondary &amp; Minor Lines (Advanced)</strong><br>Explores the 8 Secondary lines, including the Fate, Sun, and Mercury lines, to predict career success, fame, and health.</li>
+                            <li class="mb-0-75"><strong>Module 4: Mount Analysis (Advanced)</strong><br>Analyses how planetary mounts like Jupiter and Venus influence human behaviour, ambition, and the capacity for love and leadership.</li>
+                        </ul>
+                    </div>
+                    <div class="card card-auto p-4" data-animate>
+                        <h3 class="color-primary mb-1 text-center" style="font-size: 1.4rem;">Marks &amp; Timing (Part 3)</h3>
+                        <ul class="list-reset" style="text-align: left;">
+                            <li class="mb-2"><strong>Module 5: Rare Sacred Marks (Advanced)</strong><br>Interprets auspicious signs like the Fish, Trident, Lotus, and Temple, which signify unique spiritual gifts, wealth, and divine protection.</li>
+                            <li class="mb-0-75"><strong>Module 6: Timing &amp; Chronology (Advanced)</strong><br>Teaches precise techniques for timing life events by using the Life Line and Fate Line as a chronological biological clock.</li>
+                        </ul>
+                    </div>
+                    <div class="card card-auto p-4" data-animate>
+                        <h3 class="color-primary mb-1 text-center" style="font-size: 1.4rem;">Health &amp; Ethics (Part 4)</h3>
+                        <ul class="list-reset" style="text-align: left;">
+                            <li class="mb-2"><strong>Module 7: Forensic &amp; Health Palmistry (Advanced)</strong><br>Identifies health risks and deep-seated psychological patterns through skin ridges and nail analysis, bridging palmistry with modern holistic wellness.</li>
+                            <li class="mb-0-75"><strong>Module 8: Professional Consultation (Advanced)</strong><br>Focuses on the ethics of palm reading, hand-printing techniques, and integrating palmistry with astrological charts for a comprehensive client analysis.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="landscape-pricing-card" data-animate>
+                   <div class="pricing-info-left">
+                        <span class="save-badge"><i class="fas fa-tag" style="margin-right: 4px;"></i> Save 29% Today</span>
+                        <h3 class="color-primary" style="font-size: 1.8rem; margin: 5px 0 10px 0;">Grand Master Palmistry</h3>
+                        <p class="mb-0" style="font-size: 1rem; color: #555; display: flex; align-items: center; gap: 8px;">
+                            <i class="far fa-clock" style="color: #c8960c; font-size: 1.1rem;"></i> <strong>Duration:</strong> 48 WEEKS comprehensive program
+                        </p>
+                    </div>
+                    <div class="pricing-block">
+                        <div style="text-decoration: line-through; color: #999; font-size: 1.1rem; margin-bottom: 2px;">Regular Price: ₹34,999</div>
+                        <strong style="color: #c8960c; font-size: 2.5rem; line-height: 1; font-weight: 800;">₹24,999</strong>
+                    </div>
+                    <div class="enroll-block">
+                        <a href="register.html" class="btn btn-primary" style="padding: 14px 35px; border-radius: 50px; font-weight: 700; letter-spacing: 0.5px; font-size: 1.05rem; box-shadow: 0 4px 15px rgba(200, 150, 12, 0.3);">Enroll Now</a>
+                    </div>
+                </div>
             </div>
             
         </div>
@@ -572,6 +626,10 @@
                                 <span class="tier-title">Masters</span>
                                 <span class="tier-price">₹18,699</span>
                             </th>
+                            <th class="tier-grand-master">
+                                <span class="tier-title">Grand Master</span>
+                                <span class="tier-price">₹24,999</span>
+                            </th>
                         </tr>
                     </thead>
                     <tbody>
@@ -580,54 +638,77 @@
                             <td class="col-diploma"><i class="fas fa-check c-icon check"></i></td>
                             <td class="col-bachelors"><i class="fas fa-check c-icon check"></i></td>
                             <td class="col-masters"><i class="fas fa-check c-icon check"></i></td>
+                            <td class="col-grand-master"><i class="fas fa-check c-icon check"></i></td>
                         </tr>
                         <tr>
                             <td>Major Lines / Chiromancy</td>
                             <td class="col-diploma"><i class="fas fa-check c-icon check"></i></td>
                             <td class="col-bachelors"><i class="fas fa-check c-icon check"></i></td>
                             <td class="col-masters"><i class="fas fa-check c-icon check"></i></td>
+                            <td class="col-grand-master"><i class="fas fa-check c-icon check"></i></td>
                         </tr>
                         <tr>
                             <td>Mounts &amp; Minor Lines</td>
                             <td class="col-diploma"><i class="fas fa-check c-icon check"></i></td>
                             <td class="col-bachelors"><i class="fas fa-check c-icon check"></i></td>
                             <td class="col-masters"><i class="fas fa-check c-icon check"></i></td>
+                            <td class="col-grand-master"><i class="fas fa-check c-icon check"></i></td>
                         </tr>
                         <tr>
                             <td>Signs &amp; Timing / Sacred Marks</td>
                             <td class="col-diploma"><i class="fas fa-check c-icon check"></i></td>
                             <td class="col-bachelors"><i class="fas fa-check c-icon check"></i></td>
                             <td class="col-masters"><i class="fas fa-check c-icon check"></i></td>
+                            <td class="col-grand-master"><i class="fas fa-check c-icon check"></i></td>
                         </tr>
                         <tr>
                             <td>Timing &amp; Biological Clock</td>
                             <td class="col-diploma"><i class="fas fa-times c-icon cross"></i></td>
                             <td class="col-bachelors"><i class="fas fa-check c-icon check"></i></td>
                             <td class="col-masters"><i class="fas fa-check c-icon check"></i></td>
+                            <td class="col-grand-master"><i class="fas fa-check c-icon check"></i></td>
                         </tr>
                         <tr>
                             <td>Forensic &amp; Health Palmistry</td>
                             <td class="col-diploma"><i class="fas fa-times c-icon cross"></i></td>
                             <td class="col-bachelors"><i class="fas fa-check c-icon check"></i></td>
                             <td class="col-masters"><i class="fas fa-check c-icon check"></i></td>
+                            <td class="col-grand-master"><i class="fas fa-check c-icon check"></i></td>
                         </tr>
                         <tr>
                             <td>Secondary &amp; Minor Lines (Advanced)</td>
                             <td class="col-diploma"><i class="fas fa-times c-icon cross"></i></td>
                             <td class="col-bachelors"><i class="fas fa-times c-icon cross"></i></td>
                             <td class="col-masters"><i class="fas fa-check c-icon check"></i></td>
+                            <td class="col-grand-master"><i class="fas fa-check c-icon check"></i></td>
                         </tr>
                         <tr>
                             <td>Professional Consultation &amp; Ethics</td>
                             <td class="col-diploma"><i class="fas fa-times c-icon cross"></i></td>
                             <td class="col-bachelors"><i class="fas fa-times c-icon cross"></i></td>
                             <td class="col-masters"><i class="fas fa-check c-icon check"></i></td>
+                            <td class="col-grand-master"><i class="fas fa-check c-icon check"></i></td>
+                        </tr>                        <tr>
+                            <td>Extended 48-Week Access</td>
+                            <td class="col-diploma"><i class="fas fa-times c-icon cross"></i></td>
+                            <td class="col-bachelors"><i class="fas fa-times c-icon cross"></i></td>
+                            <td class="col-masters"><i class="fas fa-times c-icon cross"></i></td>
+                            <td class="col-grand-master"><i class="fas fa-check c-icon check"></i></td>
                         </tr>
+                        <tr>
+                            <td>Free 6 Spiritual Stairs Pathway</td>
+                            <td class="col-diploma"><i class="fas fa-times c-icon cross"></i></td>
+                            <td class="col-bachelors"><i class="fas fa-times c-icon cross"></i></td>
+                            <td class="col-masters"><i class="fas fa-times c-icon cross"></i></td>
+                            <td class="col-grand-master"><i class="fas fa-check c-icon check"></i></td>
+                        </tr>
+
                         <tr>
                             <td><strong>Digital Badge / E-Certificate</strong></td>
                             <td class="col-diploma"><i class="fas fa-check c-icon check"></i></td>
                             <td class="col-bachelors"><i class="fas fa-check c-icon check"></i></td>
                             <td class="col-masters"><i class="fas fa-check c-icon check"></i></td>
+                            <td class="col-grand-master"><i class="fas fa-check c-icon check"></i></td>
                         </tr>
                     </tbody>
                 </table>

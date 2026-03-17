@@ -1,0 +1,304 @@
+﻿diff --git a/AB_AI/assets/js/navbar.js b/AB_AI/assets/js/navbar.js
+index 1a3bf8b..3209d81 100644
+--- a/AB_AI/assets/js/navbar.js
++++ b/AB_AI/assets/js/navbar.js
+@@ -224,8 +224,8 @@ const courseDomains = [
+     icon: 'fas fa-crown',
+     description: 'Elite visionary training establishing you as a global authority in astrology.',
+     specialContent: {
+-      title: "ASTROBHARATAI Grand Master Pass ΓÇô Complete Syllabus",
+-      whoItIsFor: "Dedicated individuals seeking an All-in-One Lifetime Mastery Program",
++      title: "Mentorship Only",
++      whoItIsFor: "Dedicated individuals seeking an All-in-One Lifetime Mentorship",
+       objective: "Includes Γ£à All 10 Diploma Programs | Γ£à All Mastery Bundles | Γ£à All future courses & upgrades",
+       whatYouWillLearn: [
+         "<b>Comprehensive Knowledge:</b> Vedic & KP Astrology, Lal Kitab, Numerology, Vastu",
+@@ -363,9 +363,13 @@ function initMegaMenu() {
+         const scrollBtn = contentArea.querySelector('.mega-scroll-btn');
+         if (scrollBtn) {
+           scrollBtn.addEventListener('click', () => {
+-            const grid = contentArea.querySelector('.mega-courses-grid');
+-            if (grid) {
+-              grid.scrollIntoView({ behavior: 'smooth', block: 'start' });
++            if (domain.id === 'level-grandmaster') {
++              window.location.href = 'courses.html?category=Grand%20Master';
++            } else {
++              const grid = contentArea.querySelector('.mega-courses-grid');
++              if (grid) {
++                grid.scrollIntoView({ behavior: 'smooth', block: 'start' });
++              }
+             }
+           });
+         }
+diff --git a/AB_AI/courses.html b/AB_AI/courses.html
+index b75a315..29f0faa 100644
+--- a/AB_AI/courses.html
++++ b/AB_AI/courses.html
+@@ -1176,7 +1176,36 @@
+             </div>
+           </div>
+         </div>
+-        <div class="premium-gold-card" style="display: none !important; padding: 0 !important;" data-animate data-category="Grand Master" data-course-id="rudraksha">
++        <div class="premium-gold-card" style="padding: 0 !important;" data-animate data-category="Grand Master" data-course-id="rudraksha">
++          <span class="discount-tag" data-discount="25% Discount"></span>
++          <div class="card-image-container">
++            <img src="assets/images/rudraksha-new.jpg" alt="Rudraksha" class="card-image">
++          </div>
++          <div class="card-body">
++            <div class="card-header">
++              <div class="card-header-icon"><i class="fa-solid fa-om"></i></div>
++              <h3 class="card-title">Rudraksha</h3>
++            </div>
++            <p class="course-desc-text">Discover potent traditional remedies. Learn precise, practical solutions to overcome life's biggest obstacles and manifest your desired outcomes.</p>
++            <div class="mb-1">
++              <span class="category-badge" style="background:#c8960c">Grand Master ┬╖ Elite</span>
++              <span class="certification-badge">Γ£ô Certification</span>
++            </div>
++            <h4 class="color-secondary mb-1 text-center"><del
++                style="color:#999;font-size:0.65em;margin-right:8px;vertical-align:middle;">Γé╣34,999</del><strong
++                style="color:#FFD700;font-size:1.1em;">Γé╣24,999</strong></h4>
++            <div class="course-footer">
++              <a href="rudraksha.html" class="learn-more">
++                <span class="circle" aria-hidden="true">
++                  <span class="icon arrow">
++                  </span>
++                </span>
++                <span class="button-text">Learn More</span>
++              </a>
++            </div>
++          </div>
++        </div>
++        <div class="premium-gold-card" style="padding: 0 !important;" data-animate data-category="Grand Master" data-course-id="rudraksha">
+           <span class="discount-tag" data-discount="25% Discount"></span>
+           <div class="card-image-container">
+             <img src="assets/images/rudraksha-new.jpg" alt="Rudraksha" class="card-image">
+@@ -1235,7 +1264,96 @@
+           </div>
+         </div>
+ 
+-        <div class="premium-gold-card" style="display: none !important; padding: 0 !important;" data-animate data-category="Grand Master" data-course-id="bnn-astrology">
++        <div class="premium-gold-card" style="padding: 0 !important;" data-animate data-category="Grand Master" data-course-id="bnn-astrology">
++          <span class="discount-tag" data-discount="25% Discount"></span>
++          <div class="card-image-container">
++            <img src="assets/images/virgo-card.jpg" alt="BNN Advance" class="card-image">
++          </div>
++          <div class="card-body">
++            <div class="card-header">
++              <div class="card-header-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
++              <h3 class="card-title">BNN Advance</h3>
++            </div>
++            <p class="course-desc-text">Dive into advanced predictive techniques. Gain mastery over specialized systems that offer pinpoint accuracy and clarity for the future.</p>
++            <div class="mb-1">
++              <span class="category-badge" style="background:#c8960c">Grand Master ┬╖ Elite</span>
++              <span class="certification-badge">Γ£ô Certification</span>
++            </div>
++            <h4 class="color-secondary mb-1 text-center"><del
++                style="color:#999;font-size:0.65em;margin-right:8px;vertical-align:middle;">Γé╣34,999</del><strong
++                style="color:#FFD700;font-size:1.1em;">Γé╣24,999</strong></h4>
++            <div class="course-footer">
++              <a href="bnn-astrology.html" class="learn-more">
++                <span class="circle" aria-hidden="true">
++                  <span class="icon arrow">
++                  </span>
++                </span>
++                <span class="button-text">Learn More</span>
++              </a>
++            </div>
++          </div>
++        </div>
++
++        <div class="premium-gold-card" style="padding: 0 !important;" data-animate data-category="Grand Master" data-course-id="plrt">
++          <span class="discount-tag" data-discount="25% Discount"></span>
++          <div class="card-image-container">
++            <img src="assets/images/past-life.jpg" alt="Past Life Prediction" class="card-image">
++          </div>
++          <div class="card-body">
++            <div class="card-header">
++              <div class="card-header-icon"><i class="fa-solid fa-hourglass-half"></i></div>
++              <h3 class="card-title">Past Life Prediction</h3>
++            </div>
++            <p class="course-desc-text">Uncover unresolved past karma to heal current life blocks. Empower yourself to live with greater clarity, purpose, and emotional freedom.</p>
++            <div class="mb-1">
++              <span class="category-badge" style="background:#c8960c">Grand Master ┬╖ Elite</span>
++              <span class="certification-badge">Γ£ô Certification</span>
++            </div>
++            <h4 class="color-secondary mb-1 text-center"><del
++                style="color:#999;font-size:0.65em;margin-right:8px;vertical-align:middle;">Γé╣34,999</del><strong
++                style="color:#FFD700;font-size:1.1em;">Γé╣24,999</strong></h4>
++            <div class="course-footer">
++              <a href="plrt.html" class="learn-more">
++                <span class="circle" aria-hidden="true">
++                  <span class="icon arrow">
++                  </span>
++                </span>
++                <span class="button-text">Learn More</span>
++              </a>
++            </div>
++          </div>
++        </div>
++        <div class="premium-gold-card" style="padding: 0 !important;" data-animate data-category="Grand Master" data-course-id="remedy-course">
++          <span class="discount-tag" data-discount="25% Discount"></span>
++          <div class="card-image-container">
++            <img src="assets/images/cancer-card.png" alt="Remedy Course" class="card-image">
++          </div>
++          <div class="card-body">
++            <div class="card-header">
++              <div class="card-header-icon"><i class="fa-solid fa-om"></i></div>
++              <h3 class="card-title">Remedy Course</h3>
++            </div>
++            <p class="course-desc-text">Discover potent traditional remedies. Learn precise, practical solutions to overcome life's biggest obstacles and manifest your desired outcomes.</p>
++            <div class="mb-1">
++              <span class="category-badge" style="background:#c8960c">Grand Master ┬╖ Elite</span>
++              <span class="certification-badge">Γ£ô Certification</span>
++            </div>
++            <h4 class="color-secondary mb-1 text-center"><del
++                style="color:#999;font-size:0.65em;margin-right:8px;vertical-align:middle;">Γé╣34,999</del><strong
++                style="color:#FFD700;font-size:1.1em;">Γé╣24,999</strong></h4>
++            <div class="course-footer">
++              <a href="remedy-course.html" class="learn-more">
++                <span class="circle" aria-hidden="true">
++                  <span class="icon arrow">
++                  </span>
++                </span>
++                <span class="button-text">Learn More</span>
++              </a>
++            </div>
++          </div>
++        </div>
++
++        <div class="premium-gold-card" style="padding: 0 !important;" data-animate data-category="Grand Master" data-course-id="bnn-astrology">
+           <span class="discount-tag" data-discount="25% Discount"></span>
+           <div class="card-image-container">
+             <img src="assets/images/virgo-card.jpg" alt="BNN Advance" class="card-image">
+@@ -1265,7 +1383,7 @@
+           </div>
+         </div>
+ 
+-        <div class="premium-gold-card" style="display: none !important; padding: 0 !important;" data-animate data-category="Grand Master" data-course-id="plrt">
++        <div class="premium-gold-card" style="padding: 0 !important;" data-animate data-category="Grand Master" data-course-id="plrt">
+           <span class="discount-tag" data-discount="25% Discount"></span>
+           <div class="card-image-container">
+             <img src="assets/images/past-life.jpg" alt="Past Life Prediction" class="card-image">
+@@ -1294,7 +1412,7 @@
+             </div>
+           </div>
+         </div>
+-        <div class="premium-gold-card" style="display: none !important; padding: 0 !important;" data-animate data-category="Grand Master" data-course-id="remedy-course">
++        <div class="premium-gold-card" style="padding: 0 !important;" data-animate data-category="Grand Master" data-course-id="remedy-course">
+           <span class="discount-tag" data-discount="25% Discount"></span>
+           <div class="card-image-container">
+             <img src="assets/images/cancer-card.png" alt="Remedy Course" class="card-image">
+@@ -2459,12 +2577,17 @@
+             const courseId = card.getAttribute('data-course-id');
+ 
+             if (filterValue === 'all') {
+-              // De-duplication logic for "All Courses"
+-              if (courseId && shownIds.has(courseId)) {
++              // Hide Grand Master cards from All Courses view
++              if (cardCategory === 'Grand Master') {
+                 card.classList.add('hidden');
+               } else {
+-                card.classList.remove('hidden');
+-                if (courseId) shownIds.add(courseId);
++                // De-duplication logic for "All Courses"
++                if (courseId && shownIds.has(courseId)) {
++                  card.classList.add('hidden');
++                } else {
++                  card.classList.remove('hidden');
++                  if (courseId) shownIds.add(courseId);
++                }
+               }
+             } else if (filterValue === cardCategory) {
+               card.classList.remove('hidden');
+@@ -2505,11 +2628,15 @@
+             const courseId = card.getAttribute('data-course-id');
+ 
+             if (filterValue === 'all') {
+-              if (courseId && shownIds.has(courseId)) {
++              if (cardCategory === 'Grand Master') {
+                 card.classList.add('hidden');
+               } else {
+-                card.classList.remove('hidden');
+-                if (courseId) shownIds.add(courseId);
++                if (courseId && shownIds.has(courseId)) {
++                  card.classList.add('hidden');
++                } else {
++                  card.classList.remove('hidden');
++                  if (courseId) shownIds.add(courseId);
++                }
+               }
+             } else if (filterValue === cardCategory) {
+               card.classList.remove('hidden');
+@@ -2519,6 +2646,24 @@
+           });
+         });
+       }
++
++      // Handle URL parameters for category selection
++      const urlParams = new URLSearchParams(window.location.search);
++      const categoryParam = urlParams.get('category');
++      if (categoryParam) {
++        // Try desktop tab
++        const targetTab = document.querySelector(`.filter-tab[data-filter="${categoryParam}"]`);
++        if (targetTab) {
++          targetTab.click();
++        } else {
++          // Try mobile dropdown
++          const mobileSelect = document.getElementById('mobileCategorySelect');
++          if (mobileSelect) {
++            mobileSelect.value = categoryParam;
++            mobileSelect.dispatchEvent(new Event('change'));
++          }
++        }
++      }
+     });
+   </script>
+ 
+@@ -2526,9 +2671,7 @@
+   <div id="quickViewOverlay" class="quick-view-overlay">
+     <div class="quick-view-modal">
+       <div class="qv-close" id="qvClose"><i class="fa-solid fa-xmark"></i></div>
+-      <img src="" id="qvImage" class="qv-image" alt="Course Image">
+       <div class="qv-body">
+-        <h3 id="qvTitle" class="qv-title">Course Title</h3>
+         <p id="qvDesc" class="qv-desc">Course Description</p>
+       </div>
+       <div class="qv-landscape-bar">
+@@ -2589,7 +2732,7 @@
+             qvOldPrice.innerText = delEl.innerText;
+             qvNewPrice.innerText = strongEl.innerText;
+             
+-            qvEnrollBtn.href = btn.getAttribute('href');
++            qvEnrollBtn.href = "register.html";
+             overlay.classList.add('show');
+           }
+         }
+diff --git a/AB_AI/index.html b/AB_AI/index.html
+index a9eeb73..41637dd 100644
+--- a/AB_AI/index.html
++++ b/AB_AI/index.html
+@@ -731,7 +731,7 @@
+   <section class="light-bg">
+     <div class="container-wide">
+       <h2 class="card-section-title">Fee Structure</h2>
+-      <div class="grid grid-2 grid-gap-2">
++      <div class="grid grid-3 grid-gap-2">
+         <div class="premium-gold-card p-3" data-animate>
+           <h4 class="color-primary header-sm">Beginners Crash Course</h4>
+           <div class="font-2xl color-secondary price-display">
+@@ -752,7 +752,6 @@
+           <p class="card-small-text">12 Weeks</p>
+           <a href="fee-structure.html" class="btn btn-primary btn-full">View Details</a>
+         </div>
+-        <!--
+         <div class="premium-gold-card p-3" data-animate>
+           <h4 class="color-primary header-sm">Elite Grand Master</h4>
+           <div class="font-2xl color-secondary price-display">
+@@ -763,7 +762,6 @@
+           <p class="card-small-text">24 Weeks</p>
+           <a href="fee-structure.html" class="btn btn-primary btn-full">View Details</a>
+         </div>
+-        -->
+       </div>
+       <div class="text-center mt-2">
+         <a href="fee-structure.html" class="btn-glass">Show All</a>

@@ -1,0 +1,20 @@
+﻿3ecb672 HEAD@{0}: reset: moving to HEAD~1
+85186aa HEAD@{1}: commit: Update frontend: Fix Grand Master tiers and index fee structure grid
+3ecb672 HEAD@{2}: reset: moving to HEAD
+3ecb672 HEAD@{3}: commit: chore: rename 'Fast Register' to 'Register Now' in all marquee buttons
+846212f HEAD@{4}: commit: feat: add category descriptions to mobile All Courses dropdown
+4bb9cb3 HEAD@{5}: commit: feat: add mobile bottom nav bar and compact top nav - Added fixed bottom navigation bar with 5 tabs (Home, Fee Structure, Explore, 6 Stairs, Contact) - Replaced hamburger menu with compact inline top nav (About Us, All Courses, Blog, Gallery, Login, Register) - All Courses toggles dropdown panel with course categories accordion - Click-outside-to-close behavior for dropdown panel - Responsive font sizes for 480px breakpoint
+7f3eda8 HEAD@{6}: commit: Fix PLRT pricing card badge to show Save 25% instead of 6 Stairs Series
+87beafb HEAD@{7}: commit: Fix mobile layout for pricing cards and correct PLRT mega menu link
+24f972a HEAD@{8}: commit: Update frontend pages and assets
+f257d97 HEAD@{9}: commit: Update frontend with UI fixes and new course layouts
+5f4e3b8 HEAD@{10}: commit: Remove offline class references and lifetime course access claims
+9e00a94 HEAD@{11}: commit: Redesign course pages, fix truncated images, update fees structure
+373a9a9 HEAD@{12}: commit: Update frontend UI, refine courses listing, normalize components sizes
+e3d2fe5 HEAD@{13}: commit: Update frontend: testimonial redesigns, profile updates, index course cards alignment, and 6-stairs cards
+b54c3ed HEAD@{14}: commit: Update AB_AI frontend: gallery enhancements, new assets (using LFS), and layout fixes
+25f7321 HEAD@{15}: reset: moving to HEAD~1
+c6eaf75 HEAD@{16}: commit: Update AB_AI frontend: gallery enhancements, new assets, and layout fixes
+25f7321 HEAD@{17}: commit: Update course images and mobile responsiveness fixes for all course cards
+2f84046 HEAD@{18}: commit: Enhance mobile responsive course cards and update 10 course images with high-quality uncropped versions
+066ed0d HEAD@{19}: commit: Update: Accreditation cards, Benefits cards layout, 6-Stairs images, chatbot fix, mobile responsive CSS

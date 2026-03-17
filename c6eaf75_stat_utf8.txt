@@ -1,0 +1,66 @@
+﻿commit c6eaf75a2b13764237dd087aa24fe7c2935fce6e
+Author: mohit9677 <you@example.com>
+Date:   Fri Mar 6 18:55:39 2026 +0530
+
+    Update AB_AI frontend: gallery enhancements, new assets, and layout fixes
+
+ AB_AI/assets/css/gallery.css                       |  80 +++
+ AB_AI/assets/css/main.css                          |  57 +-
+ AB_AI/assets/css/profile.css                       |   1 +
+ AB_AI/assets/css/responsive.css                    |  28 +-
+ AB_AI/assets/images/10k-happy-students.webp        | Bin 0 -> 25224 bytes
+ AB_AI/assets/images/12.mp4                         | Bin 0 -> 318475028 bytes
+ AB_AI/assets/images/Bharat Shree Award .png        | Bin 0 -> 5017896 bytes
+ ...lthcare Instagram Reel_20250820_211924_0001.mp4 | Bin 0 -> 301794254 bytes
+ AB_AI/assets/images/chakra-balancing.jpg           | Bin 0 -> 509885 bytes
+ AB_AI/assets/images/dean-photo.png                 | Bin 0 -> 1606750 bytes
+ AB_AI/assets/images/face-reading.jpg               | Bin 0 -> 610519 bytes
+ AB_AI/assets/images/gallery-awards-ceremony.jpeg   | Bin 0 -> 90732 bytes
+ AB_AI/assets/images/gallery-book-launch.jpeg       | Bin 0 -> 143365 bytes
+ .../images/gallery-international-student.jpeg      | Bin 0 -> 86477 bytes
+ AB_AI/assets/images/gallery-portrait.jpeg          | Bin 0 -> 170051 bytes
+ .../assets/images/gallery-spiritual-blessing.jpeg  | Bin 0 -> 221879 bytes
+ AB_AI/assets/images/gallery-studio-interview.jpeg  | Bin 0 -> 126303 bytes
+ AB_AI/assets/images/gallery-video-1.mp4            | Bin 0 -> 2043342 bytes
+ AB_AI/assets/images/gallery-video-2.mp4            | Bin 0 -> 5921459 bytes
+ AB_AI/assets/images/gemstone.jpg                   | Bin 0 -> 660048 bytes
+ AB_AI/assets/images/global-student-network.png     | Bin 0 -> 150462 bytes
+ AB_AI/assets/images/government-approved.jpg        | Bin 0 -> 59785 bytes
+ AB_AI/assets/images/harshit-politician.jpeg        | Bin 0 -> 216078 bytes
+ AB_AI/assets/images/harshit-sir-politician.jpeg    | Bin 0 -> 216078 bytes
+ AB_AI/assets/images/harshit-sir.jpeg               | Bin 0 -> 77660 bytes
+ AB_AI/assets/images/healing.jpg                    | Bin 0 -> 686325 bytes
+ AB_AI/assets/images/img1.jpeg                      | Bin 0 -> 115685 bytes
+ AB_AI/assets/images/img2.jpg                       | Bin 0 -> 141774 bytes
+ AB_AI/assets/images/img3.jpg                       | Bin 0 -> 697183 bytes
+ AB_AI/assets/images/img4.jpg                       | Bin 0 -> 66590 bytes
+ AB_AI/assets/images/img5.JPG                       | Bin 0 -> 3534797 bytes
+ AB_AI/assets/images/kp-astrology.jpg               | Bin 0 -> 819899 bytes
+ AB_AI/assets/images/lal-kitab.jpg                  | Bin 0 -> 659598 bytes
+ AB_AI/assets/images/mantra-stair.jpg               | Bin 0 -> 713264 bytes
+ AB_AI/assets/images/mantra.jpg                     | Bin 0 -> 713264 bytes
+ AB_AI/assets/images/numerology.jpg                 | Bin 0 -> 726691 bytes
+ AB_AI/assets/images/palmistry.jpg                  | Bin 0 -> 662058 bytes
+ AB_AI/assets/images/past-life.jpg                  | Bin 0 -> 547653 bytes
+ AB_AI/assets/images/remedies.jpg                   | Bin 0 -> 632547 bytes
+ AB_AI/assets/images/rudraksha.jpg                  | Bin 0 -> 599254 bytes
+ AB_AI/assets/images/tantra-stair.jpg               | Bin 0 -> 787337 bytes
+ AB_AI/assets/images/tantra.jpg                     | Bin 0 -> 787337 bytes
+ AB_AI/assets/images/tarot.jpg                      | Bin 0 -> 711887 bytes
+ AB_AI/assets/images/turban-man-circle.png          | Bin 0 -> 979794 bytes
+ AB_AI/assets/images/vastu.jpg                      | Bin 0 -> 775109 bytes
+ AB_AI/assets/images/vedic-astrology.jpg            | Bin 0 -> 795250 bytes
+ AB_AI/assets/images/video-poster-1.jpg             | Bin 0 -> 491649 bytes
+ AB_AI/assets/images/video-poster-2.png             | Bin 0 -> 346669 bytes
+ AB_AI/assets/images/video-poster-3.png             | Bin 0 -> 348980 bytes
+ AB_AI/assets/images/yantra-stair.jpg               | Bin 0 -> 714168 bytes
+ AB_AI/assets/images/yantra.jpg                     | Bin 0 -> 714168 bytes
+ ... And your stars_ They_re always guiding yo.mp4" | Bin 0 -> 6168698 bytes
+ AB_AI/assets/js/courses-data.js                    |   2 +-
+ AB_AI/courses.html                                 | 285 ++--------
+ AB_AI/gallery.html                                 | 227 +++++---
+ AB_AI/profile.html                                 |   6 +-
+ AB_AI/scripts/add_discounts.py                     |  59 ++
+ AB_AI/status.txt                                   | Bin 0 -> 20458 bytes
+ AB_AI/upcoming-courses.html                        | 632 +++++++++++++++++++++
+ 59 files changed, 1061 insertions(+), 316 deletions(-)

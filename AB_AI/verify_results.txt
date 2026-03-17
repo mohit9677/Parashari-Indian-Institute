@@ -1,0 +1,15 @@
+FAIL vastu.html: Missing ['Extended 48-Week Access', 'Free 6 Spiritual Stairs']
+OK   tarot.html
+OK   rudraksha.html
+FAIL reiki.html: Missing ['Extended 48-Week Access', 'Free 6 Spiritual Stairs']
+OK   numerology.html
+OK   palmistry.html
+OK   nakshatra.html
+FAIL lal-kitab.html: Missing ['Extended 48-Week Access', 'Free 6 Spiritual Stairs']
+FAIL kp-astrology.html: Missing ['Extended 48-Week Access', 'Free 6 Spiritual Stairs']
+FAIL gemstone.html: Missing ['Extended 48-Week Access', 'Free 6 Spiritual Stairs']
+FAIL face-reading.html: Missing ['Extended 48-Week Access', 'Free 6 Spiritual Stairs']
+OK   crystal-healing.html
+FAIL astrology.html: Missing ['Extended 48-Week Access', 'Free 6 Spiritual Stairs']
+
+=== SOME FILES FAILED ===
