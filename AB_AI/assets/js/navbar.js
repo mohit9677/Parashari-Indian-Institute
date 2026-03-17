@@ -226,9 +226,9 @@ const courseDomains = [
     icon: 'fas fa-crown',
     description: 'The ultimate 48-week mastery journey covering all 12 core disciplines plus the exclusive 6 Spiritual Stairs pathway.',
     specialContent: {
-      title: "ASTROBHARATAI Grand Master Pass – Complete Syllabus",
-      whoItIsFor: "Dedicated individuals seeking an All-in-One Lifetime Mastery Program",
-      objective: "Includes ✅ All 10 Diploma Programs | ✅ All Mastery Bundles | ✅ All future courses & upgrades",
+      title: "ASTROBHARATAI Grand Master Pass",
+      whoItIsFor: "Dedicated individuals seeking the Ultimate 48-Week Elite Mastery Program",
+      objective: "Includes ✅ All 12 Core Disciplines | ✅ Extended 48-Week Access | ✅ Free 6 Spiritual Stairs",
       whatYouWillLearn: [
         "<b>Comprehensive Knowledge:</b> Vedic & KP Astrology, Lal Kitab, Numerology, Vastu",
         "<b>Specialized Sciences:</b> Gemstones, Face Reading, Palmistry, Tarot, Reiki",
@@ -238,10 +238,10 @@ const courseDomains = [
         "<b>Leadership:</b> Research-driven models, teaching methodology & mentoring"
       ],
       learningOutcome: [
-        "Expert-level authority as a Modern Occult Scientist",
-        "Faculty eligibility (post evaluation)",
+        "Expert-level authority across 12 disciplines",
+        "Mastery of the 6 Spiritual Stairs",
         "Priority Live Q&A (\"First-Row Access\")",
-        "Lifetime alumni & professional network"
+        "Elite Certification & 1-on-1 Mentorship support"
       ]
     },
     courses: grandMasterList
