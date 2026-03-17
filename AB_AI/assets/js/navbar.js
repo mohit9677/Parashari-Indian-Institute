@@ -124,7 +124,7 @@ const masterList = [
   { name: 'Palmistry (Chirognomy & Chiromancy)', meta: 'Palmistry', url: 'palmistry.html', icon: 'fas fa-hand-paper' }
 ];
 const grandMasterList = [
-  { name: 'Grand Master Program', meta: 'Lifetime Mastery', url: 'contact.html', icon: 'fas fa-crown' }
+  { name: 'Grand Master Program', meta: 'Lifetime Mastery', url: 'courses.html', icon: 'fas fa-crown' }
 ];
 
 const courseDomains = [
@@ -224,7 +224,7 @@ const courseDomains = [
     id: 'level-grandmaster',
     label: 'Grand Master',
     icon: 'fas fa-crown',
-    description: 'Elite visionary training establishing you as a global authority in astrology.',
+    description: 'The ultimate 48-week mastery journey covering all 12 core disciplines plus the exclusive 6 Spiritual Stairs pathway.',
     specialContent: {
       title: "ASTROBHARATAI Grand Master Pass – Complete Syllabus",
       whoItIsFor: "Dedicated individuals seeking an All-in-One Lifetime Mastery Program",
