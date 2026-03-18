@@ -227,8 +227,8 @@ const courseDomains = [
     description: 'The ultimate 48-week mastery journey covering all 12 core disciplines plus the exclusive 6 Spiritual Stairs pathway.',
     specialContent: {
       title: "ASTROBHARATAI Grand Master Pass",
-      whoItIsFor: "Dedicated individuals seeking the Ultimate 48-Week Elite Mastery Program",
-      objective: "Includes ✅ All 12 Core Disciplines | ✅ Extended 48-Week Access | ✅ Free 6 Spiritual Stairs",
+      whoItIsFor: "Dedicated individuals seeking the Ultimate 48 Weeks of Access",
+      objective: "Includes ✅ All 12 Core Disciplines | ✅ Ultimate 48 Weeks of Access | ✅ Free 6 Spiritual Stairs",
       whatYouWillLearn: [
         "<b>Comprehensive Knowledge:</b> Vedic & KP Astrology, Lal Kitab, Numerology, Vastu",
         "<b>Specialized Sciences:</b> Gemstones, Face Reading, Palmistry, Tarot, Reiki",
