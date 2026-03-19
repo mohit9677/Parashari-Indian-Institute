@@ -461,17 +461,75 @@
     </div>
   </section>
 
+  <!-- Glassmorphism Lock Styles for Video Section -->
+  <style>
+    .vid-locked {
+      position: relative;
+      cursor: not-allowed !important;
+      user-select: none;
+      overflow: hidden;
+    }
+    .vid-locked::after {
+      content: '\f023  Coming Soon';
+      font-family: 'Font Awesome 6 Free', 'Font Awesome 5 Free', sans-serif;
+      font-weight: 900;
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(255, 255, 255, 0.35);
+      backdrop-filter: blur(6px);
+      -webkit-backdrop-filter: blur(6px);
+      z-index: 10;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.4rem;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: #333;
+      text-shadow: 0 1px 3px rgba(255,255,255,0.6);
+      border-radius: inherit;
+      cursor: not-allowed !important;
+      animation: vidGlow 3s ease-in-out infinite;
+    }
+    .vid-locked::before {
+      content: '';
+      position: absolute;
+      top: 0; left: -100%;
+      width: 60%; height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.15), transparent);
+      z-index: 11;
+      animation: vidShimmer 4s ease-in-out infinite;
+      pointer-events: none;
+    }
+    .vid-locked * {
+      pointer-events: none !important;
+    }
+    .vid-locked .play-button-overlay,
+    .vid-locked .video-badge {
+      display: none !important;
+    }
+    @keyframes vidGlow {
+      0%, 100% { color: #444; }
+      50% { color: #222; text-shadow: 0 1px 8px rgba(212,175,55,0.3); }
+    }
+    @keyframes vidShimmer {
+      0% { left: -100%; }
+      50% { left: 150%; }
+      100% { left: 150%; }
+    }
+  </style>
+
   <!-- Free Video Masterclass Section -->
   <section class="video-masterclass-section">
     <div class="container-wide">
       <h2 class="card-section-title">Masterclass: Start Learning Today (Free)</h2>
       <div class="masterclass-grid">
         <!-- Main Featured Video -->
-        <div class="featured-video-container">
-          <div class="featured-video video-placeholder" id="mainMasterclassVideo"
-            data-video-url="https://drive.google.com/file/d/1EeSlZNorC3rfVjnx2CU-vsXmO7Y3pYi6/preview">
+        <div class="featured-video-container vid-locked">
+          <div class="featured-video video-placeholder" id="mainMasterclassVideo">
             <span class="video-badge">FREE LESSON</span>
-            <img src="assets/images/video-poster-1.jpg" alt="Featured Masterclass" class="video-cover">
+            <img src="assets/images/free-video-1.png" alt="Featured Masterclass" class="video-cover">
             <div class="play-button-overlay">
               <div class="play-icon">▶</div>
             </div>
@@ -480,25 +538,32 @@
 
         <!-- Playlist Sidebar -->
         <div class="playlist-sidebar">
-          <div class="playlist-item active" onclick="switchMainVideo('https://drive.google.com/file/d/1EeSlZNorC3rfVjnx2CU-vsXmO7Y3pYi6/preview', 'assets/images/video-poster-1.jpg', this)">
-            <img src="assets/images/video-poster-1.jpg" class="playlist-thumb">
+          <div class="playlist-item active vid-locked">
+            <img src="assets/images/free-video-1.png" class="playlist-thumb">
             <div class="playlist-info">
               <h5>Introduction to Astrology</h5>
               <span>Part 1: The Basics (15 min)</span>
             </div>
           </div>
-          <div class="playlist-item" onclick="switchMainVideo('https://drive.google.com/file/d/1pGuy1R19WNCPFncZB2CPOF6oBHjk-B9m/preview', 'assets/images/video-poster-2.png', this)">
-            <img src="assets/images/video-poster-2.png" class="playlist-thumb">
+          <div class="playlist-item vid-locked">
+            <img src="assets/images/free-video-2.png" class="playlist-thumb">
             <div class="playlist-info">
               <h5>The Secret of Zodiacs</h5>
               <span>Part 2: Hidden Meanings (22 min)</span>
             </div>
           </div>
-          <div class="playlist-item" onclick="switchMainVideo('https://drive.google.com/file/d/1ueubDhCuricSLb2Lyhtw30bMWQJ2sXW6/preview', 'assets/images/video-poster-3.png', this)">
-            <img src="assets/images/video-poster-3.png" class="playlist-thumb">
+          <div class="playlist-item vid-locked">
+            <img src="assets/images/free-video-3.png" class="playlist-thumb">
             <div class="playlist-info">
               <h5>Vastu for Prosperity</h5>
               <span>Masterclass Preview (18 min)</span>
+            </div>
+          </div>
+          <div class="playlist-item vid-locked">
+            <img src="assets/images/free-video-4.png" class="playlist-thumb">
+            <div class="playlist-info">
+              <h5>Astrology Remedies</h5>
+              <span>Part 4: Effective Solutions (20 min)</span>
             </div>
           </div>
         </div>
