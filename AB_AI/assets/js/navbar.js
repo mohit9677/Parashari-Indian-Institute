@@ -277,6 +277,31 @@ const courseDomains = [
       { name: 'Remedies', meta: 'Astrological Solutions', url: '6-stairs-remedies.html', icon: 'fas fa-leaf' },
       { name: 'PLRT', meta: 'Past Life Regression', url: 'plrt-6-stairs.html', icon: 'fas fa-hourglass-half' }
     ]
+  },
+  {
+    id: 'level-mentorship',
+    label: '<span style="color: #D4AF37; font-weight: 800;">1-on-1 Mentorship <i class="fas fa-star" style="color: #D4AF37; font-size: 0.85em; margin-left: 4px;"></i></span>',
+    icon: 'fas fa-star',
+    description: 'Accelerate your mastery with personalized, dedicated guidance from our top experts.',
+    specialContent: {
+      title: "1-on-1 Vedic Mentorship",
+      whoItIsFor: "Dedicated learners seeking a personalized pace and deep insights",
+      objective: "Provide exclusive, tailored guidance with direct expert Q&A",
+      whatYouWillLearn: [
+        "<b>Personalized Syllabus:</b> Adapted to your specific astrological goals",
+        "<b>Direct Q&A:</b> Live doubt clearing and practical chart-reading sessions",
+        "<b>Advanced Techniques:</b> Predictive secrets from top mentors",
+        "<b>Consultation Practice:</b> Real-time career and case study guidance"
+      ],
+      learningOutcome: [
+        "Accelerated learning curve and practical confidence",
+        "Direct access to 24x7 expert support",
+        "Priority guidance for professional consulting"
+      ]
+    },
+    courses: [
+      { name: 'Discover Mentorship Program', meta: 'Exclusive 1-on-1 Access', url: 'mentorship.html', icon: 'fas fa-arrow-right' }
+    ]
   }
 ];
 
