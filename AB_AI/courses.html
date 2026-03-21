@@ -2713,8 +2713,8 @@
       </div>
       <div class="qv-landscape-bar">
         <div class="qv-prices">
-          <span id="qvOldPrice" class="qv-old-price">₹3,499</span>
-          <span id="qvNewPrice" class="qv-new-price">₹2,499</span>
+          <span id="qvOldPrice" class="qv-old-price">₹3,999</span>
+          <span id="qvNewPrice" class="qv-new-price">₹2,999</span>
         </div>
         <a href="#" id="qvEnrollBtn" class="qv-enroll-btn">Enroll Now</a>
       </div>
@@ -2774,6 +2774,34 @@
           }
         }
       });
+    });
+
+    // Auto-open modal if courseId query param is present
+    document.addEventListener('DOMContentLoaded', function () {
+      const params = new URLSearchParams(window.location.search);
+      const courseIdParam = params.get('courseId');
+      if (courseIdParam) {
+        // Optional: Switch to Crash Course filter to show context
+        const ccFilter = document.querySelector('.filter-tab[data-filter="Crash Course"]');
+        if (ccFilter) ccFilter.click();
+        
+        setTimeout(() => {
+          const targetCard = document.querySelector(`.premium-gold-card[data-course-id="${courseIdParam}"]`);
+          if (targetCard) {
+            const learnMoreBtn = targetCard.querySelector('.learn-more');
+            if (learnMoreBtn) learnMoreBtn.click();
+            
+            // Scroll to the grid so the user is positioned correctly behind the modal
+            const grid = document.getElementById('courseGrid');
+            if (grid) {
+              window.scrollTo({
+                top: grid.offsetTop - 100,
+                behavior: 'smooth'
+              });
+            }
+          }
+        }, 500); // Wait for filter animations to settle
+      }
     });
   </script>
 
